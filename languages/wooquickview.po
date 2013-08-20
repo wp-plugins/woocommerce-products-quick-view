@@ -1,0 +1,704 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP e-Commerce Catalog Visibility Email inquiry PRO\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-20 17:47+0700\n"
+"PO-Revision-Date: 2013-08-20 17:47+0700\n"
+"Last-Translator: Nguyen Tuan <mr.nguyencongtuan@gmail.com>\n"
+"Language-Team: a3rev\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:42
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:360
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:361
+msgid "QUICKVIEW"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:52
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:603
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:604
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:675
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:676
+msgid "Quick View"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:94
+msgid "Product Page Content"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:96
+msgid "Check will show Product page excluding site header, sidebar and Footer. Note any plugin that runs its JavaScript just on the product page cannot run because this is not the actual product page url."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:100
+msgid "Site Product Page"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:102
+msgid "Check will show Product page, site header, sidebar and footer."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:126
+msgid "House Keeping"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:129
+msgid "Clean up on Deletion"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:133
+msgid "Check this box and if you ever delete this plugin it will completely remove all tables and data it created, leaving no trace it was ever here."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:175
+msgid "Settings"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:176
+msgid "Hover Position & Style"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:177
+msgid "Under Image Style"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:178
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:826
+msgid "Fancy Box Pop Up"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:179
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:918
+msgid "Colour Box Pop Up"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:295
+msgid "Global Settings"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:301
+msgid "Enable/Disable"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:302
+msgid "Check to activate the Quick View feature."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:316
+msgid "Show Button on"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:322
+msgid "Show on mouse hover over image."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:323
+msgid "Show as button or link text under image."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:327
+msgid "Popup Tool"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:335
+msgid "Fancybox (Default)"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:336
+msgid "ColorBox"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:342
+msgid "Pop-Up Content"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:349
+msgid "Button Show On Hover"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:355
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:670
+msgid "Button Text"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:356
+msgid "Text for Quick View Button Show On Hover"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:364
+msgid "Button Align"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:372
+msgid "Top"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:373
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:573
+msgid "Center"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:374
+msgid "Bottom"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:385
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:679
+msgid "Button Padding Top/Bottom"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:386
+msgid "(Padding Top/Bottom from Button text to Button border Show On Hover)"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:394
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:688
+msgid "Button Padding Left/Right"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:395
+msgid "(Padding Left/Right from Button text to Button border Show On Hover)"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:403
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:697
+msgid "Background Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:404
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:413
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:422
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:467
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:520
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:537
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:643
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:652
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:698
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:707
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:717
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:751
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:804
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:905
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:974
+msgid "Default"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:412
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:706
+msgid "Background Colour Gradient From"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:421
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:716
+msgid "Background Colour Gradient To"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:430
+msgid "Button Transparency"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:440
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:725
+msgid "Button Border Weight"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:450
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:735
+msgid "Button Border Style"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:459
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:743
+msgid "Solid"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:460
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:744
+msgid "Dotted"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:461
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:745
+msgid "Dashed"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:462
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:746
+msgid "Double"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:466
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:750
+msgid "Button Border Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:475
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:759
+msgid "Border Rounded"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:484
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:768
+msgid "Button Font"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:494
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:778
+msgid "Button Font Size"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:504
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:788
+msgid "Button Font Style"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:512
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:635
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:796
+msgid "Normal"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:513
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:636
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:797
+msgid "Italic"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:514
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:637
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:798
+msgid "Bold"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:515
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:638
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:799
+msgid "Bold/Italic"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:519
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:803
+msgid "Button Font Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:528
+msgid "Button Shadow"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:529
+msgid "Activating this setting show shadow for button."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:536
+msgid "Button Shadow Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:547
+msgid "Button/Hyperlink Show under Image"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:553
+msgid "Button or Hyperlink Type"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:560
+msgid "Hyperlink"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:561
+msgid "Button"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:565
+msgid "Button or Hyperlink Align"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:574
+msgid "Left"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:575
+msgid "Right"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:579
+msgid "Button or Hyperlink magrin"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:580
+msgid "Above/Below"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:593
+msgid "Hyperlink Styling"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:598
+msgid "Hyperlink Text"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:599
+msgid "Text for Hyperlink show under image"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:607
+msgid "Hyperlink Font"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:617
+msgid "Hyperlink Font Size"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:627
+msgid "Hyperlink Font Style"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:642
+msgid "Hyperlink Font Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:651
+msgid "Hyperlink hover Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:665
+msgid "Button Styling"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:671
+msgid "Text for Button show under image"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:680
+msgid "Padding Top/Bottom from Button text to Button border show under image"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:689
+msgid "Padding Left/Right from Button text to Button border show under image"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:812
+msgid "CSS Class"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:813
+msgid "Enter your own button CSS class"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:831
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:924
+msgid "Popup Tool Wide"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:839
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:932
+msgid "50%"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:840
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:933
+msgid "75%"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:841
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:934
+msgid "100%"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:845
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:938
+msgid "Fix Position on Scroll"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:851
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:944
+msgid "Yes - Pop-up stays centered in screen while page scrolls behind it."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:852
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:945
+msgid "No - Pop-up scrolls up and down with the page."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:856
+msgid "Open Transition Effect"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:857
+msgid "Choose a pop-up opening effect. Default - None."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:865
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:880
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:958
+msgid "None"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:866
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:881
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:959
+msgid "Fade"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:867
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:882
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:960
+msgid "Elastic"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:871
+msgid "Close Transistion Effect"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:872
+msgid "Choose a pop-up closing effect. Default - None."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:886
+msgid "Opening Speed"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:887
+msgid "Milliseconds when open popup"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:895
+msgid "Closing Speed"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:896
+msgid "Milliseconds when close popup"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:904
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:973
+msgid "Background Overlay Colour"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:905
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:974
+msgid "Select a colour or type TRANSPARENT for no colour."
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:949
+msgid "Open & Close Transition Effect"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:950
+msgid "Choose a pop-up opening & closing effect. Default - None"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:964
+msgid "Opening & Closing Speed"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:965
+msgid "Milliseconds when open and close popup"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1005
+msgid "Arial"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1006
+msgid "Verdana"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1007
+msgid "Trebuchet"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1008
+msgid "Georgia"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1009
+msgid "Times New Roman"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1010
+msgid "Tahoma"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1011
+msgid "Palatino"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1012
+msgid "Helvetica*"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1013
+msgid "Calibri*"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1014
+msgid "Myriad Pro*"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1015
+msgid "Lucida"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1016
+msgid "Arial Black"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1017
+msgid "Gill Sans*"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1018
+msgid "Geneva*"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1019
+msgid "Impact"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1020
+msgid "Courier"
+msgstr ""
+
+#: admin/classes/class-woocommerce-quick-view-ultimate-admin.php:1021
+msgid "Century Gothic"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:193
+msgid "Upgrade to WooCommerce Quick View Ultimate"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:194
+msgid "<strong>NOTE:</strong> All the functions inside the Yellow border on the plugins admin panel are extra functionality that is activated by upgrading to the Pro version"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:196
+msgid "WooCommerce Quick View Ultimate"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:197
+msgid "Activates these advanced Features"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:200
+msgid "WYSIWYG Quick View hover button style editor."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:201
+msgid "Show Quick View as a Button or link text under image."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:202
+msgid "Under Image Button or Link text WYSIWYG style editor."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:203
+msgid "Show product page content in pop-up instead of whole site."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:204
+msgid "Optional Colorbox pop-up tool."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:205
+#, php-format
+msgid "Set pop-up wide as a % of screen size in larger screens."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:206
+msgid "Select pop-up open and close effect."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:207
+msgid "Set pop-up opening / closing speed."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:208
+msgid "Set pop-up background overlay colour."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:209
+msgid "Same day priority support and auto updates."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:212
+msgid "View this plugins"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:212
+msgid "documentation"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:213
+msgid "Visit this plugins"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:213
+msgid "support forum"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:214
+msgid "More FREE a3rev WooCommerce Plugins"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:217
+msgid "WooCommerce Product Sort and Display"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:218
+msgid "WooCommerce Dynamic Products Gallery"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:219
+msgid "WooCommerce Predictive Search"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:220
+msgid "WooCommerce Compare Products"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:221
+msgid "WooCommerce Widget Product Slideshow"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:222
+msgid "WooCommerce Email Inquiry & Cart Options"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:223
+msgid "WooCommerce Email Inquiry Ultimate (Pro Only)"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:224
+msgid "WooCommerce Quotes and Orders (Pro Only)"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:227
+msgid "FREE a3rev WordPress Plugins"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:230
+msgid "Contact Us Page - Contact People"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:231
+msgid "WordPress Email Template"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:232
+msgid "Page View Count"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:243
+msgid "Documentation"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:244
+msgid "Support"
+msgstr ""
+
