@@ -1,5 +1,4 @@
 === WooCommerce Products Quick View ===
-
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.5
@@ -8,7 +7,7 @@ Stable tag: 1.0.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin adds the ultimate Quick View feature to your Shop page, Product category and Product tags listings. Opens the full pages content - add to cart and even view cart without leaving the page.
+Add Quick View feature to all grid view products on shop, category, tag pages. Opens full product page content, add to cart without leaving the page
   
 == Description ==
 
@@ -34,13 +33,13 @@ We wanted our customers to have a true supermarket shopping experience. Other Qu
 * Fully mobile responsive - if your theme is responsive it opens in its true responsive dimensions within the pop-up.
 * Quick View button shows on mouse over the image.
 * Quick View button has 3 Positional settings Top, Center or bottom of the image.
-* Fancybox pop-up tool – can’t be blocked by browser pop-up settings.
+* Fancybox pop-up tool - can't be blocked by browser pop-up settings.
 * Pop-up opens in 0.300 of a second and closes instantly.
-* SEO tracking – Your analytics tracking code e.g. Google records every view.
+* SEO tracking - Your analytics tracking code e.g. Google records every view.
 * Add to Cart , View Cart all work within the pop-up.
 * All product page features add by plugins work within the pop-up. 
 * Fully cross browser compliant including IE7 to IE10.
-* Mobile device optimized – all tablets and phones
+* Mobile device optimized - all tablets and phones
 
 = Pro Version Upgrade =
 
