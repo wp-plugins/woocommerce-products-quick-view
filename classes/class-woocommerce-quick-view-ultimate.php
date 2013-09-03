@@ -43,7 +43,9 @@ class WC_Quick_View_Ultimate
 	public function fix_style_js_responsi_theme(){
 		if ( (is_home() && function_exists('add_responsi_pagination_theme')) ){
 			add_action( 'woo_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
+			add_action( 'a3rev_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
 			add_action( 'woo_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
+			add_action( 'a3rev_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
 		}
 		if ( is_singular('product') ) {
 			add_action( 'wp_footer', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );

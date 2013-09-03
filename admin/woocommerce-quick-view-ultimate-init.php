@@ -7,7 +7,7 @@ function wc_quick_view_ultimate_install(){
 	global $wpdb;
 	//global $wp_rewrite;
 	WC_Quick_View_Ultimate_Settings::set_setting();
-	update_option('wc_quick_view_ultimate_version', '1.0.0');
+	update_option('wc_quick_view_ultimate_version', '1.0.1');
 	update_option('wc_quick_view_ultimate_plugin', 'wc_quick_view_ultimate');
 	//$wp_rewrite->flush_rules();
 	update_option('wc_quick_view_ultimate_just_installed', true);
@@ -32,6 +32,6 @@ global $wc_quick_view_ultimate;
 $GLOBALS['wc_quick_view_ultimate_ultimate_settings'] = new WC_Quick_View_Ultimate_Settings();
 $GLOBALS['wc_quick_view_ultimate_ultimate'] = new WC_Quick_View_Ultimate();
 
-update_option('wc_quick_view_ultimate_version', '1.0.0');
+update_option('wc_quick_view_ultimate_version', '1.0.1');
 
 ?>
