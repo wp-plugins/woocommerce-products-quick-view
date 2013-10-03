@@ -82,7 +82,7 @@ Please note that we do not provide support for our Lite Version plugins. Hundred
 
 * English (default) - always included.
 *.po file (wooquickview.po) in languages folder for translations.
-* If you do a translation for your site please send it to us for inclusion in the plugin language folder. We'll acknowledge your work here. [Go here](http://a3rev.com/contact/) to send your translation files to us.
+* If you do a translation for your site please send it to us for inclusion in the plugin language folder. We'll acknowledge your work here. [Go here](https://a3rev.com/contact-us-page/) to send your translation files to us.
 
 = Plugin Resources =
 
