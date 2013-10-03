@@ -31,13 +31,40 @@ class WC_Quick_View_Ultimate
 		add_action( 'woocommerce_after_shop_loop', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
 		add_action( 'woocommerce_after_shop_loop', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
 		add_action( 'wp_head', array( &$this, 'fix_style_js_responsi_theme'), 13 );
-		//Enqueue Script On Home Page Responsi	
 		
+		// Add script check if checkout then close popup and redirect to checkout page
+		add_action( 'wp_head', array( &$this, 'redirect_to_checkout_page_from_popup') );
+		
+		//Enqueue Script On Home Page Responsi	
 		add_action( 'wp_footer', array( &$this, 'quick_view_ultimate_popup') );
 		
 		//Ajax Action
 		add_action('wp_ajax_quick_view_ultimate_reload_cart', array( &$this, 'quick_view_ultimate_reload_cart') );
 		add_action('wp_ajax_nopriv_quick_view_ultimate_reload_cart', array( &$this, 'quick_view_ultimate_reload_cart') );
+		
+		// Add upgrade notice to Dashboard pages
+		global $wc_qv_admin_init;
+		add_filter( $wc_qv_admin_init->plugin_name . '_plugin_extension', array( $this, 'plugin_extension' ) );
+		
+		$admin_pages = $wc_qv_admin_init->admin_pages();
+		if ( is_array( $admin_pages ) && count( $admin_pages ) > 0 ) {
+			foreach ( $admin_pages as $admin_page ) {
+				add_action( $wc_qv_admin_init->plugin_name . '-' . $admin_page . '_tab_start', array( $this, 'plugin_extension_start' ) );
+				add_action( $wc_qv_admin_init->plugin_name . '-' . $admin_page . '_tab_end', array( $this, 'plugin_extension_end' ) );
+			}
+		}
+	}
+	
+	public function redirect_to_checkout_page_from_popup() {
+		if ( is_checkout() ) {
+	?>
+    	<script type="text/javascript">
+		if ( window.self !== window.top ) {
+			self.parent.location.href = '<?php echo get_permalink( woocommerce_get_page_id( 'checkout' ) ); ?>';
+		}
+		</script>
+    <?php
+		}
 	}
 	
 	public function fix_style_js_responsi_theme(){
@@ -188,9 +215,20 @@ class WC_Quick_View_Ultimate
 		die();
 	}
 	
+	public function plugin_extension_start() {
+		global $wc_qv_admin_init;
+		
+		$wc_qv_admin_init->plugin_extension_start();
+	}
+	
+	public function plugin_extension_end() {
+		global $wc_qv_admin_init;
+		
+		$wc_qv_admin_init->plugin_extension_end();
+	}
+	
 	public function plugin_extension() {
 		$html = '';
-		$html .= '<div id="a3_plugin_panel_extensions">';
 		$html .= '<a href="http://a3rev.com/shop/" target="_blank" style="float:right;margin-top:5px; margin-left:10px;" ><img src="'.WC_QUICK_VIEW_ULTIMATE_IMAGES_URL.'/a3logo.png" /></a>';
 		$html .= '<h3>'.__('Upgrade to WooCommerce Quick View Ultimate', 'wooquickview').'</h3>';
 		$html .= '<p>'.__("<strong>NOTE:</strong> All the functions inside the Yellow border on the plugins admin panel are extra functionality that is activated by upgrading to the Pro version", 'wooquickview').':</p>';
@@ -234,7 +272,6 @@ class WC_Quick_View_Ultimate
 		$html .= '<li>* <a href="http://wordpress.org/plugins/page-views-count/" target="_blank">'.__('Page View Count', 'wooquickview').'</a></li>';
 		$html .= '</ul>';
 		$html .= '</p>';
-		$html .= '</div>';
 		return $html;
 	}
 	

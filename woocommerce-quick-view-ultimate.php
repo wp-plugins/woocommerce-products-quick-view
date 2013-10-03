@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Products Quick View
 Description: This plugin adds the ultimate Quick View feature to your Shop page, Product category and Product tags listings. Opens the full pages content - add to cart and even view cart without leaving the page.
-Version: 1.0.1
+Version: 1.0.2
 Author: A3 Revolution
 Author URI: http://www.a3rev.com/
 License: This software is under commercial license and copyright to A3 Revolution Software Development team
@@ -21,20 +21,29 @@ License: This software is under commercial license and copyright to A3 Revolutio
 define('WC_QUICK_VIEW_ULTIMATE_FILE_PATH', dirname(__FILE__));
 define('WC_QUICK_VIEW_ULTIMATE_DIR_NAME', basename(WC_QUICK_VIEW_ULTIMATE_FILE_PATH));
 define('WC_QUICK_VIEW_ULTIMATE_FOLDER', dirname(plugin_basename(__FILE__)));
-define('WC_QUICK_VIEW_ULTIMATE_URL', WP_CONTENT_URL.'/plugins/'.WC_QUICK_VIEW_ULTIMATE_FOLDER);
+define('WC_QUICK_VIEW_ULTIMATE_URL', untrailingslashit( plugins_url( '/', __FILE__ ) ) );
 define('WC_QUICK_VIEW_ULTIMATE_DIR', WP_CONTENT_DIR.'/plugins/'.WC_QUICK_VIEW_ULTIMATE_FOLDER);
 define('WC_QUICK_VIEW_ULTIMATE_NAME', plugin_basename(__FILE__) );
 define('WC_QUICK_VIEW_ULTIMATE_TEMPLATE_PATH', WC_QUICK_VIEW_ULTIMATE_FILE_PATH . '/templates' );
 define('WC_QUICK_VIEW_ULTIMATE_IMAGES_URL',  WC_QUICK_VIEW_ULTIMATE_URL . '/assets/images' );
 define('WC_QUICK_VIEW_ULTIMATE_JS_URL',  WC_QUICK_VIEW_ULTIMATE_URL . '/assets/js' );
 define('WC_QUICK_VIEW_ULTIMATE_CSS_URL',  WC_QUICK_VIEW_ULTIMATE_URL . '/assets/css' );
-define('WC_QUICK_VIEW_ULTIMATE_WP_TESTED', '3.6' );
+define('WC_QUICK_VIEW_ULTIMATE_WP_TESTED', '3.6.1' );
 if(!defined("WC_QUICK_VIEW_ULTIMATE_AUTHOR_URI"))
     define("WC_QUICK_VIEW_ULTIMATE_AUTHOR_URI", "http://a3rev.com/shop/woocommerce-quick-view-ultimate/");
 	
+if(!defined("WC_QUICK_VIEW_ULTIMATE_DOCS_URI"))
+    define("WC_QUICK_VIEW_ULTIMATE_DOCS_URI", "http://docs.a3rev.com/user-guides/plugins-extensions/woocommerce-quick-view-ultimate/");
+
+include('admin/admin-ui.php');
+include('admin/admin-interface.php');
+
+include('admin/admin-pages/admin-quick-view-page.php');
+
+include('admin/admin-init.php');
+	
 include 'classes/class-woocommerce-quick-view-ultimate-style.php';
 include 'classes/class-woocommerce-quick-view-ultimate.php';
-include 'admin/classes/class-woocommerce-quick-view-ultimate-admin.php';
 
 include 'admin/woocommerce-quick-view-ultimate-init.php';
 
@@ -59,26 +68,16 @@ function wc_quick_view_ultimate_uninstall(){
 		delete_option( 'quick_view_ultimate_on_hover_bt_bg' );
 		delete_option( 'quick_view_ultimate_on_hover_bt_bg_from' );
 		delete_option( 'quick_view_ultimate_on_hover_bt_bg_to' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_border_width' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_border_style' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_border_color' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_rounded' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_font_family' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_font_size' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_font_style' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_font_color' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_enable_shadow' );
-		delete_option( 'quick_view_ultimate_on_hover_bt_shadow_color' );
+		delete_option( 'quick_view_ultimate_on_hover_bt_border' );
+		delete_option( 'quick_view_ultimate_on_hover_bt_font' );
+		delete_option( 'quick_view_ultimate_on_hover_bt_shadowr' );
 		delete_option( 'quick_view_ultimate_on_hover_bt_transparent' );
 		
 		// Delete Button/Hyperlink Show under Image
 		delete_option( 'quick_view_ultimate_under_image_bt_type' );
 		delete_option( 'quick_view_ultimate_under_image_bt_alink' );
 		delete_option( 'quick_view_ultimate_under_image_link_text' );
-		delete_option( 'quick_view_ultimate_under_image_link_font_family' );
-		delete_option( 'quick_view_ultimate_under_image_link_font_size' );
-		delete_option( 'quick_view_ultimate_under_image_link_font_style' );
-		delete_option( 'quick_view_ultimate_under_image_link_font_color' );
+		delete_option( 'quick_view_ultimate_under_image_link_font' );
 		delete_option( 'quick_view_ultimate_under_image_link_font_hover_color' );
 		delete_option( 'quick_view_ultimate_under_image_bt_text' );
 		delete_option( 'quick_view_ultimate_under_image_bt_padding_tb' );
@@ -86,14 +85,8 @@ function wc_quick_view_ultimate_uninstall(){
 		delete_option( 'quick_view_ultimate_under_image_bt_bg' );
 		delete_option( 'quick_view_ultimate_under_image_bt_bg_from' );
 		delete_option( 'quick_view_ultimate_under_image_bt_bg_to' );
-		delete_option( 'quick_view_ultimate_under_image_bt_border_width' );
-		delete_option( 'quick_view_ultimate_under_image_bt_border_style' );
-		delete_option( 'quick_view_ultimate_under_image_bt_border_color' );
-		delete_option( 'quick_view_ultimate_under_image_bt_rounded' );
-		delete_option( 'quick_view_ultimate_under_image_bt_font_family' );
-		delete_option( 'quick_view_ultimate_under_image_bt_font_size' );
-		delete_option( 'quick_view_ultimate_under_image_bt_font_style');
-		delete_option( 'quick_view_ultimate_under_image_bt_font_color' );
+		delete_option( 'quick_view_ultimate_under_image_bt_border' );
+		delete_option( 'quick_view_ultimate_under_image_bt_font' );
 		delete_option( 'quick_view_ultimate_under_image_bt_margin' );
 		delete_option( 'quick_view_ultimate_under_image_bt_class' );
 		
