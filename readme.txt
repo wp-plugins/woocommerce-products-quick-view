@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.5
 Tested up to: 3.6.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -137,6 +137,15 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.0.3 - 2013/10/10 =
+* Feature: 
+	* Admin panel intuitive app interface feature. Show slider to set corner radius when select Round, hide when select Square on Border Corner Style Switch. (Pro Version Feature)
+* Tweaks:
+	* a3rev logo image now resizes to the size of the yellow sidebar in tablets and mobiles.
+* Fixes:
+	* Intuitive Radio Switch settings not saving. Input with disabled attribute could not parse when form is submitted, replace disabled with custom attribute: checkbox-disabled
+	* App interface Radio switches not working properly on Android platform, replace removeProp() with removeAttr() function script
+
 = 1.0.2 - 2013/10/03 =
 * Features :
 	* Upgraded the plugin to the newly developed a3rev admin panel app interface.
@@ -163,6 +172,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Upgrade now for another admin panel intuitive app interface feature plus a Radio switch bug fix and Android platform bug fix
 
 = 1.0.2 =
 Upgrade now to get the all new admin panel app interface. PayPal checkout in pop-up bug fix and browser protocol bug fix.

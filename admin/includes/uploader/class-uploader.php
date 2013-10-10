@@ -142,6 +142,9 @@ class WC_QV_Uploader extends WC_QV_Admin_UI
 		if ( $post_id == 0 ) {
 			$post_id = $this->get_silentpost( $id_attribute );
 		}
+		
+		if ( trim( $value ) == '' ) $value = trim( $default_value );
+		
 		$output .= '<input type="text" name="'.$name_attribute.'" id="'.$id_attribute.'" value="'.esc_attr( $value ).'" class="'.$id_attribute. ' ' .$class.' a3_upload" style="'.$css.'" rel="'.$field_name.'" /> ';
 		$output .= '<input id="upload_'.$id_attribute.'" class="a3rev-ui-upload-button a3_upload_button button" type="button" value="'.__( 'Upload', 'wooquickview' ).'" rel="'.$post_id.'" /> '.$description;
 		

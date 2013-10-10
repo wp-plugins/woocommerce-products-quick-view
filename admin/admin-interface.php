@@ -1142,6 +1142,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 										<li>
                                             <input
                                                 name="<?php echo $name_attribute; ?>"
+                                                <?php if ( $i_option['val'] == $option_value ) echo ' checkbox-disabled="true" ' ; ?>
                                                 class="a3rev-ui-onoff_radio <?php echo esc_attr( $value['class'] ); ?>"
                                                 checked_label="<?php echo esc_html( $i_option['checked_label'] ); ?>"
                                                 unchecked_label="<?php echo esc_html( $i_option['unchecked_label'] ); ?>"
@@ -1537,22 +1538,24 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
                                     <?php checked( 'rounded', $corner ); ?>
                                     <?php echo implode( ' ', $custom_attributes ); ?>
 								/> 
-                                <span class="a3rev-ui-border_corner-span"><?php _e( 'Rounded Value', 'wooquickview' ); ?></span> 
                                 
-							<!-- Border Rounded Value -->                              
-								<div class="a3rev-ui-slide-container-start">
-                                	<div class="a3rev-ui-slide-container-end">
-                                        	<div class="a3rev-ui-slide" id="<?php echo $id_attribute; ?>-rounded_value_div" min="<?php echo esc_attr( $value['min'] ); ?>" max="<?php echo esc_attr( $value['max'] ); ?>" inc="<?php echo esc_attr( $value['increment'] ); ?>"></div>
-									</div>
+							<!-- Border Rounded Value -->
+                            	<div class="a3rev-ui-border-corner-value-container">   
+                                    <span class="a3rev-ui-border_corner-span"><?php _e( 'Rounded Value', 'wooquickview' ); ?></span>                            
+                                    <div class="a3rev-ui-slide-container-start">
+                                        <div class="a3rev-ui-slide-container-end">
+                                                <div class="a3rev-ui-slide" id="<?php echo $id_attribute; ?>-rounded_value_div" min="<?php echo esc_attr( $value['min'] ); ?>" max="<?php echo esc_attr( $value['max'] ); ?>" inc="<?php echo esc_attr( $value['increment'] ); ?>"></div>
+                                        </div>
+                                    </div>
+                                    <input
+                                        readonly="readonly"
+                                        name="<?php echo $name_attribute; ?>[rounded_value]"
+                                        id="<?php echo $id_attribute; ?>-rounded_value"
+                                        type="text"
+                                        value="<?php echo esc_attr( $rounded_value ); ?>"
+                                        class="a3rev-ui-border_corner-rounded_value a3rev-ui-slider"
+                                    /> <span class="a3rev-ui-border_corner-px">px</span>
                                 </div>
-								<input
-									readonly="readonly"
-									name="<?php echo $name_attribute; ?>[rounded_value]"
-									id="<?php echo $id_attribute; ?>-rounded_value"
-									type="text"
-									value="<?php echo esc_attr( $rounded_value ); ?>"
-									class="a3rev-ui-border_corner-rounded_value a3rev-ui-slider"
-								/> <span class="a3rev-ui-border_corner-px">px</span>
                                 <div style="clear:both"></div>
 							</div>
                         
@@ -1671,21 +1674,22 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 								/> 
                                 
                                 <!-- Border Rounded Value -->
-                                <span class="a3rev-ui-border_corner-span"><?php _e( 'Rounded Value', 'wooquickview' ); ?></span> 
-								<div class="a3rev-ui-slide-container-start">
-                                	<div class="a3rev-ui-slide-container-end">
-                                        	<div class="a3rev-ui-slide" id="<?php echo $id_attribute; ?>-rounded_value_div" min="<?php echo esc_attr( $value['min'] ); ?>" max="<?php echo esc_attr( $value['max'] ); ?>" inc="<?php echo esc_attr( $value['increment'] ); ?>"></div>
-									</div>
+                                <div class="a3rev-ui-border-corner-value-container">
+                                    <span class="a3rev-ui-border_corner-span"><?php _e( 'Rounded Value', 'wooquickview' ); ?></span> 
+                                    <div class="a3rev-ui-slide-container-start">
+                                        <div class="a3rev-ui-slide-container-end">
+                                                <div class="a3rev-ui-slide" id="<?php echo $id_attribute; ?>-rounded_value_div" min="<?php echo esc_attr( $value['min'] ); ?>" max="<?php echo esc_attr( $value['max'] ); ?>" inc="<?php echo esc_attr( $value['increment'] ); ?>"></div>
+                                        </div>
+                                    </div>
+                                    <input
+                                        readonly="readonly"
+                                        name="<?php echo $name_attribute; ?>[rounded_value]"
+                                        id="<?php echo $id_attribute; ?>-rounded_value"
+                                        type="text"
+                                        value="<?php echo esc_attr( $rounded_value ); ?>"
+                                        class="a3rev-ui-border_corner-rounded_value a3rev-ui-slider"
+                                    /> <span class="a3rev-ui-border_corner-px">px</span>
                                 </div>
-								<input
-									readonly="readonly"
-									name="<?php echo $name_attribute; ?>[rounded_value]"
-									id="<?php echo $id_attribute; ?>-rounded_value"
-									type="text"
-									value="<?php echo esc_attr( $rounded_value ); ?>"
-									class="a3rev-ui-border_corner-rounded_value a3rev-ui-slider"
-								/> <span class="a3rev-ui-border_corner-px">px</span>
-                                
                                 <!-- Preview Button -->
                                <div class="a3rev-ui-settings-preview"><a href="#" class="a3rev-ui-border-preview-button a3rev-ui-settings-preview-button button submit-button" title="<?php _e( 'Preview your customized border settings', 'wooquickview'); ?>"><span>&nbsp;</span></a></div>
                             </div>
@@ -2051,7 +2055,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 		
 		$border_css = '';
 		
-		$border_css .= 'border: ' . esc_attr( $option['width'] ) . ' ' . esc_attr( $option['style'] ) . ' ' . esc_attr( $option['color'] ) .';';
+		$border_css .= 'border: ' . esc_attr( $option['width'] ) . ' ' . esc_attr( $option['style'] ) . ' ' . esc_attr( $option['color'] ) .' !important;';
 			
 		if ( isset( $option['corner'] ) && esc_attr( $option['corner'] ) == 'rounded' ) {
 			$border_css .= 'border-radius: ' . $option['rounded_value'] . 'px !important;';
@@ -2075,7 +2079,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 		
 		$border_style_css = '';
 		
-		$border_style_css .= 'border: ' . esc_attr( $option['width'] ) . ' ' . esc_attr( $option['style'] ) . ' ' . esc_attr( $option['color'] ) .';';
+		$border_style_css .= 'border: ' . esc_attr( $option['width'] ) . ' ' . esc_attr( $option['style'] ) . ' ' . esc_attr( $option['color'] ) .' !important;';
 		
 		return $border_style_css;
 		
@@ -2110,11 +2114,12 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 	public function generate_shadow_css( $option  ) {
 		
 		$shadow_css = '';
+		if ( ! isset( $option['inset'] ) ) $option['inset'] = '';
 		
 		if ( isset( $option['enable'] ) && $option['enable'] == 1 ) {
-			$shadow_css .= 'box-shadow: ' . $option['h_shadow'] . ' ' . $option['v_shadow'] . ' ' . $option['blur'] . ' ' . $option['spread'] . ' ' . $option['color'] . ' ' . $option['inset'] . ' ;';
-            $shadow_css .= '-moz-box-shadow: ' . $option['h_shadow'] . ' ' . $option['v_shadow'] . ' ' . $option['blur'] . ' ' . $option['spread'] . ' ' . $option['color'] . ' ' . $option['inset'] . ' ;';
-            $shadow_css .= '-webkit-box-shadow: ' . $option['h_shadow'] . ' ' . $option['v_shadow'] . ' ' . $option['blur'] . ' ' . $option['spread'] . ' ' . $option['color'] . ' ' . $option['inset'] . ' ;';
+			$shadow_css .= 'box-shadow: ' . $option['h_shadow'] . ' ' . $option['v_shadow'] . ' ' . $option['blur'] . ' ' . $option['spread'] . ' ' . $option['color'] . ' ' . $option['inset'] . ' !important;';
+            $shadow_css .= '-moz-box-shadow: ' . $option['h_shadow'] . ' ' . $option['v_shadow'] . ' ' . $option['blur'] . ' ' . $option['spread'] . ' ' . $option['color'] . ' ' . $option['inset'] . ' !important;';
+            $shadow_css .= '-webkit-box-shadow: ' . $option['h_shadow'] . ' ' . $option['v_shadow'] . ' ' . $option['blur'] . ' ' . $option['spread'] . ' ' . $option['color'] . ' ' . $option['inset'] . ' !important;';
 		} else {
 			$shadow_css .= 'box-shadow: none !important ;';
             $shadow_css .= '-moz-box-shadow: none !important ;';

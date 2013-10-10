@@ -214,7 +214,7 @@ class WC_QV_Admin_Init extends WC_QV_Admin_UI
 					$activated_first_tab = false;
 					$tab_data = false;
 					foreach ( $tabs as $tab ) {
-						echo '<a href="' . admin_url( $page_data['admin_url'] . '?page=' . $current_page . '&tab=' . $tab['name'] ) . '" class="nav-tab ';
+						echo '<a href="' . add_query_arg( array( 'page' => $current_page, 'tab' => $tab['name'] ), admin_url( $page_data['admin_url'] ) ) . '" class="nav-tab ';
 						if ( $current_tab == '' && $activated_first_tab === false ) { 
 							echo 'nav-tab-active'; 
 							$activated_first_tab = true; 
@@ -237,9 +237,11 @@ class WC_QV_Admin_Init extends WC_QV_Admin_UI
 					} else {
 						do_action( $this->plugin_name . '-' . $current_page . '_settings_tabs_' . $current_tab );
 					}
+			?>
+			</div>
+			<?php
 				}
             ?>
-            </div>
             <div style="clear:both; margin-bottom:20px;"></div>
         </div>
 		<?php

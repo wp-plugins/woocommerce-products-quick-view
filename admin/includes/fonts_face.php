@@ -401,9 +401,9 @@ class WC_QV_Fonts_Face extends WC_QV_Admin_UI
 		} // END foreach
 
 		if ( !@$option['style'] && !@$option['size'] && !@$option['color'] )
-			return 'font-family: '.stripslashes($option["face"]).';';
+			return 'font-family: '.stripslashes($option["face"]).' !important;';
 		else
-			return 'font:'.$option['style'].' '.$option['size'].' '.stripslashes($option['face']).';color:'.$option['color'].';';
+			return 'font:'.$option['style'].' '.$option['size'].' '.stripslashes($option['face']).' !important; color:'.$option['color'].' !important;';
 	}
 	
 	
@@ -415,7 +415,7 @@ class WC_QV_Fonts_Face extends WC_QV_Admin_UI
 	
 	add_action( 'wp_head', array( $this, 'generate_google_webfonts' ) );
 	*/
-	public function generate_google_webfonts( $google_fonts = array() ) {
+	public function generate_google_webfonts( $google_fonts = array(), $echo = true ) {
 		$fonts = '';
 		$output = '';
 
@@ -438,10 +438,14 @@ class WC_QV_Fonts_Face extends WC_QV_Admin_UI
 				$output .= "\n<!-- Google Webfonts -->\n";
 				$output .= '<link href="http'. ( is_ssl() ? 's' : '' ) .'://fonts.googleapis.com/css?family=' . $fonts .'" rel="stylesheet" type="text/css" />'."\n";
 				$output = str_replace( '|"','"',$output);
-
-				echo $output;
 			}
 		}
+		
+		if ( $echo )
+			echo $output;
+		else
+			return $output;
+			
 	} // End generate_google_webfonts()
 		
 }

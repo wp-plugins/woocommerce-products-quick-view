@@ -78,15 +78,15 @@ class WC_QV_Admin_UI
 	/* Start of yellow box on right for pro fields
 	/*-----------------------------------------------------------------------------------*/
 	public function plugin_extension_start( $echo = true ) {
-		$optput = '<div id="a3_plugin_panel_container">';
-		$optput .= '<div id="a3_plugin_panel_fields">';
+		$output = '<div id="a3_plugin_panel_container">';
+		$output .= '<div id="a3_plugin_panel_fields">';
 		
-		$optput = apply_filters( $this->plugin_name . '_plugin_extension_start', $optput );
+		$output = apply_filters( $this->plugin_name . '_plugin_extension_start', $output );
 		
 		if ( $echo )
-			echo $optput;
+			echo $output;
 		else
-			return $optput;
+			return $output;
 	}
 	
 	/*-----------------------------------------------------------------------------------*/
@@ -94,20 +94,20 @@ class WC_QV_Admin_UI
 	/* End of yellow box on right for pro fields
 	/*-----------------------------------------------------------------------------------*/
 	public function plugin_extension_end( $echo = true ) {
-		$optput = '</div>';
-		$optput .= '<div id="a3_plugin_panel_upgrade_area">';
-		$optput .= '<div id="a3_plugin_panel_extensions">';
-		$optput .= apply_filters( $this->plugin_name . '_plugin_extension', '' );
-		$optput .= '</div>';
-		$optput .= '</div>';
-		$optput .= '</div>';
+		$output = '</div>';
+		$output .= '<div id="a3_plugin_panel_upgrade_area">';
+		$output .= '<div id="a3_plugin_panel_extensions">';
+		$output .= apply_filters( $this->plugin_name . '_plugin_extension', '' );
+		$output .= '</div>';
+		$output .= '</div>';
+		$output .= '</div>';
 		
-		$optput = apply_filters( $this->plugin_name . '_plugin_extension_end', $optput );
+		$output = apply_filters( $this->plugin_name . '_plugin_extension_end', $output );
 		
 		if ( $echo )
-			echo $optput;
+			echo $output;
 		else
-			return $optput;
+			return $output;
 		
 	}
 	
