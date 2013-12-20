@@ -15,7 +15,7 @@ class WC_Quick_View_Ultimate_Style
 	}
 	
 	public function button_style_show_on_hover(){
-		$quick_view_ultimate_on_hover_bt_alink = get_option( 'quick_view_ultimate_on_hover_bt_alink' );
+		$quick_view_ultimate_on_hover_bt_alink = esc_attr( stripslashes( get_option( 'quick_view_ultimate_on_hover_bt_alink' ) ) );
 		
 		?>
 		<style type="text/css">

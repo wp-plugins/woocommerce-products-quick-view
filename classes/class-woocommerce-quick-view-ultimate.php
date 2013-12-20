@@ -12,6 +12,7 @@
  * quick_view_ultimate_wp_enqueue_style()
  * quick_view_ultimate_popup()
  * quick_view_ultimate_reload_cart()
+ * a3_wp_admin()
  * plugin_extension()
  * plugin_extra_links()
  */
@@ -92,9 +93,9 @@ class WC_Quick_View_Ultimate
 		
 		if( !$do_this ) return;
 		
-		$quick_view_ultimate_on_hover_bt_alink = get_option('quick_view_ultimate_on_hover_bt_alink');
+		$quick_view_ultimate_on_hover_bt_alink = esc_attr( stripslashes( get_option('quick_view_ultimate_on_hover_bt_alink') ) );
 		$quick_view_ultimate_popup_tool = 'fancybox';
-		$quick_view_ultimate_on_hover_bt_text = get_option( 'quick_view_ultimate_on_hover_bt_text' );
+		$quick_view_ultimate_on_hover_bt_text = esc_attr( stripslashes( get_option( 'quick_view_ultimate_on_hover_bt_text' ) ) );
 		
 		$quick_view_ultimate_button = '';
 		
@@ -227,9 +228,13 @@ class WC_Quick_View_Ultimate
 		$wc_qv_admin_init->plugin_extension_end();
 	}
 	
+	public static function a3_wp_admin() {
+		wp_enqueue_style( 'a3rev-wp-admin-style', WC_QUICK_VIEW_ULTIMATE_CSS_URL . '/a3_wp_admin.css' );
+	}
+	
 	public function plugin_extension() {
 		$html = '';
-		$html .= '<a href="http://a3rev.com/shop/" target="_blank" style="float:right;margin-top:5px; margin-left:10px;" ><img src="'.WC_QUICK_VIEW_ULTIMATE_IMAGES_URL.'/a3logo.png" /></a>';
+		$html .= '<a href="http://a3rev.com/shop/" target="_blank" style="float:right;margin-top:5px; margin-left:10px;" ><div class="a3-plugin-ui-icon a3-plugin-ui-a3-rev-logo"></div></a>';
 		$html .= '<h3>'.__('Upgrade to WooCommerce Quick View Ultimate', 'wooquickview').'</h3>';
 		$html .= '<p>'.__("<strong>NOTE:</strong> All the functions inside the Yellow border on the plugins admin panel are extra functionality that is activated by upgrading to the Pro version", 'wooquickview').':</p>';
 		$html .= '<p>';

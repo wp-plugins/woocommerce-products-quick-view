@@ -85,6 +85,8 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 			
 		add_action( $this->plugin_name . '_set_default_settings' , array( $this, 'set_default_settings' ) );
 		
+		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_init' , array( $this, 'clean_on_deletion' ) );
+		
 		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_init' , array( $this, 'reset_default_settings' ) );
 		
 		//add_action( $this->plugin_name . '_get_all_settings' , array( $this, 'get_settings' ) );
@@ -120,6 +122,18 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 		global $wc_qv_admin_interface;
 		
 		$wc_qv_admin_interface->reset_settings( $this->form_fields, $this->option_name, true, true );
+	}
+	
+	/*-----------------------------------------------------------------------------------*/
+	/* clean_on_deletion()
+	/* Process when clean on deletion option is un selected */
+	/*-----------------------------------------------------------------------------------*/
+	public function clean_on_deletion() {
+		if ( ( isset( $_POST['bt_save_settings'] ) || isset( $_POST['bt_reset_settings'] ) ) && get_option( 'quick_view_lite_clean_on_deletion' ) == 0  )  {
+			$uninstallable_plugins = (array) get_option('uninstall_plugins');
+			unset($uninstallable_plugins[WC_QUICK_VIEW_ULTIMATE_NAME]);
+			update_option('uninstall_plugins', $uninstallable_plugins);
+		}
 	}
 	
 	/*-----------------------------------------------------------------------------------*/
@@ -286,7 +300,7 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 			array(  
 				'name' 		=> __( 'Clean up on Deletion', 'wooquickview' ),
 				'desc' 		=> __( "On deletion (not deactivate) the plugin will completely remove all tables and data it created, leaving no trace it was ever here.", 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_clean_on_deletion',
+				'id' 		=> 'quick_view_lite_clean_on_deletion',
 				'type' 		=> 'onoff_checkbox',
 				'default'	=> '1',
 				'free_version'		=> true,

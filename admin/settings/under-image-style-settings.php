@@ -344,12 +344,14 @@ $(document).ready(function() {
 		$(".show_under_image_button_styling").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
 	}
 	$(document).on( "a3rev-ui-onoff_checkbox-switch", '.quick_view_ultimate_under_image_change', function( event, value, status ) {
+		$(".show_under_image_hyperlink_styling").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
+		$(".show_under_image_button_styling").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
 		if ( status == 'true') {
-			$(".show_under_image_hyperlink_styling").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
-			$(".show_under_image_button_styling").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
+			$(".show_under_image_hyperlink_styling").slideDown();
+			$(".show_under_image_button_styling").slideUp();
 		} else {
-			$(".show_under_image_hyperlink_styling").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
-			$(".show_under_image_button_styling").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
+			$(".show_under_image_hyperlink_styling").slideUp();
+			$(".show_under_image_button_styling").slideDown();
 		}
 	});
 });

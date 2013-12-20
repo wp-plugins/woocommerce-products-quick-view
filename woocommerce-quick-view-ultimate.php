@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Products Quick View
 Description: This plugin adds the ultimate Quick View feature to your Shop page, Product category and Product tags listings. Opens the full pages content - add to cart and even view cart without leaving the page.
-Version: 1.0.3
+Version: 1.0.4
 Author: A3 Revolution
 Author URI: http://www.a3rev.com/
 License: This software is under commercial license and copyright to A3 Revolution Software Development team
@@ -28,7 +28,7 @@ define('WC_QUICK_VIEW_ULTIMATE_TEMPLATE_PATH', WC_QUICK_VIEW_ULTIMATE_FILE_PATH 
 define('WC_QUICK_VIEW_ULTIMATE_IMAGES_URL',  WC_QUICK_VIEW_ULTIMATE_URL . '/assets/images' );
 define('WC_QUICK_VIEW_ULTIMATE_JS_URL',  WC_QUICK_VIEW_ULTIMATE_URL . '/assets/js' );
 define('WC_QUICK_VIEW_ULTIMATE_CSS_URL',  WC_QUICK_VIEW_ULTIMATE_URL . '/assets/css' );
-define('WC_QUICK_VIEW_ULTIMATE_WP_TESTED', '3.6.1' );
+define('WC_QUICK_VIEW_ULTIMATE_WP_TESTED', '3.8.0' );
 if(!defined("WC_QUICK_VIEW_ULTIMATE_AUTHOR_URI"))
     define("WC_QUICK_VIEW_ULTIMATE_AUTHOR_URI", "http://a3rev.com/shop/woocommerce-quick-view-ultimate/");
 	
@@ -51,8 +51,8 @@ include 'admin/woocommerce-quick-view-ultimate-init.php';
 * Call when the plugin is activated and deactivated
 */
 register_activation_hook(__FILE__,'wc_quick_view_ultimate_install');
-function wc_quick_view_ultimate_uninstall(){
-	if ( get_option('quick_view_ultimate_clean_on_deletion') == 1 ) {
+function wc_quick_view_lite_uninstall(){
+	if ( get_option('quick_view_lite_clean_on_deletion') == 1 ) {
 		
 		// Delete global settings
 		delete_option( 'quick_view_ultimate_enable' );
@@ -106,10 +106,10 @@ function wc_quick_view_ultimate_uninstall(){
 		delete_option( 'quick_view_ultimate_colorbox_speed' );
 		delete_option( 'quick_view_ultimate_colorbox_overlay_color' );
 		
-		delete_option( 'quick_view_ultimate_clean_on_deletion' );
+		delete_option( 'quick_view_lite_clean_on_deletion' );
 	}
 }
-if ( get_option('quick_view_ultimate_clean_on_deletion') == 1 ) {
-	register_uninstall_hook( __FILE__, 'wc_quick_view_ultimate_uninstall' );
+if ( get_option('quick_view_lite_clean_on_deletion') == 1 ) {
+	register_uninstall_hook( __FILE__, 'wc_quick_view_lite_uninstall' );
 }
 ?>
