@@ -58,10 +58,11 @@ class WC_Quick_View_Ultimate
 	
 	public function redirect_to_checkout_page_from_popup() {
 		if ( is_checkout() ) {
+			$woocommerce_db_version = get_option( 'woocommerce_db_version', null );
 	?>
     	<script type="text/javascript">
 		if ( window.self !== window.top ) {
-			self.parent.location.href = '<?php echo get_permalink( woocommerce_get_page_id( 'checkout' ) ); ?>';
+			self.parent.location.href = '<?php if ( version_compare( $woocommerce_db_version, '2.1', '<' ) ) { echo get_permalink( woocommerce_get_page_id( 'checkout' ) ); } else { echo get_permalink( wc_get_page_id( 'checkout' ) ); } ?>';
 		}
 		</script>
     <?php
@@ -137,13 +138,14 @@ class WC_Quick_View_Ultimate
 		
 		global $woocommerce;
 		$suffix 				= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$frontend_script_path 	= $woocommerce->plugin_url() . '/assets/js/frontend/';
+		$woocommerce_db_version = get_option( 'woocommerce_db_version', null );
+		
+		$frontend_script_path 	= ( ( version_compare( $woocommerce_db_version, '2.1', '<' ) ) ? $woocommerce->plugin_url() : WC()->plugin_url() ) . '/assets/js/frontend/';
 		
 		$quick_view_ultimate_enable = get_option('quick_view_ultimate_enable');
 		$do_this = false;
 		if( $quick_view_ultimate_enable == 'yes' ) $do_this = true;
 		if( !$do_this ) return;
-		$quick_view_ultimate_fancybox_popup_tool_wide = 75;
 		
 			wp_enqueue_style( 'woocommerce_fancybox_styles', WC_QUICK_VIEW_ULTIMATE_JS_URL . '/fancybox/fancybox.css' );
 			wp_enqueue_script( 'fancybox', WC_QUICK_VIEW_ULTIMATE_JS_URL . '/fancybox/fancybox'.$suffix.'.js', array(), false, true );
@@ -162,10 +164,19 @@ class WC_Quick_View_Ultimate
 		
 		?>
 		<script type="text/javascript">
-		
-			<?php
-				if ( $quick_view_ultimate_fancybox_popup_tool_wide == 100 ) $quick_view_ultimate_fancybox_popup_tool_wide = 94;
-			?>
+			function wc_qv_getWidth() {
+				xWidth = null;
+				if(window.screen != null)
+				  xWidth = window.screen.availWidth;
+			
+				if(window.innerWidth != null)
+				  xWidth = window.innerWidth;
+			
+				if(document.body != null)
+				  xWidth = document.body.clientWidth;
+			
+				return xWidth;
+			}
 			jQuery(document).on("click", ".quick_view_ultimate_click.fancybox", function(){
 			
 				var product_id = jQuery(this).attr('id');
@@ -174,31 +185,38 @@ class WC_Quick_View_Ultimate
 				var obj = jQuery(this);
 				
 				var url = product_url;
-				
+				var popup_wide = 600;
+				if ( wc_qv_getWidth()  <= 568 ) { 
+					popup_wide = '95%'; 
+				}
                 jQuery.fancybox({
-					'centerOnScroll' : <?php echo $quick_view_ultimate_fancybox_center_on_scroll;?>,
-					'transitionIn' : '<?php echo $quick_view_ultimate_fancybox_transition_in;?>', 
-					'transitionOut':'<?php echo $quick_view_ultimate_fancybox_transition_out;?>',
-					'easingIn': 'swing',
-					'easingOut': 'swing',
-					'speedIn' : <?php echo $quick_view_ultimate_fancybox_speed_in;?>,
-					'speedOut' : <?php echo $quick_view_ultimate_fancybox_speed_out;?>,
-					'width':'<?php echo $quick_view_ultimate_fancybox_popup_tool_wide;?>%',
-					'autoScale': false,
-					'height':'80%',
-					'margin':0,
-					'padding':0,
-					'autoDimensions': true,
-                    'type': 'iframe',
-                    'content': url,
-					'overlayColor':'<?php echo $quick_view_ultimate_fancybox_overlay_color;?>',
-					
-					'onClosed': function() {
+					href: url,
+					type: "iframe",
+					centerOnScroll : <?php echo $quick_view_ultimate_fancybox_center_on_scroll;?>,
+					transitionIn : '<?php echo $quick_view_ultimate_fancybox_transition_in;?>', 
+					transitionOut: '<?php echo $quick_view_ultimate_fancybox_transition_out;?>',
+					easingIn: 'swing',
+					easingOut: 'swing',
+					speedIn : <?php echo $quick_view_ultimate_fancybox_speed_in;?>,
+					speedOut : <?php echo $quick_view_ultimate_fancybox_speed_out;?>,
+					width: popup_wide,
+					autoScale: true,
+					height: 460,
+					margin: 0,
+					padding: 10,
+					maxWidth: "95%",
+					maxHeight: "80%",
+					autoDimensions: true,
+					overlayColor: '<?php echo $quick_view_ultimate_fancybox_overlay_color;?>',
+					showCloseButton : true,
+					openEffect	: "none",
+					closeEffect	: "none",
+					onClosed: function() {
 						jQuery.post( '<?php echo admin_url('admin-ajax.php', 'relative');?>?action=quick_view_ultimate_reload_cart&security=<?php echo wp_create_nonce("reload-cart");?>', '', function(rsHTML){
 							jQuery('.widget_shopping_cart_content').html(rsHTML);
 							
 						});
-					},
+					}
                 });
 				jQuery.fancybox.center;
 
@@ -212,7 +230,7 @@ class WC_Quick_View_Ultimate
 	public function quick_view_ultimate_reload_cart() {
 		global $woocommerce;
 		check_ajax_referer( 'reload-cart', 'security' );
-		if(function_exists('woocommerce_mini_cart'))woocommerce_mini_cart('') ;
+		if(function_exists('woocommerce_mini_cart'))woocommerce_mini_cart() ;
 		die();
 	}
 	
@@ -280,7 +298,7 @@ class WC_Quick_View_Ultimate
 		return $html;
 	}
 	
-	public function plugin_extra_links($links, $plugin_name) {
+	public static function plugin_extra_links($links, $plugin_name) {
 		if ( $plugin_name != WC_QUICK_VIEW_ULTIMATE_NAME) {
 			return $links;
 		}

@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.5
-Tested up to: 3.8.0
-Stable tag: 1.0.4
+Tested up to: 3.8.1
+Stable tag: 1.0.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -153,6 +153,16 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.0.5 - 2014/01/28 =
+* Feature - Upgraded for 100% compatibility with soon to be released WooCommerce Version 2.1 with backward compatibility to Version 2.0
+* Feature - Added all required code so plugin can work with WooCommerce Version 2.1 refactored code.
+* Tweak - Removed dynamic pop-up wide setting and replaced with static pop-up max wide. 
+* Tweak - Pop-up tools wide under 520px shows 100% wide of the screen for mobiles in portrait or landscape
+* Tweak - Added description text to the top of each Pro Version yellow border section
+* Tweak - Tested for compatibility with WordPress version 3.8.1
+* Tweak - Full WP_DEBUG ran, all uncaught exceptions, errors, warnings, notices and php strict standard notices fixed.
+* Fix - Distorted pop-up display in mobile phone portrait view with new pop-up static max wide.
+
 = 1.0.4 - 2013/12/20 =
 * Feature - a3rev Plugin Framework admin interface upgraded to 100% Compatibility with WordPress v3.8.0 with backward compatibility.
 * Feature - a3rev framework 100% mobile and tablet responsive, portrait and landscape viewing.
@@ -190,6 +200,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.0.5 =
+Upgrade now for full compatibility with WooCommerce Version 2.1 and WordPress version 3.8.1. Includes full backward compatibly with WooCommerce versions 2.0 to 2.0.20. Major pop-up display in mobiles rework.
 
 = 1.0.4 =
 Upgrade now for full a3rev Plugin Framework compatibility with WordPress version 3.8.0 and backwards. New admin interface full mobile and tablet responsive display.

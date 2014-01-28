@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP e-Commerce Catalog Visibility Email inquiry PRO\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-20 16:15+0700\n"
-"PO-Revision-Date: 2013-12-20 16:15+0700\n"
+"POT-Creation-Date: 2014-01-28 12:08+0700\n"
+"PO-Revision-Date: 2014-01-28 12:08+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "MIME-Version: 1.0\n"
@@ -82,114 +82,130 @@ msgstr ""
 msgid "Outset"
 msgstr ""
 
-#: admin/admin-interface.php:1293 admin/admin-interface.php:1383
-#: admin/admin-interface.php:1412 admin/settings/global-settings.php:309
+#: admin/admin-interface.php:1294 admin/admin-interface.php:1384
+#: admin/admin-interface.php:1413 admin/settings/global-settings.php:310
 msgid "ON"
 msgstr ""
 
-#: admin/admin-interface.php:1294 admin/admin-interface.php:1384
-#: admin/admin-interface.php:1413 admin/settings/global-settings.php:310
+#: admin/admin-interface.php:1295 admin/admin-interface.php:1385
+#: admin/admin-interface.php:1414 admin/settings/global-settings.php:311
 msgid "OFF"
 msgstr ""
 
-#: admin/admin-interface.php:1454
+#: admin/admin-interface.php:1455
 msgid "Width"
 msgstr ""
 
-#: admin/admin-interface.php:1456
+#: admin/admin-interface.php:1457
 msgid "Height"
 msgstr ""
 
-#: admin/admin-interface.php:1458
+#: admin/admin-interface.php:1459
 msgid "Hard Crop"
 msgstr ""
 
-#: admin/admin-interface.php:1536
+#: admin/admin-interface.php:1537
 msgid "-- Default Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1547
+#: admin/admin-interface.php:1548
 msgid "-- Google Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1588
+#: admin/admin-interface.php:1589
 msgid "Preview your customized typography settings"
 msgstr ""
 
-#: admin/admin-interface.php:1722 admin/admin-interface.php:1980
+#: admin/admin-interface.php:1723 admin/admin-interface.php:1981
 msgid "Preview your customized border settings"
 msgstr ""
 
-#: admin/admin-interface.php:1731 admin/admin-interface.php:1971
+#: admin/admin-interface.php:1732 admin/admin-interface.php:1972
 msgid "Rounded"
 msgstr ""
 
-#: admin/admin-interface.php:1732 admin/admin-interface.php:1972
+#: admin/admin-interface.php:1733 admin/admin-interface.php:1973
 msgid "Square"
 msgstr ""
 
-#: admin/admin-interface.php:1742 admin/admin-interface.php:1985
+#: admin/admin-interface.php:1743 admin/admin-interface.php:1986
 msgid "Top Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1762 admin/admin-interface.php:2005
+#: admin/admin-interface.php:1763 admin/admin-interface.php:2006
 msgid "Top Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1782 admin/admin-interface.php:2025
+#: admin/admin-interface.php:1783 admin/admin-interface.php:2026
 msgid "Bottom Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1802 admin/admin-interface.php:2045
+#: admin/admin-interface.php:1803 admin/admin-interface.php:2046
 msgid "Bottom Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1895
+#: admin/admin-interface.php:1896
 msgid "Preview your customized border styles settings"
 msgstr ""
 
-#: admin/admin-interface.php:2106
+#: admin/admin-interface.php:2107
 msgid "YES"
 msgstr ""
 
-#: admin/admin-interface.php:2107
+#: admin/admin-interface.php:2108
 msgid "NO"
 msgstr ""
 
-#: admin/admin-interface.php:2121
+#: admin/admin-interface.php:2122
 msgid "Horizontal Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2139
+#: admin/admin-interface.php:2140
 msgid "Vertical Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2157
+#: admin/admin-interface.php:2158
 msgid "Blur Distance"
 msgstr ""
 
-#: admin/admin-interface.php:2175
+#: admin/admin-interface.php:2176
 msgid "Spread Size"
 msgstr ""
 
-#: admin/admin-interface.php:2193
+#: admin/admin-interface.php:2194
 msgid "INNER"
 msgstr ""
 
-#: admin/admin-interface.php:2194
+#: admin/admin-interface.php:2195
 msgid "OUTER"
 msgstr ""
 
-#: admin/admin-interface.php:2212
+#: admin/admin-interface.php:2213
 msgid "Preview your customized box shadow settings"
 msgstr ""
 
-#: admin/admin-interface.php:2400
+#: admin/admin-interface.php:2401
 msgid "Save changes"
 msgstr ""
 
-#: admin/admin-interface.php:2401
+#: admin/admin-interface.php:2402
 msgid "Reset Settings"
+msgstr ""
+
+#: admin/admin-ui.php:127
+#, php-format
+msgid "Settings inside this yellow border are %s Features."
+msgstr ""
+
+#: admin/admin-ui.php:129
+#, php-format
+msgid ""
+"Upgrade to the <a href=\"%s\" target=\"_blank\">%s</a> to activate these "
+"settings."
+msgstr ""
+
+#: admin/admin-ui.php:131 admin/admin-ui.php:133
+msgid "Ultimate Version"
 msgstr ""
 
 #: admin/admin-pages/admin-quick-view-page.php:63
@@ -241,70 +257,65 @@ msgstr ""
 
 #: admin/settings/colorbox-popup-settings.php:199
 #: admin/settings/fancybox-popup-settings.php:199
-msgid "Popup Tool Wide"
-msgstr ""
-
-#: admin/settings/colorbox-popup-settings.php:209
-#: admin/settings/fancybox-popup-settings.php:209
 msgid "Fix Position on Scroll"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:216
-#: admin/settings/fancybox-popup-settings.php:216
+#: admin/settings/colorbox-popup-settings.php:206
+#: admin/settings/fancybox-popup-settings.php:206
 msgid "Pop-up stays centered in screen while page scrolls behind it."
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:223
-#: admin/settings/fancybox-popup-settings.php:223
+#: admin/settings/colorbox-popup-settings.php:213
+#: admin/settings/fancybox-popup-settings.php:213
 msgid "Pop-up scrolls up and down with the page."
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:230
+#: admin/settings/colorbox-popup-settings.php:220
 msgid "Open & Close Transition Effect"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:231
+#: admin/settings/colorbox-popup-settings.php:221
 msgid "Choose a pop-up opening & closing effect. Default - None"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:237
-#: admin/settings/fancybox-popup-settings.php:237
-#: admin/settings/fancybox-popup-settings.php:250
+#: admin/settings/colorbox-popup-settings.php:227
+#: admin/settings/fancybox-popup-settings.php:227
+#: admin/settings/fancybox-popup-settings.php:240
 msgid "None"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:238
-#: admin/settings/fancybox-popup-settings.php:238
-#: admin/settings/fancybox-popup-settings.php:251
+#: admin/settings/colorbox-popup-settings.php:228
+#: admin/settings/fancybox-popup-settings.php:228
+#: admin/settings/fancybox-popup-settings.php:241
 msgid "Fade"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:239
-#: admin/settings/fancybox-popup-settings.php:239
-#: admin/settings/fancybox-popup-settings.php:252
+#: admin/settings/colorbox-popup-settings.php:229
+#: admin/settings/fancybox-popup-settings.php:229
+#: admin/settings/fancybox-popup-settings.php:242
 msgid "Elastic"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:243
+#: admin/settings/colorbox-popup-settings.php:233
 msgid "Opening & Closing Speed"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:244
+#: admin/settings/colorbox-popup-settings.php:234
 msgid "Milliseconds when open and close popup"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:251
-#: admin/settings/fancybox-popup-settings.php:272
+#: admin/settings/colorbox-popup-settings.php:241
+#: admin/settings/fancybox-popup-settings.php:262
 msgid "Background Overlay Colour"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:252
-#: admin/settings/fancybox-popup-settings.php:273
+#: admin/settings/colorbox-popup-settings.php:242
+#: admin/settings/fancybox-popup-settings.php:263
 msgid "Select a colour or empty for no colour."
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:252
-#: admin/settings/fancybox-popup-settings.php:273
+#: admin/settings/colorbox-popup-settings.php:242
+#: admin/settings/fancybox-popup-settings.php:263
 #: admin/settings/hover-position-style-settings.php:247
 #: admin/settings/hover-position-style-settings.php:254
 #: admin/settings/hover-position-style-settings.php:261
@@ -331,35 +342,35 @@ msgstr ""
 msgid "Fancy Box Pop Up"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:230
+#: admin/settings/fancybox-popup-settings.php:220
 msgid "Open Transition Effect"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:231
+#: admin/settings/fancybox-popup-settings.php:221
 msgid "Choose a pop-up opening effect. Default - None."
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:243
+#: admin/settings/fancybox-popup-settings.php:233
 msgid "Close Transistion Effect"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:244
+#: admin/settings/fancybox-popup-settings.php:234
 msgid "Choose a pop-up closing effect. Default - None."
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:256
+#: admin/settings/fancybox-popup-settings.php:246
 msgid "Opening Speed"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:257
+#: admin/settings/fancybox-popup-settings.php:247
 msgid "Milliseconds when open popup"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:264
+#: admin/settings/fancybox-popup-settings.php:254
 msgid "Closing Speed"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:265
+#: admin/settings/fancybox-popup-settings.php:255
 msgid "Milliseconds when close popup"
 msgstr ""
 
@@ -447,22 +458,22 @@ msgstr ""
 msgid "Product Page Content"
 msgstr ""
 
-#: admin/settings/global-settings.php:289
+#: admin/settings/global-settings.php:290
 msgid ""
 "Product page excluding site header, sidebar and Footer. <span class="
 "\"description\">Note:</span> Any JavaScript features that load per product "
 "page will not work with this setting"
 msgstr ""
 
-#: admin/settings/global-settings.php:297
+#: admin/settings/global-settings.php:298
 msgid "House Keeping :"
 msgstr ""
 
-#: admin/settings/global-settings.php:301
+#: admin/settings/global-settings.php:302
 msgid "Clean up on Deletion"
 msgstr ""
 
-#: admin/settings/global-settings.php:302
+#: admin/settings/global-settings.php:303
 msgid ""
 "On deletion (not deactivate) the plugin will completely remove all tables "
 "and data it created, leaving no trace it was ever here."
@@ -670,138 +681,138 @@ msgstr ""
 msgid "Pop Up Style"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:238
+#: classes/class-woocommerce-quick-view-ultimate.php:256
 msgid "Upgrade to WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:239
+#: classes/class-woocommerce-quick-view-ultimate.php:257
 msgid ""
 "<strong>NOTE:</strong> All the functions inside the Yellow border on the "
 "plugins admin panel are extra functionality that is activated by upgrading "
 "to the Pro version"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:241
+#: classes/class-woocommerce-quick-view-ultimate.php:259
 msgid "WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:242
+#: classes/class-woocommerce-quick-view-ultimate.php:260
 msgid "Activates these advanced Features"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:245
+#: classes/class-woocommerce-quick-view-ultimate.php:263
 msgid "WYSIWYG Quick View hover button style editor."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:246
+#: classes/class-woocommerce-quick-view-ultimate.php:264
 msgid "Show Quick View as a Button or link text under image."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:247
+#: classes/class-woocommerce-quick-view-ultimate.php:265
 msgid "Under Image Button or Link text WYSIWYG style editor."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:248
+#: classes/class-woocommerce-quick-view-ultimate.php:266
 msgid "Show product page content in pop-up instead of whole site."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:249
+#: classes/class-woocommerce-quick-view-ultimate.php:267
 msgid "Optional Colorbox pop-up tool."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:250
+#: classes/class-woocommerce-quick-view-ultimate.php:268
 #, php-format
 msgid "Set pop-up wide as a % of screen size in larger screens."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:251
+#: classes/class-woocommerce-quick-view-ultimate.php:269
 msgid "Select pop-up open and close effect."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:252
+#: classes/class-woocommerce-quick-view-ultimate.php:270
 msgid "Set pop-up opening / closing speed."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:253
+#: classes/class-woocommerce-quick-view-ultimate.php:271
 msgid "Set pop-up background overlay colour."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:254
+#: classes/class-woocommerce-quick-view-ultimate.php:272
 msgid "Same day priority support and auto updates."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:257
+#: classes/class-woocommerce-quick-view-ultimate.php:275
 msgid "View this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:257
+#: classes/class-woocommerce-quick-view-ultimate.php:275
 msgid "documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:258
+#: classes/class-woocommerce-quick-view-ultimate.php:276
 msgid "Visit this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:258
+#: classes/class-woocommerce-quick-view-ultimate.php:276
 msgid "support forum"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:259
+#: classes/class-woocommerce-quick-view-ultimate.php:277
 msgid "More FREE a3rev WooCommerce Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:262
+#: classes/class-woocommerce-quick-view-ultimate.php:280
 msgid "WooCommerce Product Sort and Display"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:263
+#: classes/class-woocommerce-quick-view-ultimate.php:281
 msgid "WooCommerce Dynamic Products Gallery"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:264
+#: classes/class-woocommerce-quick-view-ultimate.php:282
 msgid "WooCommerce Predictive Search"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:265
+#: classes/class-woocommerce-quick-view-ultimate.php:283
 msgid "WooCommerce Compare Products"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:266
+#: classes/class-woocommerce-quick-view-ultimate.php:284
 msgid "WooCommerce Widget Product Slideshow"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:267
+#: classes/class-woocommerce-quick-view-ultimate.php:285
 msgid "WooCommerce Email Inquiry & Cart Options"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:268
+#: classes/class-woocommerce-quick-view-ultimate.php:286
 msgid "WooCommerce Email Inquiry Ultimate (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:269
+#: classes/class-woocommerce-quick-view-ultimate.php:287
 msgid "WooCommerce Quotes and Orders (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:272
+#: classes/class-woocommerce-quick-view-ultimate.php:290
 msgid "FREE a3rev WordPress Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:275
+#: classes/class-woocommerce-quick-view-ultimate.php:293
 msgid "Contact Us Page - Contact People"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:276
+#: classes/class-woocommerce-quick-view-ultimate.php:294
 msgid "WordPress Email Template"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:277
+#: classes/class-woocommerce-quick-view-ultimate.php:295
 msgid "Page View Count"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:287
+#: classes/class-woocommerce-quick-view-ultimate.php:305
 msgid "Documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:288
+#: classes/class-woocommerce-quick-view-ultimate.php:306
 msgid "Support"
 msgstr ""

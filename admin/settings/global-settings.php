@@ -272,7 +272,7 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 				'default'	=> 'full_page',
 				'onoff_options' => array(
 					array(
-						'val' 				=> '',
+						'val' 				=> 'full_page',
 						'text' 				=> __( 'Open full site in pop-up', 'wooquickview' ) .' <span class="description">('.__( 'recommended', 'wooquickview' ).')</span>' ,
 						'checked_label'		=> 'ON',
 						'unchecked_label' 	=> 'OFF',
@@ -283,6 +283,7 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 				'name' 		=> __( "Product Page Content", 'wooquickview' ),
 				'id' 		=> 'quick_view_ultimate_popup_content',
 				'type' 		=> 'onoff_radio',
+				'default'	=> 'full_page',
 				'onoff_options' => array(
 					array(
 						'val' 				=> 'product_page',

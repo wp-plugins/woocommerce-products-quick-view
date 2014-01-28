@@ -196,16 +196,6 @@ class WC_QV_Fancybox_Popup_Settings extends WC_QV_Admin_UI
                 'type' 		=> 'heading',
            	),
 			array(  
-				'name' 		=> __( "Popup Tool Wide", 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_fancybox_popup_tool_wide',
-				'desc'		=> '%',
-				'type' 		=> 'slider',
-				'default'	=> 75,
-				'min'		=> 50,
-				'max'		=> 100,
-				'increment'	=> 1
-			),
-			array(  
 				'name' 		=> __( "Fix Position on Scroll", 'wooquickview' ),
 				'id' 		=> 'quick_view_ultimate_fancybox_center_on_scroll',
 				'type' 		=> 'onoff_radio',

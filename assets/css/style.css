@@ -84,9 +84,15 @@ a.quick_view_ultimate_under_button {
 	-webkit-box-shadow: 0 0 15px #999999;
 	z-index:1;
 }
-@media only screen and (max-width: 600px) {
-	#fancybox-wrap{width:86% !important;left:1% !important;padding:20px !important;}
+#fancybox-outer {
+	padding:0px !important;
 }
-@media only screen and (max-width: 480px) {
-	#fancybox-wrap{width:80% !important;left:1% !important;padding:20px !important;}
+@media only screen and (max-width: 568px) {
+	#fancybox-content {
+		border:5px solid #FFFFFF !important;
+		width:auto !important;
+	}
+	#fancybox-outer {
+		padding:0px !important;
+	}
 }
