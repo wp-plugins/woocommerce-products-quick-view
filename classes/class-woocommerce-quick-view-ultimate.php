@@ -25,23 +25,23 @@ class WC_Quick_View_Ultimate
 	public function init () {
 				
 		//Add Quick View Hover Each Products
-		//add_action( 'woocommerce_after_shop_loop_item', array( &$this, 'add_quick_view_ultimate_hover_each_products'), 10 );
-		add_action( 'woocommerce_before_shop_loop_item_title', array( &$this, 'add_quick_view_ultimate_hover_each_products'), 11 );
+		//add_action( 'woocommerce_after_shop_loop_item', array( $this, 'add_quick_view_ultimate_hover_each_products'), 10 );
+		add_action( 'woocommerce_before_shop_loop_item_title', array( $this, 'add_quick_view_ultimate_hover_each_products'), 11 );
 				
 		//Enqueue Script
-		add_action( 'woocommerce_after_shop_loop', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
-		add_action( 'woocommerce_after_shop_loop', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
-		add_action( 'wp_head', array( &$this, 'fix_style_js_responsi_theme'), 13 );
+		add_action( 'woocommerce_after_shop_loop', array( $this, 'quick_view_ultimate_wp_enqueue_script'),13 );
+		add_action( 'woocommerce_after_shop_loop', array( $this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
+		add_action( 'wp_head', array( $this, 'fix_style_js_responsi_theme'), 13 );
 		
 		// Add script check if checkout then close popup and redirect to checkout page
-		add_action( 'wp_head', array( &$this, 'redirect_to_checkout_page_from_popup') );
+		add_action( 'wp_head', array( $this, 'redirect_to_checkout_page_from_popup') );
 		
 		//Enqueue Script On Home Page Responsi	
-		add_action( 'wp_footer', array( &$this, 'quick_view_ultimate_popup') );
+		add_action( 'wp_footer', array( $this, 'quick_view_ultimate_popup') );
 		
 		//Ajax Action
-		add_action('wp_ajax_quick_view_ultimate_reload_cart', array( &$this, 'quick_view_ultimate_reload_cart') );
-		add_action('wp_ajax_nopriv_quick_view_ultimate_reload_cart', array( &$this, 'quick_view_ultimate_reload_cart') );
+		add_action('wp_ajax_quick_view_ultimate_reload_cart', array( $this, 'quick_view_ultimate_reload_cart') );
+		add_action('wp_ajax_nopriv_quick_view_ultimate_reload_cart', array( $this, 'quick_view_ultimate_reload_cart') );
 		
 		// Add upgrade notice to Dashboard pages
 		global $wc_qv_admin_init;
@@ -71,14 +71,14 @@ class WC_Quick_View_Ultimate
 	
 	public function fix_style_js_responsi_theme(){
 		if ( (is_home() && function_exists('add_responsi_pagination_theme')) ){
-			add_action( 'woo_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
-			add_action( 'a3rev_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
-			add_action( 'woo_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
-			add_action( 'a3rev_main_end', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
+			add_action( 'woo_main_end', array( $this, 'quick_view_ultimate_wp_enqueue_script'),13 );
+			add_action( 'a3rev_main_end', array( $this, 'quick_view_ultimate_wp_enqueue_script'),13 );
+			add_action( 'woo_main_end', array( $this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
+			add_action( 'a3rev_main_end', array( $this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
 		}
 		if ( is_singular('product') ) {
-			add_action( 'wp_footer', array( &$this, 'quick_view_ultimate_wp_enqueue_script'),13 );
-			add_action( 'wp_footer', array( &$this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
+			add_action( 'wp_footer', array( $this, 'quick_view_ultimate_wp_enqueue_script'),13 );
+			add_action( 'wp_footer', array( $this, 'quick_view_ultimate_wp_enqueue_style'), 13 );
 		}
 	}
 		
@@ -257,6 +257,11 @@ class WC_Quick_View_Ultimate
 		$html .= '<p>'.__("<strong>NOTE:</strong> All the functions inside the Yellow border on the plugins admin panel are extra functionality that is activated by upgrading to the Pro version", 'wooquickview').':</p>';
 		$html .= '<p>';
 		$html .= '<h3 style="margin-bottom:5px;">* <a href="'.WC_QUICK_VIEW_ULTIMATE_AUTHOR_URI.'" target="_blank">'.__('WooCommerce Quick View Ultimate', 'wooquickview').'</a></h3>';
+		$html .= '<p>';
+		$html .= '* '. sprintf( __('Trial the <a href="%s" target="_blank">Pro Version for Free</a>', 'wooquickview'), 'http://a3rev.com/shop/wp-e-commerce-quick-view-ultimate' ).'<br />';
+		$html .= '* '. __('No credit card required.', 'wooquickview').'<br />';
+		$html .= '* '. __('Immediate access to developer support.', 'wooquickview');
+		$html .= '</p>';
 		$html .= '<div><strong>'.__('Activates these advanced Features', 'wooquickview').':</strong></div>';
 		$html .= '<p>';
 		$html .= '<ul style="padding-left:10px;">';
@@ -290,6 +295,7 @@ class WC_Quick_View_Ultimate
 		$html .= '<h3>'.__('FREE a3rev WordPress Plugins', 'wooquickview').'</h3>';
 		$html .= '<p>';
 		$html .= '<ul style="padding-left:10px;">';
+		$html .= '<li>* <a href="http://wordpress.org/plugins/a3-responsive-slider/" target="_blank">'.__('a3 Responsive Slider', 'wooquickview').'</a></li>';
 		$html .= '<li>* <a href="http://wordpress.org/plugins/contact-us-page-contact-people/" target="_blank">'.__('Contact Us Page - Contact People', 'wooquickview').'</a></li>';
 		$html .= '<li>* <a href="http://wordpress.org/plugins/wp-email-template/" target="_blank">'.__('WordPress Email Template', 'wooquickview').'</a></li>';
 		$html .= '<li>* <a href="http://wordpress.org/plugins/page-views-count/" target="_blank">'.__('Page View Count', 'wooquickview').'</a></li>';
