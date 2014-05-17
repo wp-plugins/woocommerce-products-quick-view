@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>
 <?php
 /*-----------------------------------------------------------------------------------
-WC Quick View Hover Position Settings
+WC Quick View Custom Template Global Settings
 
 TABLE OF CONTENTS
 
@@ -28,13 +28,13 @@ TABLE OF CONTENTS
 
 -----------------------------------------------------------------------------------*/
 
-class WC_QV_Hover_Position_Style_Settings extends WC_QV_Admin_UI
+class WC_QV_Custom_Template_Global_Settings extends WC_QV_Admin_UI
 {
 	
 	/**
 	 * @var string
 	 */
-	private $parent_tab = 'button-style';
+	private $parent_tab = 'settings';
 	
 	/**
 	 * @var array
@@ -45,13 +45,13 @@ class WC_QV_Hover_Position_Style_Settings extends WC_QV_Admin_UI
 	 * @var string
 	 * You must change to correct option name that you are working
 	 */
-	public $option_name = '';
+	public $option_name = 'quick_view_template_global_settings';
 	
 	/**
 	 * @var string
 	 * You must change to correct form key that you are working
 	 */
-	public $form_key = 'wc_quick_view_hover_position_style';
+	public $form_key = 'quick_view_template_global_settings';
 	
 	/**
 	 * @var string
@@ -78,13 +78,19 @@ class WC_QV_Hover_Position_Style_Settings extends WC_QV_Admin_UI
 		$this->subtab_init();
 		
 		$this->form_messages = array(
-				'success_message'	=> __( 'Hover Position Style successfully saved.', 'wooquickview' ),
-				'error_message'		=> __( 'Error: Hover Position Style can not save.', 'wooquickview' ),
-				'reset_message'		=> __( 'Hover Position Style successfully reseted.', 'wooquickview' ),
+				'success_message'	=> __( 'Global Settings successfully saved.', 'wooquickview' ),
+				'error_message'		=> __( 'Error: Global Settings can not save.', 'wooquickview' ),
+				'reset_message'		=> __( 'Global Settings successfully reseted.', 'wooquickview' ),
 			);
 			
 		add_action( $this->plugin_name . '_set_default_settings' , array( $this, 'set_default_settings' ) );
+				
+		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_init' , array( $this, 'reset_default_settings' ) );
+		
 		//add_action( $this->plugin_name . '_get_all_settings' , array( $this, 'get_settings' ) );
+		
+		add_action( $this->plugin_name . '-'. $this->form_key.'_settings_start', array( $this, 'pro_fields_before' ) );
+		add_action( $this->plugin_name . '-'. $this->form_key.'_settings_end', array( $this, 'pro_fields_after' ) );
 	}
 	
 	/*-----------------------------------------------------------------------------------*/
@@ -105,6 +111,16 @@ class WC_QV_Hover_Position_Style_Settings extends WC_QV_Admin_UI
 		global $wc_qv_admin_interface;
 		
 		$wc_qv_admin_interface->reset_settings( $this->form_fields, $this->option_name, false );
+	}
+	
+	/*-----------------------------------------------------------------------------------*/
+	/* reset_default_settings()
+	/* Reset default settings with function called from Admin Interface */
+	/*-----------------------------------------------------------------------------------*/
+	public function reset_default_settings() {
+		global $wc_qv_admin_interface;
+		
+		$wc_qv_admin_interface->reset_settings( $this->form_fields, $this->option_name, true, true );
 	}
 	
 	/*-----------------------------------------------------------------------------------*/
@@ -131,9 +147,9 @@ class WC_QV_Hover_Position_Style_Settings extends WC_QV_Admin_UI
 	public function subtab_data() {
 		
 		$subtab_data = array( 
-			'name'				=> 'hover-position-style',
-			'label'				=> __( 'Hover Position & Style', 'wooquickview' ),
-			'callback_function'	=> 'wc_qv_hover_position_style_settings_form',
+			'name'				=> 'settings',
+			'label'				=> __( 'Container Style', 'wooquickview' ),
+			'callback_function'	=> 'wc_qv_custom_template_global_settings_form',
 		);
 		
 		if ( $this->subtab_data ) return $this->subtab_data;
@@ -174,114 +190,61 @@ class WC_QV_Hover_Position_Style_Settings extends WC_QV_Admin_UI
 		
   		// Define settings			
      	$this->form_fields = apply_filters( $this->option_name . '_settings_fields', array(
-		
-			array(
-            	'name' => __( 'Button Show On Hover', 'wooquickview' ),
-                'type' => 'heading',
-           	),
-			array(  
-				'name' => __( 'Button Text', 'wooquickview' ),
-				'desc' 		=> __('Text for Quick View Button Show On Hover', 'wooquickview'),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_text',
-				'type' 		=> 'text',
-				'default'	=> __('QUICKVIEW', 'wooquickview')
-			),
-			array(  
-				'name' 		=> __( 'Button Align', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_alink',
-				'css' 		=> 'width:80px;',
-				'type' 		=> 'select',
-				'default'	=> 'center',
-				'options'	=> array(
-						'top'			=> __( 'Top', 'wooquickview' ) ,	
-						'center'		=> __( 'Center', 'wooquickview' ) ,	
-						'bottom'		=> __( 'Bottom', 'wooquickview' ) ,	
-					),
-			),
-			array(  
-				'name' => __( 'Button Padding', 'wooquickview' ),
-				'desc' 		=> __( 'Padding from Button text to Button border Show On Hover', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_padding',
-				'type' 		=> 'array_textfields',
-				'ids'		=> array( 
-	 								array(  'id' 		=> 'quick_view_ultimate_on_hover_bt_padding_tb',
-	 										'name' 		=> __( 'Top/Bottom', 'wooquickview' ),
-	 										'class' 	=> '',
-	 										'css'		=> 'width:40px;',
-	 										'default'	=> '7' ),
-	 
-	 								array(  'id' 		=> 'quick_view_ultimate_on_hover_bt_padding_lr',
-	 										'name' 		=> __( 'Left/Right', 'wooquickview' ),
-	 										'class' 	=> '',
-	 										'css'		=> 'width:40px;',
-	 										'default'	=> '17' ),
-	 							)
-			),
 			
 			array(  
-				'name' 		=> __( 'Background Colour', 'wooquickview' ),
-				'desc' 		=> __( 'Default', 'wooquickview') . ' [default_value]',
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_bg',
-				'type' 		=> 'color',
-				'default'	=> '#999999'
+				'type'		=> 'heading'
 			),
 			array(  
-				'name' 		=> __( 'Background Colour Gradient From', 'wooquickview' ),
-				'desc' 		=> __( 'Default', 'wooquickview' ). ' [default_value]',
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_bg_from',
-				'type' 		=> 'color',
-				'default'	=> '#999999'
-			),
-			array(  
-				'name' 		=> __( 'Background Colour Gradient To', 'wooquickview' ),
-				'desc' 		=> __( 'Default', 'wooquickview' ). ' [default_value]',
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_bg_to',
-				'type' 		=> 'color',
-				'default'	=> '#999999'
-			),
-			array(  
-				'name' 		=> __( 'Button Transparency', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_transparent',
+				'name' 		=> __( 'Gallery Container Wide', 'wooquickview' ),
+				'id' 		=> 'gallery_container_wide',
 				'desc'		=> '%',
 				'type' 		=> 'slider',
 				'default'	=> 50,
-				'min'		=> 0,
-				'max'		=> 100,
-				'increment'	=> 10
+				'min'		=> 30,
+				'max'		=> 70,
+				'increment'	=> 1
 			),
 			array(  
-				'name' 		=> __( 'Button Border', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_border',
-				'type' 		=> 'border',
-				'default'	=> array( 'width' => '1px', 'style' => 'solid', 'color' => '#FFFFFF', 'corner' => 'rounded' , 'rounded_value' => 3 ),
+				'name' 		=> __( 'Gallery Position', 'wooquickview' ),
+				'id' 		=> 'gallery_position',
+				'type' 		=> 'onoff_radio',
+				'default' 	=> 'left',
+				'onoff_options' => array(
+					array(
+						'val' 				=> 'left',
+						'text' 				=> __( 'Left', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
+					array(
+						'val' 				=> 'right',
+						'text' 				=> __( 'Right', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
+				),
 			),
 			array(  
-				'name' 		=> __( 'Button Font', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_font',
-				'type' 		=> 'typography',
-				'default'	=> array( 'size' => '14px', 'face' => 'Arial', 'style' => 'normal', 'color' => '#FFFFFF' )
+				'name' 		=> __( 'Pop-up Container Background Colour', 'wooquickview' ),
+				'desc' 		=> __('Default', 'wooquickview'). ' [default_value]',
+				'id' 		=> 'container_bg_color',
+				'type' 		=> 'color',
+				'default'	=> '#FFFFFF'
 			),
-			array(  
-				'name' => __( 'Button Shadow', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_on_hover_bt_shadow',
-				'type' 		=> 'box_shadow',
-				'default'	=> array( 'h_shadow' => '5px' , 'v_shadow' => '5px', 'blur' => '2px' , 'spread' => '2px', 'color' => '#999999', 'inset' => '' )
-			),
-			
         ));
 	}
 }
 
-global $wc_qv_hover_position_style_settings;
-$wc_qv_hover_position_style_settings = new WC_QV_Hover_Position_Style_Settings();
+global $wc_qv_custom_template_global_settings;
+$wc_qv_custom_template_global_settings = new WC_QV_Custom_Template_Global_Settings();
 
 /** 
- * wc_qv_hover_position_style_settings_form()
+ * wc_qv_custom_template_global_settings_form()
  * Define the callback function to show subtab content
  */
-function wc_qv_hover_position_style_settings_form() {
-	global $wc_qv_hover_position_style_settings;
-	$wc_qv_hover_position_style_settings->settings_form();
+function wc_qv_custom_template_global_settings_form() {
+	global $wc_qv_custom_template_global_settings;
+	$wc_qv_custom_template_global_settings->settings_form();
 }
 
 ?>

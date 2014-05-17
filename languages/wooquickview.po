@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Product Quick View\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-12 14:20+0700\n"
-"PO-Revision-Date: 2014-05-12 14:20+0700\n"
+"POT-Creation-Date: 2014-05-17 19:25+0700\n"
+"PO-Revision-Date: 2014-05-17 19:25+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -85,12 +85,76 @@ msgid "Outset"
 msgstr ""
 
 #: admin/admin-interface.php:1298 admin/admin-interface.php:1388
-#: admin/admin-interface.php:1417 admin/settings/global-settings.php:310
+#: admin/admin-interface.php:1417
+#: admin/settings/custom-template/add-to-cart-settings.php:209
+#: admin/settings/custom-template/add-to-cart-settings.php:238
+#: admin/settings/custom-template/add-to-cart-settings.php:244
+#: admin/settings/custom-template/add-to-cart-settings.php:250
+#: admin/settings/custom-template/control-settings.php:208
+#: admin/settings/custom-template/control-settings.php:225
+#: admin/settings/custom-template/control-settings.php:231
+#: admin/settings/custom-template/global-settings.php:216
+#: admin/settings/custom-template/global-settings.php:222
+#: admin/settings/custom-template/product-description-settings.php:208
+#: admin/settings/custom-template/product-description-settings.php:232
+#: admin/settings/custom-template/product-description-settings.php:238
+#: admin/settings/custom-template/product-description-settings.php:244
+#: admin/settings/custom-template/product-meta-settings.php:208
+#: admin/settings/custom-template/product-meta-settings.php:226
+#: admin/settings/custom-template/product-meta-settings.php:232
+#: admin/settings/custom-template/product-meta-settings.php:238
+#: admin/settings/custom-template/product-price-settings.php:208
+#: admin/settings/custom-template/product-price-settings.php:238
+#: admin/settings/custom-template/product-price-settings.php:244
+#: admin/settings/custom-template/product-price-settings.php:250
+#: admin/settings/custom-template/product-rating-settings.php:208
+#: admin/settings/custom-template/product-rating-settings.php:226
+#: admin/settings/custom-template/product-rating-settings.php:232
+#: admin/settings/custom-template/product-rating-settings.php:238
+#: admin/settings/custom-template/product-title-settings.php:207
+#: admin/settings/custom-template/product-title-settings.php:213
+#: admin/settings/custom-template/product-title-settings.php:219
+#: admin/settings/custom-template/product-title-settings.php:233
+#: admin/settings/custom-template/product-title-settings.php:239
+#: admin/settings/custom-template/product-title-settings.php:245
+#: admin/settings/global-settings.php:325
 msgid "ON"
 msgstr ""
 
 #: admin/admin-interface.php:1299 admin/admin-interface.php:1389
-#: admin/admin-interface.php:1418 admin/settings/global-settings.php:311
+#: admin/admin-interface.php:1418
+#: admin/settings/custom-template/add-to-cart-settings.php:210
+#: admin/settings/custom-template/add-to-cart-settings.php:239
+#: admin/settings/custom-template/add-to-cart-settings.php:245
+#: admin/settings/custom-template/add-to-cart-settings.php:251
+#: admin/settings/custom-template/control-settings.php:209
+#: admin/settings/custom-template/control-settings.php:226
+#: admin/settings/custom-template/control-settings.php:232
+#: admin/settings/custom-template/global-settings.php:217
+#: admin/settings/custom-template/global-settings.php:223
+#: admin/settings/custom-template/product-description-settings.php:209
+#: admin/settings/custom-template/product-description-settings.php:233
+#: admin/settings/custom-template/product-description-settings.php:239
+#: admin/settings/custom-template/product-description-settings.php:245
+#: admin/settings/custom-template/product-meta-settings.php:209
+#: admin/settings/custom-template/product-meta-settings.php:227
+#: admin/settings/custom-template/product-meta-settings.php:233
+#: admin/settings/custom-template/product-meta-settings.php:239
+#: admin/settings/custom-template/product-price-settings.php:209
+#: admin/settings/custom-template/product-price-settings.php:239
+#: admin/settings/custom-template/product-price-settings.php:245
+#: admin/settings/custom-template/product-price-settings.php:251
+#: admin/settings/custom-template/product-rating-settings.php:209
+#: admin/settings/custom-template/product-rating-settings.php:227
+#: admin/settings/custom-template/product-rating-settings.php:233
+#: admin/settings/custom-template/product-rating-settings.php:239
+#: admin/settings/custom-template/product-title-settings.php:208
+#: admin/settings/custom-template/product-title-settings.php:214
+#: admin/settings/custom-template/product-title-settings.php:220
+#: admin/settings/custom-template/product-title-settings.php:234
+#: admin/settings/custom-template/product-title-settings.php:240
+#: admin/settings/custom-template/product-title-settings.php:246
+#: admin/settings/global-settings.php:326
 msgid "OFF"
 msgstr ""
 
@@ -151,10 +215,22 @@ msgid "Preview your customized border styles settings"
 msgstr ""
 
 #: admin/admin-interface.php:2112
+#: admin/settings/custom-template/gallery-style-settings.php:218
+#: admin/settings/custom-template/gallery-style-settings.php:265
+#: admin/settings/custom-template/gallery-style-settings.php:339
+#: admin/settings/custom-template/gallery-style-settings.php:382
+#: admin/settings/custom-template/thumbnails-settings.php:209
+#: admin/settings/custom-template/thumbnails-settings.php:225
 msgid "YES"
 msgstr ""
 
 #: admin/admin-interface.php:2113
+#: admin/settings/custom-template/gallery-style-settings.php:219
+#: admin/settings/custom-template/gallery-style-settings.php:266
+#: admin/settings/custom-template/gallery-style-settings.php:340
+#: admin/settings/custom-template/gallery-style-settings.php:383
+#: admin/settings/custom-template/thumbnails-settings.php:210
+#: admin/settings/custom-template/thumbnails-settings.php:226
 msgid "NO"
 msgstr ""
 
@@ -194,27 +270,38 @@ msgstr ""
 msgid "Reset Settings"
 msgstr ""
 
+#: admin/admin-pages/admin-custom-template-page.php:63
+#: admin/admin-pages/admin-custom-template-page.php:64
+msgid "Custom Template"
+msgstr ""
+
 #: admin/admin-pages/admin-quick-view-page.php:63
 #: admin/admin-pages/admin-quick-view-page.php:64
-#: admin/settings/under-image-style-settings.php:242
-#: admin/settings/under-image-style-settings.php:268
+msgid "WC Quick View"
+msgstr ""
+
+#: admin/admin-pages/admin-quick-view-page.php:78
+#: admin/admin-pages/admin-quick-view-page.php:79
+#: admin/settings/under-image-style-settings.php:226
+#: admin/settings/under-image-style-settings.php:252
 msgid "Quick View"
 msgstr ""
 
 #: admin/admin-ui.php:127
-#, php-format
-msgid "Settings inside this yellow border are %s Features."
+msgid ""
+"Advanced settings inside this yellow border are not activated on the Lite "
+"Version."
 msgstr ""
 
 #: admin/admin-ui.php:129
 #, php-format
 msgid ""
-"Upgrade to the <a href=\"%s\" target=\"_blank\">%s</a> to activate these "
-"settings."
+"The fully featured %s in availble for <a href=\"%s\" target=\"_blank\">Free "
+"Evaluation Trail Here</a>. No credit card required."
 msgstr ""
 
-#: admin/admin-ui.php:131 admin/admin-ui.php:133
-msgid "Ultimate Version"
+#: admin/admin-ui.php:131
+msgid "Pro Version"
 msgstr ""
 
 #: admin/includes/uploader/class-uploader.php:149
@@ -281,12 +368,15 @@ msgid "Choose a pop-up opening & closing effect. Default - None"
 msgstr ""
 
 #: admin/settings/colorbox-popup-settings.php:227
+#: admin/settings/custom-template/gallery-style-settings.php:229
+#: admin/settings/custom-template/product-title-settings.php:206
 #: admin/settings/fancybox-popup-settings.php:227
 #: admin/settings/fancybox-popup-settings.php:240
 msgid "None"
 msgstr ""
 
 #: admin/settings/colorbox-popup-settings.php:228
+#: admin/settings/custom-template/gallery-style-settings.php:230
 #: admin/settings/fancybox-popup-settings.php:228
 #: admin/settings/fancybox-popup-settings.php:241
 msgid "Fade"
@@ -317,14 +407,715 @@ msgid "Select a colour or empty for no colour."
 msgstr ""
 
 #: admin/settings/colorbox-popup-settings.php:242
+#: admin/settings/custom-template/add-to-cart-settings.php:300
+#: admin/settings/custom-template/add-to-cart-settings.php:307
+#: admin/settings/custom-template/add-to-cart-settings.php:315
+#: admin/settings/custom-template/global-settings.php:229
 #: admin/settings/fancybox-popup-settings.php:263
-#: admin/settings/hover-position-style-settings.php:247
-#: admin/settings/hover-position-style-settings.php:254
-#: admin/settings/hover-position-style-settings.php:261
-#: admin/settings/under-image-style-settings.php:291
-#: admin/settings/under-image-style-settings.php:298
-#: admin/settings/under-image-style-settings.php:306
+#: admin/settings/hover-position-style-settings.php:223
+#: admin/settings/hover-position-style-settings.php:230
+#: admin/settings/hover-position-style-settings.php:237
+#: admin/settings/under-image-style-settings.php:275
+#: admin/settings/under-image-style-settings.php:282
+#: admin/settings/under-image-style-settings.php:290
 msgid "Default"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:81
+msgid "Add to Cart Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:82
+msgid "Error: Add to Cart Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:83
+msgid "Add to Cart Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:154
+msgid "Add to Cart"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:198
+msgid "Add To Cart Setup"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:202
+msgid "Add To Cart"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:214
+msgid "Add To Cart Button / Hyperlink"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:219
+#: admin/settings/under-image-style-settings.php:185
+msgid "Button or Hyperlink Type"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:226
+#: admin/settings/under-image-style-settings.php:193
+msgid "Button"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:227
+#: admin/settings/under-image-style-settings.php:192
+msgid "Hyperlink"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:230
+msgid "Added To Cart Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:237
+#: admin/settings/custom-template/add-to-cart-settings.php:352
+#: admin/settings/custom-template/add-to-cart-settings.php:376
+#: admin/settings/custom-template/gallery-style-settings.php:288
+#: admin/settings/custom-template/global-settings.php:215
+#: admin/settings/custom-template/product-description-settings.php:231
+#: admin/settings/custom-template/product-description-settings.php:267
+#: admin/settings/custom-template/product-meta-settings.php:225
+#: admin/settings/custom-template/product-meta-settings.php:279
+#: admin/settings/custom-template/product-price-settings.php:237
+#: admin/settings/custom-template/product-price-settings.php:273
+#: admin/settings/custom-template/product-rating-settings.php:225
+#: admin/settings/custom-template/product-rating-settings.php:261
+#: admin/settings/custom-template/product-title-settings.php:232
+#: admin/settings/custom-template/product-title-settings.php:298
+#: admin/settings/custom-template/product-title-settings.php:327
+#: admin/settings/under-image-style-settings.php:203
+msgid "Left"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:243
+#: admin/settings/custom-template/product-description-settings.php:237
+#: admin/settings/custom-template/product-meta-settings.php:231
+#: admin/settings/custom-template/product-price-settings.php:243
+#: admin/settings/custom-template/product-rating-settings.php:231
+#: admin/settings/custom-template/product-title-settings.php:238
+#: admin/settings/hover-position-style-settings.php:197
+#: admin/settings/under-image-style-settings.php:202
+msgid "Center"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:249
+#: admin/settings/custom-template/add-to-cart-settings.php:356
+#: admin/settings/custom-template/add-to-cart-settings.php:380
+#: admin/settings/custom-template/gallery-style-settings.php:294
+#: admin/settings/custom-template/global-settings.php:221
+#: admin/settings/custom-template/product-description-settings.php:243
+#: admin/settings/custom-template/product-description-settings.php:273
+#: admin/settings/custom-template/product-meta-settings.php:237
+#: admin/settings/custom-template/product-meta-settings.php:285
+#: admin/settings/custom-template/product-price-settings.php:249
+#: admin/settings/custom-template/product-price-settings.php:279
+#: admin/settings/custom-template/product-rating-settings.php:237
+#: admin/settings/custom-template/product-rating-settings.php:267
+#: admin/settings/custom-template/product-title-settings.php:244
+#: admin/settings/custom-template/product-title-settings.php:304
+#: admin/settings/custom-template/product-title-settings.php:333
+#: admin/settings/under-image-style-settings.php:204
+msgid "Right"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:256
+msgid "Added To Cart Success Icon"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:257
+msgid "Upload a 16px x 16px image, support .jpg, .pgn, .jpeg, .gif formats."
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:264
+msgid "Add To Cart Hyperlink Styling"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:269
+#: admin/settings/under-image-style-settings.php:222
+msgid "Hyperlink Text"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:272
+#: admin/settings/custom-template/add-to-cart-settings.php:296
+msgid "Add to cart"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:275
+#: admin/settings/under-image-style-settings.php:229
+msgid "Hyperlink Font"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:281
+msgid "Hyperlink Hover Colour"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:288
+msgid "Add To Cart Button Styling"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:293
+#: admin/settings/hover-position-style-settings.php:183
+#: admin/settings/under-image-style-settings.php:248
+msgid "Button Text"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:299
+#: admin/settings/hover-position-style-settings.php:222
+#: admin/settings/under-image-style-settings.php:274
+msgid "Background Colour"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:306
+#: admin/settings/hover-position-style-settings.php:229
+#: admin/settings/under-image-style-settings.php:281
+msgid "Background Colour Gradient From"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:314
+#: admin/settings/hover-position-style-settings.php:236
+#: admin/settings/under-image-style-settings.php:289
+msgid "Background Colour Gradient To"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:321
+#: admin/settings/hover-position-style-settings.php:259
+#: admin/settings/under-image-style-settings.php:302
+msgid "Button Font"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:327
+#: admin/settings/hover-position-style-settings.php:253
+#: admin/settings/under-image-style-settings.php:296
+msgid "Button Border"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:333
+#: admin/settings/hover-position-style-settings.php:265
+msgid "Button Shadow"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:339
+#: admin/settings/custom-template/product-title-settings.php:281
+msgid "Border Margin (Outside)"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:344
+#: admin/settings/custom-template/add-to-cart-settings.php:368
+#: admin/settings/custom-template/gallery-style-settings.php:277
+#: admin/settings/custom-template/product-description-settings.php:256
+#: admin/settings/custom-template/product-meta-settings.php:268
+#: admin/settings/custom-template/product-price-settings.php:262
+#: admin/settings/custom-template/product-rating-settings.php:250
+#: admin/settings/custom-template/product-title-settings.php:287
+#: admin/settings/custom-template/product-title-settings.php:316
+#: admin/settings/hover-position-style-settings.php:196
+msgid "Top"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:348
+#: admin/settings/custom-template/add-to-cart-settings.php:372
+#: admin/settings/custom-template/gallery-style-settings.php:282
+#: admin/settings/custom-template/product-description-settings.php:261
+#: admin/settings/custom-template/product-meta-settings.php:273
+#: admin/settings/custom-template/product-price-settings.php:267
+#: admin/settings/custom-template/product-rating-settings.php:255
+#: admin/settings/custom-template/product-title-settings.php:292
+#: admin/settings/custom-template/product-title-settings.php:321
+#: admin/settings/hover-position-style-settings.php:198
+msgid "Bottom"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:362
+#: admin/settings/custom-template/product-title-settings.php:310
+msgid "Border Padding (Inside)"
+msgstr ""
+
+#: admin/settings/custom-template/add-to-cart-settings.php:363
+msgid "Padding from Button text to Button border"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:81
+msgid "Controls Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:82
+msgid "Error: Controls Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:83
+msgid "Controls Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:153
+msgid "Controls"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:197
+msgid "Controls Settings"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:201
+msgid "Next / Previous Control"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:217
+msgid "Control Transition"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:224
+msgid "Alway show when popup loaded"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:230
+msgid "Show when hover on popup container"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:237
+msgid "Previous Icon"
+msgstr ""
+
+#: admin/settings/custom-template/control-settings.php:243
+msgid "Next Icon"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:81
+msgid "Gallery Style successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:82
+msgid "Error: Gallery Style can not save."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:83
+msgid "Gallery Style successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:153
+#: admin/settings/custom-template/gallery-style-settings.php:269
+msgid "Gallery Style"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:196
+msgid "Gallery Dimensions"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:198
+msgid "Gallery height"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:207
+msgid "Gallery Special Effects"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:211
+msgid "Auto start"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:222
+msgid "Slide transition effect"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:231
+msgid "Slide Hori"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:232
+msgid "Slide Vert"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:233
+msgid "Resize"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:237
+msgid "Time between transitions"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:247
+msgid "Transition effect speed"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:258
+msgid "Single Image Transition"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:259
+msgid ""
+"YES to auto deactivate image transition effect when only 1 image is loaded "
+"to gallery."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:271
+msgid "Gallery Margin"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:300
+msgid "Image background colour"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:301
+msgid "Gallery image background colour. Default <code>#FFFFFF</code>."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:307
+msgid "Border colour"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:308
+msgid "Gallery border colour. Default <code>#CCCCCC</code>."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:314
+msgid "Caption text"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:316
+#: admin/settings/custom-template/gallery-style-settings.php:348
+msgid "Font"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:322
+#: admin/settings/custom-template/gallery-style-settings.php:354
+msgid "Background"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:323
+msgid "Caption text background colour. Default [default_value]"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:329
+msgid "Nav Bar"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:331
+#: admin/settings/custom-template/gallery-style-settings.php:374
+msgid "Control"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:332
+msgid "YES to enable Nav bar Control"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:355
+msgid "Nav bar background colour. Default [default_value]."
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:361
+msgid "Container height"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:370
+msgid "Lazy-load scroll"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:375
+msgid "YES to enable lazy-load scroll"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:391
+msgid "Colour"
+msgstr ""
+
+#: admin/settings/custom-template/gallery-style-settings.php:392
+msgid "Scroll bar colour. Default [default_value]."
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:81
+msgid "Global Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:82
+msgid "Error: Global Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:83
+msgid "Global Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:151
+msgid "Container Style"
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:198
+msgid "Gallery Container Wide"
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:208
+msgid "Gallery Position"
+msgstr ""
+
+#: admin/settings/custom-template/global-settings.php:228
+msgid "Pop-up Container Background Colour"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:81
+msgid "Product Short Description Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:82
+msgid "Error: Product Short Description Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:83
+msgid "Product Short Description Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:153
+#: admin/settings/custom-template/product-description-settings.php:201
+msgid "Product Short Description"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:197
+msgid "Product Short Description Setup"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:213
+msgid "Product Short Description Style"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:218
+msgid "Short Description Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:224
+msgid "Short Description Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:250
+msgid "Short Description Margin"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:81
+msgid "Product Meta Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:82
+msgid "Error: Product Meta Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:83
+msgid "Product Meta Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:153
+#: admin/settings/custom-template/product-meta-settings.php:201
+msgid "Product Meta"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:197
+msgid "Product Meta Setup"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:213
+msgid "Product Meta Style"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:218
+msgid "Product Meta Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:244
+msgid "Product Meta Name Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:250
+msgid "Product Meta Value Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:256
+msgid "Product Meta Value Hover Color"
+msgstr ""
+
+#: admin/settings/custom-template/product-meta-settings.php:262
+msgid "Product Meta Margin"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:81
+msgid "Product Price Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:82
+msgid "Error: Product Price Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:83
+msgid "Product Price Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:153
+#: admin/settings/custom-template/product-price-settings.php:201
+msgid "Product Price"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:197
+msgid "Product Price Setup"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:213
+msgid "Product Price Style"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:218
+msgid "Price Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:224
+msgid "Old Price Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:230
+msgid "Price Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/product-price-settings.php:256
+msgid "Price Margin"
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:81
+msgid "Product Rating Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:82
+msgid "Error: Product Rating Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:83
+msgid "Product Rating Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:153
+#: admin/settings/custom-template/product-rating-settings.php:201
+msgid "Product Rating"
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:197
+msgid "Product Rating Setup"
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:213
+msgid "Product Rating Style"
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:218
+msgid "Rating Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/product-rating-settings.php:244
+msgid "Rating Margin"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:81
+msgid "Product Title Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:82
+msgid "Error: Product Title Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:83
+msgid "Product Title Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:151
+msgid "Product Title"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:195
+msgid "Product Title Style"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:199
+msgid "Title Transformation"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:212
+msgid "Uppercase"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:218
+msgid "Lowercase"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:225
+msgid "Title Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:251
+msgid "Title Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:257
+msgid "Title Hover Colour"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:263
+msgid "Title Container Background Colour"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:269
+msgid "Title Container Border"
+msgstr ""
+
+#: admin/settings/custom-template/product-title-settings.php:275
+msgid "Title Container Shadow"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:81
+msgid "Thumbnails Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:82
+msgid "Error: Thumbnails Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:83
+msgid "Thumbnails Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:153
+#: admin/settings/custom-template/thumbnails-settings.php:197
+msgid "Image Thumbnails"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:201
+msgid "Show thumbnails"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:202
+msgid "YES to enable thumbnail gallery"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:218
+msgid "Single Image Thumbnail"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:219
+msgid "YES to hide thumbnail when only 1 image is loaded to gallery."
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:229
+msgid "Thumbnail width"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:230
+msgid ""
+"Setting 0px will show at default 105px. Please use the disable thumbnails "
+"feature if you want to hide them."
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:237
+msgid "Thumbnail height"
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:238
+msgid ""
+"Setting 0px will show at default 75px. Please use the disable thumbnails "
+"feature if you want to hide them."
+msgstr ""
+
+#: admin/settings/custom-template/thumbnails-settings.php:245
+msgid "Thumbnail spacing"
 msgstr ""
 
 #: admin/settings/fancybox-popup-settings.php:81
@@ -389,6 +1180,7 @@ msgid "Quick View Settings successfully reseted."
 msgstr ""
 
 #: admin/settings/global-settings.php:164 admin/tabs/admin-settings-tab.php:78
+#: admin/tabs/custom-template/global-settings-tab.php:78
 msgid "Settings"
 msgstr ""
 
@@ -412,7 +1204,7 @@ msgstr ""
 msgid "Set Display Type"
 msgstr ""
 
-#: admin/settings/global-settings.php:228
+#: admin/settings/global-settings.php:227
 msgid "Show Quick View as"
 msgstr ""
 
@@ -428,54 +1220,68 @@ msgstr ""
 msgid "Select a Pop Up Tool"
 msgstr ""
 
-#: admin/settings/global-settings.php:253
+#: admin/settings/global-settings.php:254
 msgid "Pop Up Tool"
 msgstr ""
 
-#: admin/settings/global-settings.php:259
+#: admin/settings/global-settings.php:260
 msgid "FANCYBOX"
 msgstr ""
 
-#: admin/settings/global-settings.php:260
+#: admin/settings/global-settings.php:261
 msgid "COLORBOX"
 msgstr ""
 
-#: admin/settings/global-settings.php:264
+#: admin/settings/global-settings.php:265
 msgid "Choose Pop Up Content Type"
 msgstr ""
 
-#: admin/settings/global-settings.php:269
-msgid "Site Product Page"
+#: admin/settings/global-settings.php:270
+msgid "Custom Template Pop-up"
 msgstr ""
 
-#: admin/settings/global-settings.php:276
-msgid "Open full site in pop-up"
+#: admin/settings/global-settings.php:277
+msgid ""
+"Use the Custom Template for pop-up with Dynamic product image gallery, view "
+"Next&gt; &lt;Previous product in the pop-up."
 msgstr ""
 
-#: admin/settings/global-settings.php:276
+#: admin/settings/global-settings.php:277
 msgid "recommended"
 msgstr ""
 
-#: admin/settings/global-settings.php:283
+#: admin/settings/global-settings.php:284
+msgid "Site Product Page"
+msgstr ""
+
+#: admin/settings/global-settings.php:291
+msgid "Open full site in pop-up"
+msgstr ""
+
+#: admin/settings/global-settings.php:291
+msgid "The only Activated Option in Lite Version!"
+msgstr ""
+
+#: admin/settings/global-settings.php:298
 msgid "Product Page Content"
 msgstr ""
 
-#: admin/settings/global-settings.php:290
+#: admin/settings/global-settings.php:305
 msgid ""
 "Product page excluding site header, sidebar and Footer. <span class="
 "\"description\">Note:</span> Any JavaScript features that load per product "
 "page will not work with this setting"
 msgstr ""
 
-#: admin/settings/global-settings.php:298
+#: admin/settings/global-settings.php:313
 msgid "House Keeping :"
 msgstr ""
 
-#: admin/settings/global-settings.php:302
+#: admin/settings/global-settings.php:317
 msgid "Clean up on Deletion"
 msgstr ""
 
-#: admin/settings/global-settings.php:303
+#: admin/settings/global-settings.php:318
 msgid ""
 "On deletion (not deactivate) the plugin will completely remove all tables "
 "and data it created, leaving no trace it was ever here."
@@ -493,94 +1299,47 @@ msgstr ""
 msgid "Hover Position Style successfully reseted."
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:152
+#: admin/settings/hover-position-style-settings.php:135
 msgid "Hover Position & Style"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:196
+#: admin/settings/hover-position-style-settings.php:179
 msgid "Button Show On Hover"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:200
-#: admin/settings/under-image-style-settings.php:264
-msgid "Button Text"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:201
+#: admin/settings/hover-position-style-settings.php:184
 msgid "Text for Quick View Button Show On Hover"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:204
+#: admin/settings/hover-position-style-settings.php:187
 msgid "QUICKVIEW"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:208
+#: admin/settings/hover-position-style-settings.php:190
 msgid "Button Align"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:215
-msgid "Top"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:216
-#: admin/settings/under-image-style-settings.php:218
-msgid "Center"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:217
-msgid "Bottom"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:226
-#: admin/settings/under-image-style-settings.php:271
+#: admin/settings/hover-position-style-settings.php:202
+#: admin/settings/under-image-style-settings.php:255
 msgid "Button Padding"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:227
+#: admin/settings/hover-position-style-settings.php:203
 msgid "Padding from Button text to Button border Show On Hover"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:232
-#: admin/settings/under-image-style-settings.php:277
+#: admin/settings/hover-position-style-settings.php:208
+#: admin/settings/under-image-style-settings.php:261
 msgid "Top/Bottom"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:238
-#: admin/settings/under-image-style-settings.php:283
+#: admin/settings/hover-position-style-settings.php:214
+#: admin/settings/under-image-style-settings.php:267
 msgid "Left/Right"
 msgstr ""
 
-#: admin/settings/hover-position-style-settings.php:246
-#: admin/settings/under-image-style-settings.php:290
-msgid "Background Colour"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:253
-#: admin/settings/under-image-style-settings.php:297
-msgid "Background Colour Gradient From"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:260
-#: admin/settings/under-image-style-settings.php:305
-msgid "Background Colour Gradient To"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:267
+#: admin/settings/hover-position-style-settings.php:243
 msgid "Button Transparency"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:277
-#: admin/settings/under-image-style-settings.php:312
-msgid "Button Border"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:283
-#: admin/settings/under-image-style-settings.php:318
-msgid "Button Font"
-msgstr ""
-
-#: admin/settings/hover-position-style-settings.php:289
-msgid "Button Shadow"
 msgstr ""
 
 #: admin/settings/under-image-style-settings.php:81
@@ -595,83 +1354,55 @@ msgstr ""
 msgid "Under Image Style successfully reseted."
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:153
+#: admin/settings/under-image-style-settings.php:137
 msgid "Under Image Style"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:197
+#: admin/settings/under-image-style-settings.php:181
 msgid "Button/Hyperlink Show under Image"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:201
-msgid "Button or Hyperlink Type"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:208
-msgid "Hyperlink"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:209
-msgid "Button"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:212
+#: admin/settings/under-image-style-settings.php:196
 msgid "Button or Hyperlink Align"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:219
-msgid "Left"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:220
-msgid "Right"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:224
+#: admin/settings/under-image-style-settings.php:208
 msgid "Button or Hyperlink magrin"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:225
+#: admin/settings/under-image-style-settings.php:209
 msgid "Above/Below"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:233
+#: admin/settings/under-image-style-settings.php:217
 msgid "Hyperlink Styling"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:238
-msgid "Hyperlink Text"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:239
+#: admin/settings/under-image-style-settings.php:223
 msgid "Text for Hyperlink show under image"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:245
-msgid "Hyperlink Font"
-msgstr ""
-
-#: admin/settings/under-image-style-settings.php:252
+#: admin/settings/under-image-style-settings.php:236
 msgid "Hyperlink hover Colour"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:259
+#: admin/settings/under-image-style-settings.php:243
 msgid "Button Styling"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:265
+#: admin/settings/under-image-style-settings.php:249
 msgid "Text for Button show under image"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:272
+#: admin/settings/under-image-style-settings.php:256
 msgid "Padding from Button text to Button border show under image"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:324
+#: admin/settings/under-image-style-settings.php:308
 msgid "CSS Class"
 msgstr ""
 
-#: admin/settings/under-image-style-settings.php:325
+#: admin/settings/under-image-style-settings.php:309
 msgid "Enter your own button CSS class"
 msgstr ""
 
@@ -683,155 +1414,162 @@ msgstr ""
 msgid "Pop Up Style"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:256
+#: admin/tabs/custom-template/gallery-tab.php:78
+msgid "Gallery Settings"
+msgstr ""
+
+#: admin/tabs/custom-template/product-data-tab.php:78
+msgid "Product Data"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:328
 msgid "Upgrade to WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:257
+#: classes/class-woocommerce-quick-view-ultimate.php:329
 msgid ""
 "<strong>NOTE:</strong> All the functions inside the Yellow border on the "
 "plugins admin panel are extra functionality that is activated by upgrading "
 "to the Pro version"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:259
+#: classes/class-woocommerce-quick-view-ultimate.php:331
 msgid "WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:261
+#: classes/class-woocommerce-quick-view-ultimate.php:333
 #, php-format
 msgid "Trial the <a href=\"%s\" target=\"_blank\">Pro Version for Free</a>"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:262
+#: classes/class-woocommerce-quick-view-ultimate.php:334
 msgid "No credit card required."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:263
+#: classes/class-woocommerce-quick-view-ultimate.php:335
 msgid "Immediate access to developer support."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:265
+#: classes/class-woocommerce-quick-view-ultimate.php:337
 msgid "Activates these advanced Features"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:268
-msgid "WYSIWYG Quick View hover button style editor."
+#: classes/class-woocommerce-quick-view-ultimate.php:340
+msgid "Quick View Custom Template for pop-up."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:269
-msgid "Show Quick View as a Button or link text under image."
+#: classes/class-woocommerce-quick-view-ultimate.php:341
+msgid "Custom Template Dynamic Product Gallery."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:270
-msgid "Under Image Button or Link text WYSIWYG style editor."
+#: classes/class-woocommerce-quick-view-ultimate.php:342
+msgid "Custom Template Next &gt; &lt; Previous Product feature."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:271
-msgid "Show product page content in pop-up instead of whole site."
+#: classes/class-woocommerce-quick-view-ultimate.php:343
+msgid "Custom Template Style and layout settings."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:272
-msgid "Optional Colorbox pop-up tool."
+#: classes/class-woocommerce-quick-view-ultimate.php:344
+msgid "Optional Fancybox | Colorbox pop-up tool."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:273
-#, php-format
-msgid "Set pop-up wide as a % of screen size in larger screens."
-msgstr ""
-
-#: classes/class-woocommerce-quick-view-ultimate.php:274
+#: classes/class-woocommerce-quick-view-ultimate.php:345
 msgid "Select pop-up open and close effect."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:275
+#: classes/class-woocommerce-quick-view-ultimate.php:346
 msgid "Set pop-up opening / closing speed."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:276
+#: classes/class-woocommerce-quick-view-ultimate.php:347
 msgid "Set pop-up background overlay colour."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:277
-msgid "Same day priority support and auto updates."
+#: classes/class-woocommerce-quick-view-ultimate.php:348
+msgid "Access to support from developers."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:280
+#: classes/class-woocommerce-quick-view-ultimate.php:349
+msgid "Lifetime upgrades and maintenence."
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:352
 msgid "View this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:280
+#: classes/class-woocommerce-quick-view-ultimate.php:352
 msgid "documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:281
+#: classes/class-woocommerce-quick-view-ultimate.php:353
 msgid "Visit this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:281
+#: classes/class-woocommerce-quick-view-ultimate.php:353
 msgid "support forum"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:282
+#: classes/class-woocommerce-quick-view-ultimate.php:354
 msgid "More FREE a3rev WooCommerce Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:285
+#: classes/class-woocommerce-quick-view-ultimate.php:357
 msgid "WooCommerce Product Sort and Display"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:286
+#: classes/class-woocommerce-quick-view-ultimate.php:358
 msgid "WooCommerce Dynamic Products Gallery"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:287
+#: classes/class-woocommerce-quick-view-ultimate.php:359
 msgid "WooCommerce Predictive Search"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:288
+#: classes/class-woocommerce-quick-view-ultimate.php:360
 msgid "WooCommerce Compare Products"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:289
+#: classes/class-woocommerce-quick-view-ultimate.php:361
 msgid "WooCommerce Widget Product Slideshow"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:290
+#: classes/class-woocommerce-quick-view-ultimate.php:362
 msgid "WooCommerce Email Inquiry & Cart Options"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:291
+#: classes/class-woocommerce-quick-view-ultimate.php:363
 msgid "WooCommerce Email Inquiry Ultimate (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:292
+#: classes/class-woocommerce-quick-view-ultimate.php:364
 msgid "WooCommerce Quotes and Orders (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:295
+#: classes/class-woocommerce-quick-view-ultimate.php:367
 msgid "FREE a3rev WordPress Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:298
+#: classes/class-woocommerce-quick-view-ultimate.php:370
 msgid "a3 Responsive Slider"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:299
+#: classes/class-woocommerce-quick-view-ultimate.php:371
 msgid "Contact Us Page - Contact People"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:300
+#: classes/class-woocommerce-quick-view-ultimate.php:372
 msgid "WordPress Email Template"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:301
+#: classes/class-woocommerce-quick-view-ultimate.php:373
 msgid "Page View Count"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:311
+#: classes/class-woocommerce-quick-view-ultimate.php:383
 msgid "Documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:312
+#: classes/class-woocommerce-quick-view-ultimate.php:384
 msgid "Support"
 msgstr ""
