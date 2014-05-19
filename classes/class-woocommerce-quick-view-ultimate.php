@@ -252,6 +252,12 @@ class WC_Quick_View_Ultimate
 				
 				var obj = jQuery(this);
 				
+				// detect iOS to fix scroll for iframe on fancybox
+				var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+				if ( iOS ) {
+					jQuery('#fancybox-content').attr( "style", "overflow-y: auto !important; -webkit-overflow-scrolling: touch !important;" );
+				}
+				
 				var url = product_url;
 				var popup_wide = 600;
 				if ( wc_qv_getWidth()  <= 600 ) { 

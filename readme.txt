@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.0.6
+Stable tag: 1.0.6.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -175,6 +175,11 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.0.6.1 - 2014/05/19 =
+* Tweak - Updated Pop-up menu with new Pro Version features set custom pop-up width and height.
+* Tweak - Updated Custom Template, Product Data > Product Description menu with new Pro Version features.
+* Fix - Quick View Fancybox pop-up menu not scrolling in iOS Mobiles
+
 = 1.0.6 - 2014/05/17 =
 * Feature - Added option to show Quick View button or link text under image
 * Feature - Added full Quick View Button customization with the a3rev Button Creator functions - Create any style button.
@@ -242,6 +247,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.0.6.1 =
+Upgrade now for a Quick View Fancybox scroll bug fix in iOS Mobile operating system.
 
 = 1.0.6 =
 Upgrade now for new features. Full Button styling options. Quick View as button or Hyperlink text under product images. Full compatibility with WooCommerce 2.1.9

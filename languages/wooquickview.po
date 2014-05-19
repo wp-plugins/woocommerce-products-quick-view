@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Product Quick View\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-17 19:25+0700\n"
-"PO-Revision-Date: 2014-05-17 19:25+0700\n"
+"POT-Creation-Date: 2014-05-19 16:28+0700\n"
+"PO-Revision-Date: 2014-05-19 16:28+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -96,9 +96,9 @@ msgstr ""
 #: admin/settings/custom-template/global-settings.php:216
 #: admin/settings/custom-template/global-settings.php:222
 #: admin/settings/custom-template/product-description-settings.php:208
-#: admin/settings/custom-template/product-description-settings.php:232
-#: admin/settings/custom-template/product-description-settings.php:238
-#: admin/settings/custom-template/product-description-settings.php:244
+#: admin/settings/custom-template/product-description-settings.php:278
+#: admin/settings/custom-template/product-description-settings.php:284
+#: admin/settings/custom-template/product-description-settings.php:290
 #: admin/settings/custom-template/product-meta-settings.php:208
 #: admin/settings/custom-template/product-meta-settings.php:226
 #: admin/settings/custom-template/product-meta-settings.php:232
@@ -133,9 +133,9 @@ msgstr ""
 #: admin/settings/custom-template/global-settings.php:217
 #: admin/settings/custom-template/global-settings.php:223
 #: admin/settings/custom-template/product-description-settings.php:209
-#: admin/settings/custom-template/product-description-settings.php:233
-#: admin/settings/custom-template/product-description-settings.php:239
-#: admin/settings/custom-template/product-description-settings.php:245
+#: admin/settings/custom-template/product-description-settings.php:279
+#: admin/settings/custom-template/product-description-settings.php:285
+#: admin/settings/custom-template/product-description-settings.php:291
 #: admin/settings/custom-template/product-meta-settings.php:209
 #: admin/settings/custom-template/product-meta-settings.php:227
 #: admin/settings/custom-template/product-meta-settings.php:233
@@ -346,72 +346,82 @@ msgstr ""
 
 #: admin/settings/colorbox-popup-settings.php:199
 #: admin/settings/fancybox-popup-settings.php:199
+msgid "Pop-up Maximum Width"
+msgstr ""
+
+#: admin/settings/colorbox-popup-settings.php:209
+#: admin/settings/fancybox-popup-settings.php:209
+msgid "Pop-up Maximum Height"
+msgstr ""
+
+#: admin/settings/colorbox-popup-settings.php:219
+#: admin/settings/fancybox-popup-settings.php:219
 msgid "Fix Position on Scroll"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:206
-#: admin/settings/fancybox-popup-settings.php:206
+#: admin/settings/colorbox-popup-settings.php:226
+#: admin/settings/fancybox-popup-settings.php:226
 msgid "Pop-up stays centered in screen while page scrolls behind it."
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:213
-#: admin/settings/fancybox-popup-settings.php:213
+#: admin/settings/colorbox-popup-settings.php:233
+#: admin/settings/fancybox-popup-settings.php:233
 msgid "Pop-up scrolls up and down with the page."
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:220
+#: admin/settings/colorbox-popup-settings.php:240
 msgid "Open & Close Transition Effect"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:221
+#: admin/settings/colorbox-popup-settings.php:241
 msgid "Choose a pop-up opening & closing effect. Default - None"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:227
+#: admin/settings/colorbox-popup-settings.php:247
 #: admin/settings/custom-template/gallery-style-settings.php:229
 #: admin/settings/custom-template/product-title-settings.php:206
-#: admin/settings/fancybox-popup-settings.php:227
-#: admin/settings/fancybox-popup-settings.php:240
+#: admin/settings/fancybox-popup-settings.php:247
+#: admin/settings/fancybox-popup-settings.php:260
 msgid "None"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:228
+#: admin/settings/colorbox-popup-settings.php:248
 #: admin/settings/custom-template/gallery-style-settings.php:230
-#: admin/settings/fancybox-popup-settings.php:228
-#: admin/settings/fancybox-popup-settings.php:241
+#: admin/settings/fancybox-popup-settings.php:248
+#: admin/settings/fancybox-popup-settings.php:261
 msgid "Fade"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:229
-#: admin/settings/fancybox-popup-settings.php:229
-#: admin/settings/fancybox-popup-settings.php:242
+#: admin/settings/colorbox-popup-settings.php:249
+#: admin/settings/fancybox-popup-settings.php:249
+#: admin/settings/fancybox-popup-settings.php:262
 msgid "Elastic"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:233
+#: admin/settings/colorbox-popup-settings.php:253
 msgid "Opening & Closing Speed"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:234
+#: admin/settings/colorbox-popup-settings.php:254
 msgid "Milliseconds when open and close popup"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:241
-#: admin/settings/fancybox-popup-settings.php:262
+#: admin/settings/colorbox-popup-settings.php:261
+#: admin/settings/fancybox-popup-settings.php:282
 msgid "Background Overlay Colour"
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:242
-#: admin/settings/fancybox-popup-settings.php:263
+#: admin/settings/colorbox-popup-settings.php:262
+#: admin/settings/fancybox-popup-settings.php:283
 msgid "Select a colour or empty for no colour."
 msgstr ""
 
-#: admin/settings/colorbox-popup-settings.php:242
+#: admin/settings/colorbox-popup-settings.php:262
 #: admin/settings/custom-template/add-to-cart-settings.php:300
 #: admin/settings/custom-template/add-to-cart-settings.php:307
 #: admin/settings/custom-template/add-to-cart-settings.php:315
 #: admin/settings/custom-template/global-settings.php:229
-#: admin/settings/fancybox-popup-settings.php:263
+#: admin/settings/fancybox-popup-settings.php:283
 #: admin/settings/hover-position-style-settings.php:223
 #: admin/settings/hover-position-style-settings.php:230
 #: admin/settings/hover-position-style-settings.php:237
@@ -473,8 +483,8 @@ msgstr ""
 #: admin/settings/custom-template/add-to-cart-settings.php:376
 #: admin/settings/custom-template/gallery-style-settings.php:288
 #: admin/settings/custom-template/global-settings.php:215
-#: admin/settings/custom-template/product-description-settings.php:231
-#: admin/settings/custom-template/product-description-settings.php:267
+#: admin/settings/custom-template/product-description-settings.php:277
+#: admin/settings/custom-template/product-description-settings.php:313
 #: admin/settings/custom-template/product-meta-settings.php:225
 #: admin/settings/custom-template/product-meta-settings.php:279
 #: admin/settings/custom-template/product-price-settings.php:237
@@ -489,7 +499,7 @@ msgid "Left"
 msgstr ""
 
 #: admin/settings/custom-template/add-to-cart-settings.php:243
-#: admin/settings/custom-template/product-description-settings.php:237
+#: admin/settings/custom-template/product-description-settings.php:283
 #: admin/settings/custom-template/product-meta-settings.php:231
 #: admin/settings/custom-template/product-price-settings.php:243
 #: admin/settings/custom-template/product-rating-settings.php:231
@@ -504,8 +514,8 @@ msgstr ""
 #: admin/settings/custom-template/add-to-cart-settings.php:380
 #: admin/settings/custom-template/gallery-style-settings.php:294
 #: admin/settings/custom-template/global-settings.php:221
-#: admin/settings/custom-template/product-description-settings.php:243
-#: admin/settings/custom-template/product-description-settings.php:273
+#: admin/settings/custom-template/product-description-settings.php:289
+#: admin/settings/custom-template/product-description-settings.php:319
 #: admin/settings/custom-template/product-meta-settings.php:237
 #: admin/settings/custom-template/product-meta-settings.php:285
 #: admin/settings/custom-template/product-price-settings.php:249
@@ -603,7 +613,7 @@ msgstr ""
 #: admin/settings/custom-template/add-to-cart-settings.php:344
 #: admin/settings/custom-template/add-to-cart-settings.php:368
 #: admin/settings/custom-template/gallery-style-settings.php:277
-#: admin/settings/custom-template/product-description-settings.php:256
+#: admin/settings/custom-template/product-description-settings.php:302
 #: admin/settings/custom-template/product-meta-settings.php:268
 #: admin/settings/custom-template/product-price-settings.php:262
 #: admin/settings/custom-template/product-rating-settings.php:250
@@ -616,7 +626,7 @@ msgstr ""
 #: admin/settings/custom-template/add-to-cart-settings.php:348
 #: admin/settings/custom-template/add-to-cart-settings.php:372
 #: admin/settings/custom-template/gallery-style-settings.php:282
-#: admin/settings/custom-template/product-description-settings.php:261
+#: admin/settings/custom-template/product-description-settings.php:307
 #: admin/settings/custom-template/product-meta-settings.php:273
 #: admin/settings/custom-template/product-price-settings.php:267
 #: admin/settings/custom-template/product-rating-settings.php:255
@@ -850,40 +860,53 @@ msgid "Pop-up Container Background Colour"
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:81
-msgid "Product Short Description Settings successfully saved."
+msgid "Product Description Settings successfully saved."
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:82
-msgid "Error: Product Short Description Settings can not save."
+msgid "Error: Product Description Settings can not save."
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:83
-msgid "Product Short Description Settings successfully reseted."
+msgid "Product Description Settings successfully reseted."
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:153
 #: admin/settings/custom-template/product-description-settings.php:201
-msgid "Product Short Description"
+#: admin/settings/custom-template/product-description-settings.php:232
+msgid "Product Description"
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:197
-msgid "Product Short Description Setup"
+msgid "Product Description Setup"
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:213
-msgid "Product Short Description Style"
+msgid "Pull Product Description From"
 msgstr ""
 
 #: admin/settings/custom-template/product-description-settings.php:218
-msgid "Short Description Font"
+msgid "Product Short Description"
 msgstr ""
 
-#: admin/settings/custom-template/product-description-settings.php:224
-msgid "Short Description Alignment"
+#: admin/settings/custom-template/product-description-settings.php:251
+msgid "Number of Characters"
 msgstr ""
 
-#: admin/settings/custom-template/product-description-settings.php:250
-msgid "Short Description Margin"
+#: admin/settings/custom-template/product-description-settings.php:259
+msgid "Product Description Style"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:264
+msgid "Description Font"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:270
+msgid "Description Alignment"
+msgstr ""
+
+#: admin/settings/custom-template/product-description-settings.php:296
+msgid "Description Margin"
 msgstr ""
 
 #: admin/settings/custom-template/product-meta-settings.php:81
@@ -1135,35 +1158,35 @@ msgstr ""
 msgid "Fancy Box Pop Up"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:220
+#: admin/settings/fancybox-popup-settings.php:240
 msgid "Open Transition Effect"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:221
+#: admin/settings/fancybox-popup-settings.php:241
 msgid "Choose a pop-up opening effect. Default - None."
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:233
+#: admin/settings/fancybox-popup-settings.php:253
 msgid "Close Transistion Effect"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:234
+#: admin/settings/fancybox-popup-settings.php:254
 msgid "Choose a pop-up closing effect. Default - None."
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:246
+#: admin/settings/fancybox-popup-settings.php:266
 msgid "Opening Speed"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:247
+#: admin/settings/fancybox-popup-settings.php:267
 msgid "Milliseconds when open popup"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:254
+#: admin/settings/fancybox-popup-settings.php:274
 msgid "Closing Speed"
 msgstr ""
 
-#: admin/settings/fancybox-popup-settings.php:255
+#: admin/settings/fancybox-popup-settings.php:275
 msgid "Milliseconds when close popup"
 msgstr ""
 
@@ -1422,154 +1445,154 @@ msgstr ""
 msgid "Product Data"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:328
+#: classes/class-woocommerce-quick-view-ultimate.php:334
 msgid "Upgrade to WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:329
+#: classes/class-woocommerce-quick-view-ultimate.php:335
 msgid ""
 "<strong>NOTE:</strong> All the functions inside the Yellow border on the "
 "plugins admin panel are extra functionality that is activated by upgrading "
 "to the Pro version"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:331
+#: classes/class-woocommerce-quick-view-ultimate.php:337
 msgid "WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:333
+#: classes/class-woocommerce-quick-view-ultimate.php:339
 #, php-format
 msgid "Trial the <a href=\"%s\" target=\"_blank\">Pro Version for Free</a>"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:334
+#: classes/class-woocommerce-quick-view-ultimate.php:340
 msgid "No credit card required."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:335
+#: classes/class-woocommerce-quick-view-ultimate.php:341
 msgid "Immediate access to developer support."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:337
+#: classes/class-woocommerce-quick-view-ultimate.php:343
 msgid "Activates these advanced Features"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:340
+#: classes/class-woocommerce-quick-view-ultimate.php:346
 msgid "Quick View Custom Template for pop-up."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:341
+#: classes/class-woocommerce-quick-view-ultimate.php:347
 msgid "Custom Template Dynamic Product Gallery."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:342
+#: classes/class-woocommerce-quick-view-ultimate.php:348
 msgid "Custom Template Next &gt; &lt; Previous Product feature."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:343
+#: classes/class-woocommerce-quick-view-ultimate.php:349
 msgid "Custom Template Style and layout settings."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:344
+#: classes/class-woocommerce-quick-view-ultimate.php:350
 msgid "Optional Fancybox | Colorbox pop-up tool."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:345
+#: classes/class-woocommerce-quick-view-ultimate.php:351
 msgid "Select pop-up open and close effect."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:346
+#: classes/class-woocommerce-quick-view-ultimate.php:352
 msgid "Set pop-up opening / closing speed."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:347
+#: classes/class-woocommerce-quick-view-ultimate.php:353
 msgid "Set pop-up background overlay colour."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:348
+#: classes/class-woocommerce-quick-view-ultimate.php:354
 msgid "Access to support from developers."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:349
+#: classes/class-woocommerce-quick-view-ultimate.php:355
 msgid "Lifetime upgrades and maintenence."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:352
+#: classes/class-woocommerce-quick-view-ultimate.php:358
 msgid "View this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:352
+#: classes/class-woocommerce-quick-view-ultimate.php:358
 msgid "documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:353
+#: classes/class-woocommerce-quick-view-ultimate.php:359
 msgid "Visit this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:353
+#: classes/class-woocommerce-quick-view-ultimate.php:359
 msgid "support forum"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:354
+#: classes/class-woocommerce-quick-view-ultimate.php:360
 msgid "More FREE a3rev WooCommerce Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:357
+#: classes/class-woocommerce-quick-view-ultimate.php:363
 msgid "WooCommerce Product Sort and Display"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:358
+#: classes/class-woocommerce-quick-view-ultimate.php:364
 msgid "WooCommerce Dynamic Products Gallery"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:359
+#: classes/class-woocommerce-quick-view-ultimate.php:365
 msgid "WooCommerce Predictive Search"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:360
+#: classes/class-woocommerce-quick-view-ultimate.php:366
 msgid "WooCommerce Compare Products"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:361
+#: classes/class-woocommerce-quick-view-ultimate.php:367
 msgid "WooCommerce Widget Product Slideshow"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:362
+#: classes/class-woocommerce-quick-view-ultimate.php:368
 msgid "WooCommerce Email Inquiry & Cart Options"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:363
+#: classes/class-woocommerce-quick-view-ultimate.php:369
 msgid "WooCommerce Email Inquiry Ultimate (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:364
+#: classes/class-woocommerce-quick-view-ultimate.php:370
 msgid "WooCommerce Quotes and Orders (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:367
+#: classes/class-woocommerce-quick-view-ultimate.php:373
 msgid "FREE a3rev WordPress Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:370
+#: classes/class-woocommerce-quick-view-ultimate.php:376
 msgid "a3 Responsive Slider"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:371
+#: classes/class-woocommerce-quick-view-ultimate.php:377
 msgid "Contact Us Page - Contact People"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:372
+#: classes/class-woocommerce-quick-view-ultimate.php:378
 msgid "WordPress Email Template"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:373
+#: classes/class-woocommerce-quick-view-ultimate.php:379
 msgid "Page View Count"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:383
+#: classes/class-woocommerce-quick-view-ultimate.php:389
 msgid "Documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:384
+#: classes/class-woocommerce-quick-view-ultimate.php:390
 msgid "Support"
 msgstr ""

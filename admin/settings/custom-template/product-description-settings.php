@@ -78,9 +78,9 @@ class WC_QV_Custom_Template_Product_Description_Settings extends WC_QV_Admin_UI
 		$this->subtab_init();
 		
 		$this->form_messages = array(
-				'success_message'	=> __( 'Product Short Description Settings successfully saved.', 'wooquickview' ),
-				'error_message'		=> __( 'Error: Product Short Description Settings can not save.', 'wooquickview' ),
-				'reset_message'		=> __( 'Product Short Description Settings successfully reseted.', 'wooquickview' ),
+				'success_message'	=> __( 'Product Description Settings successfully saved.', 'wooquickview' ),
+				'error_message'		=> __( 'Error: Product Description Settings can not save.', 'wooquickview' ),
+				'reset_message'		=> __( 'Product Description Settings successfully reseted.', 'wooquickview' ),
 			);
 			
 		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_end', array( $this, 'include_script' ) );
@@ -149,8 +149,8 @@ class WC_QV_Custom_Template_Product_Description_Settings extends WC_QV_Admin_UI
 	public function subtab_data() {
 		
 		$subtab_data = array( 
-			'name'				=> 'product-short-description',
-			'label'				=> __( 'Product Short Description', 'wooquickview' ),
+			'name'				=> 'product-description',
+			'label'				=> __( 'Product Description', 'wooquickview' ),
 			'callback_function'	=> 'wc_qv_custom_template_product_description_settings_form',
 		);
 		
@@ -194,11 +194,11 @@ class WC_QV_Custom_Template_Product_Description_Settings extends WC_QV_Admin_UI
      	$this->form_fields = apply_filters( $this->option_name . '_settings_fields', array(
 		
 			array(
-				'name'		=> __( 'Product Short Description Setup', 'wooquickview' ),
+				'name'		=> __( 'Product Description Setup', 'wooquickview' ),
                 'type' 		=> 'heading',
            	),
 			array(  
-				'name' 		=> __( 'Product Short Description', 'wooquickview' ),
+				'name' 		=> __( 'Product Description', 'wooquickview' ),
 				'id' 		=> 'show_description',
 				'class'		=> 'show_description',
 				'type' 		=> 'onoff_checkbox',
@@ -210,18 +210,64 @@ class WC_QV_Custom_Template_Product_Description_Settings extends WC_QV_Admin_UI
 			),
 			
 			array(
-				'name'		=> __( 'Product Short Description Style', 'wooquickview' ),
+            	'name' 		=> __( 'Pull Product Description From', 'wooquickview' ),
+                'type' 		=> 'heading',
+				'class'		=> 'show_description_container',
+           	),
+			array(  
+				'name' 		=> __( "Product Short Description", 'wooquickview' ),
+				'id' 		=> 'pull_description_from',
+				'class'		=> 'pull_description_from',
+				'type' 		=> 'onoff_radio',
+				'default'	=> 'short_description',
+				'onoff_options' => array(
+					array(
+						'val' 				=> 'short_description',
+						'checked_label'		=> 'ON',
+						'unchecked_label' 	=> 'OFF',
+					),
+				),
+			),
+			array(  
+				'name' 		=> __( 'Product Description', 'wooquickview' ),
+				'id' 		=> 'pull_description_from',
+				'class'		=> 'pull_description_from',
+				'type' 		=> 'onoff_radio',
+				'default'	=> 'description',
+				'onoff_options' => array(
+					array(
+						'val' 				=> 'description',
+						'checked_label'		=> 'ON',
+						'unchecked_label' 	=> 'OFF',
+					),
+				),
+			),
+			
+			array(
+                'type' 		=> 'heading',
+				'class'		=> 'description_characters_container',
+           	),
+			array(  
+				'name' 		=> __( 'Number of Characters', 'wooquickview' ),
+				'id' 		=> 'description_characters',
+				'type' 		=> 'text',
+				'css'		=> 'width:40px;',
+				'default'	=> 300
+			),
+			
+			array(
+				'name'		=> __( 'Product Description Style', 'wooquickview' ),
                 'type' 		=> 'heading',
 				'class'		=> 'show_description_container'
            	),
 			array(  
-				'name' 		=> __( 'Short Description Font', 'wooquickview' ),
+				'name' 		=> __( 'Description Font', 'wooquickview' ),
 				'id' 		=> 'description_font',
 				'type' 		=> 'typography',
 				'default'	=> array( 'size' => '12px', 'face' => 'Arial, sans-serif', 'style' => 'normal', 'color' => '#000000' )
 			),
 			array(  
-				'name' 		=> __( 'Short Description Alignment', 'wooquickview' ),
+				'name' 		=> __( 'Description Alignment', 'wooquickview' ),
 				'id' 		=> 'description_alignment',
 				'type' 		=> 'onoff_radio',
 				'default' 	=> 'left',
@@ -247,7 +293,7 @@ class WC_QV_Custom_Template_Product_Description_Settings extends WC_QV_Admin_UI
 				),
 			),
 			array(  
-				'name' 		=> __( 'Short Description Margin', 'wooquickview' ),
+				'name' 		=> __( 'Description Margin', 'wooquickview' ),
 				'id' 		=> 'description_margin',
 				'type' 		=> 'array_textfields',
 				'ids'		=> array( 
@@ -284,18 +330,35 @@ class WC_QV_Custom_Template_Product_Description_Settings extends WC_QV_Admin_UI
 <script>
 (function($) {
 $(document).ready(function() {
+	if ( $("input.pull_description_from:checked").val() == 'short_description' ) {
+		$(".description_characters_container").hide();
+	}
+	
 	if ( $("input.show_description:checked").val() == '1') {
 		$(".show_description_container").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
 	} else {
 		$(".show_description_container").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
+		$(".description_characters_container").hide();
 	}
 	
 	$(document).on( "a3rev-ui-onoff_checkbox-switch", '.show_description', function( event, value, status ) {
 		$(".show_description_container").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
 		if ( status == 'true' ) {
 			$(".show_description_container").slideDown();
+			if ( $("input.pull_description_from:checked").val() == 'description' ) {
+				$(".description_characters_container").slideDown();
+			}
 		} else {
 			$(".show_description_container").slideUp();
+			$(".description_characters_container").slideUp();
+		}
+	});
+	
+	$(document).on( "a3rev-ui-onoff_radio-switch", '.pull_description_from', function( event, value, status ) {
+		if ( value == 'description' && status == 'true' ) {
+			$('.description_characters_container').slideDown();
+		} else {
+			$('.description_characters_container').slideUp();
 		}
 	});
 	
