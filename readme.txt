@@ -1,9 +1,9 @@
 === WooCommerce Products Quick View ===
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
-Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 1.0.5
+Requires at least: 3.7
+Tested up to: 3.9.1
+Stable tag: 1.0.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -31,36 +31,11 @@ We wanted our customers to have a true supermarket shopping experience. Other Qu
 * Works on any theme.
 * Pop-up opens full page content.
 * Fully mobile responsive - if your theme is responsive it opens in its true responsive dimensions within the pop-up.
-* Quick View button shows on mouse over the image.
-* Quick View button has 3 Positional settings Top, Center or bottom of the image.
-* Fancybox pop-up tool - can't be blocked by browser pop-up settings.
-* Pop-up opens in 0.300 of a second and closes instantly.
-* SEO tracking - Your analytics tracking code e.g. Google records every view.
-* Add to Cart , View Cart all work within the pop-up.
-* All product page features add by plugins work within the pop-up. 
-* Fully cross browser compliant including IE7 to IE10.
+* Show Quick View as a button or hyperlink text (fully customizable without writing any code)
+* All product page features added by plugins work within the pop-up.
+* Show Quick View on hover over image or show as button or linked text under the image. 
+* Fully cross browser compliant including IE8 to IE11.
 * Mobile device optimized - all tablets and phones
-
-= Mobile Responsive App style admin interface =
-
-Like WordPress we believe that a3rev plugin users should be able to configure and tweak our plugins settings while on the go, right from their mobile or tablet. This plugins features an app style admin interface with Switches, Sliders and a smart interface that hides associated settings when a feature is not turned ON.
-
-* 100% compatible with WordPress v3.8.0 admin interface.
-* Backward compatibility to WordPress v3.5.0
-* App style admin interface.
-* Admin app interface is fully mobile and tablet responsive.
-
-= Lite & Pro Version Admin Interface =
-
-All a3rev Lite Version plugins have exactly the same admin interface as the Pro Version. Pro Version features and settings are easy to spot on the admin dashboard as they are inside of a Yellow border. The Pro Version settings are all active on the admin panels so they can be used to get a great idea of how they work and what is available BUT the settings do not save when changes are saved and hence are not applied to the front end. Upgrading to the Pro version activates all the Pro version Features and Settings and removes the Yellow side bar and borders.
-
-= Lite Version Support =
-
-As a Lite Version user please post all support requests to the plugins WordPress Support forum. We do not watch that forum and posting there you will be relying on another user for support, not an a3rev team member. Upgrading to a Pro Version Licence gives 'write' access to the a3rev support forum and hence Lifetime priority support as part of the License.
-
-= Pro Version Upgrade =
-
-This plugin has a Pro Version upgrade that adds more functionality to this Free version. You will see all of the available upgrade features on the plugins admin panel, in the Yellow sidebar. Those Pro features include:
 
 = Hover Button point and click Styling =
 
@@ -72,15 +47,66 @@ This plugin has a Pro Version upgrade that adds more functionality to this Free 
 = Show Quick View under the Image =
 
 * Option to show Quick View as a Button or Hyper linked text under the product image.
-* When placed under the image Quick View is visible all of the time and does not rely on the user mousing over or touching the listing to show.
-* WYSIWYG Button style editor with transparency setting.
-* WYSIWYG Button and Hyperlink text editors - Simple point click settings to create an eye catching button
-* Padding settings above and below Button / Link text allow you to style how Quick View is positioned under the image on your theme.
+* When placed under the image Quick View is visible all of the time.
+* a3rev Button creator, for creating the perfect style without touching the theme code.
+* a3rev Button style transparency setting.
+* a3rev Hyperlink text creator - Simple point click settings to create an eye catching clickable link.
+* Quick View button has 3 Positional settings Top, Center or bottom of the image.
+
+= Mobile Responsive Quick View Pop-up =
+
+* Fancybox pop-up tool - can't be blocked by browser pop-up settings.
+* Pop-up opens in 0.300 of a second and closes instantly.
+* SEO tracking - Your analytics tracking code e.g. Google records every view.
+* Add to Cart , View Cart all work within the pop-up.
+
+
+= Lite & Pro Version Admin Interface =
+
+* All a3rev Lite Version plugins have exactly the same admin interface as the Pro Version. 
+* Pro Version features and settings are inside of a Yellow border. 
+* The Pro Version settings are all active on the admin panels But do not save and are not applied to the front end. 
+* Upgrading to the Pro version activates all the Pro version Features and Settings and removes the Yellow side bar and borders.
+
+= Lite Version Support =
+
+* As a Lite Version user please post all support requests to the plugins WordPress Support forum. 
+* We do not watch that forum and posting there you will be relying on another user for support, not an a3rev team member. 
+* Upgrading to a Pro Version Licence gives 'write' access to the a3rev support forum.
+
+= Pro Version Upgrade =
+
+This plugin has a Pro Version upgrade that adds more functionality to this Free version. You will see all of the available upgrade features on the plugins admin panel, in the Yellow sidebar. Those Pro features include:
+
+= Free Trial Evaluation =
+
+* Try the [full Pro Version for free](http://a3rev.com/shop/woocommerce-quick-view-ultimate/).
+* a3rev try before you buy
+* No credit card required. 
+* 60 day no questions asked money back guarantee on all licenses upgraded from trail to Lifetime Licenses.
+* Add additional sites to a Lifetime License when you require them at a 30% discount.
+* Immediate access to developer support from the plugins a3rev support forum.
+
+= Fully Customizable Pop-up Template =
+
+This feature allows you to create a Quick View Pop-up like now other. Features:
+
+* Fully Customizable pop up content template (no coding what so ever)
+* Next> <Previous Scroll - scroll through products right from the pop-up.
+* Next> <Previous Scroll works with all WooCommerce Product Sort Types.
+* Next> <Previous Scroll works on Shop page and all product category pages.
+* Template has its own Fully customizable Dynamic Image gallery
+* Dynamic Gallery automatically gets all images uploaded to the product
+* Set Gallery Left to show aligned Left or Right in the pop-up.
+* Gallery has 5 different transition effect types to choose from.
+* Gallery - set effect transition timing.  
+* Full template style customizing settings e.g background colour, Title font ect.
+* a3rev Button creator for creating any style for the buttons.
+* Control over what shows in the template e.g Prices, Add to Cart Button etc.
 
 = Advanced Pop-up Controls =
 
 * Option to use Colorbox pop-up tool.
-* Set pop-up wide as a % of screen size in larger screens.
 * Select pop-up open and close transition effect.
 * Set pop-up opening / closing speed.
 * Set pop-up background overlay colour with WYSIWYG colour picker.
@@ -91,10 +117,6 @@ This plugin has a Pro Version upgrade that adds more functionality to this Free 
 
 * Option to show Product Page Content instead of opening the page url in the pop-up.
 
-= Priority Support =
-
-Please note that we do not provide support for our Lite Version plugins. Hundreds of thousands of plugin downloads has proven that vast majority of the support requests we get have nothing to do with our plugins but are related to bugs in the users theme or other plugins they have installed. We give priority support to those users who purchase a Pro Version license. In this plugins case, we offer a single payment, Lifetime License fee which includes access to and full support from the a3rev support forum.
-
 = Localization =
 
 * English (default) - always included.
@@ -103,14 +125,14 @@ Please note that we do not provide support for our Lite Version plugins. Hundred
 
 = Plugin Resources =
 
-[PRO Version](http://a3rev.com/shop/woocommerce-quick-view-ultimate/) |
+[PRO Version Free Trial](http://a3rev.com/shop/woocommerce-quick-view-ultimate/) |
 [Documentation](http://docs.a3rev.com/user-guides/plugins-extensions/woocommerce-quick-view-ultimate/) |
 
 == Installation ==
 
 = Minimum Requirements =
 
-* WordPress 3.5.2
+* WordPress 3.7
 * WooCommerce v2.0 and later.
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
@@ -132,11 +154,11 @@ The manual installation method involves downloading our plugin and uploading it 
 
 1. Install and activate the plugin
 
-2. On wp-admin click on WooCommerce > Quick View Menu
+2. On wp-admin go to the WC Quick View Menu
 
-3. Settings - apply to your whole site.
+3. Go to Quick View sub menu Settings - Turn the Quick View Feature ON.
 
-4. Hover Position & Style tab - Set the position of the button.
+4. Make your settings and style the Quick View Button or hypertext link.
 
 5. Have fun.
  
@@ -152,6 +174,26 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Changelog ==
+
+= 1.0.6 - 2014/05/17 =
+* Feature - Added option to show Quick View button or link text under image
+* Feature - Added full Quick View Button customization with the a3rev Button Creator functions - Create any style button.
+* Feature - Added Button transparency setting for Quick View hover button.
+* Feature - Added Under Image Button creator and Hyperlink styling functions.
+* Tweak - Moved the plugin from a sub menu item on the WooCommerce menu to its own WordPress Admin menu WC Quick View.
+* Tweak - Added all Custom Template Menus as a Sub menu of WC Quick View (Pro Version new feature)
+* Tweak - Updated the plugins description text with new features for Lite and Pro versions.
+* Tweak - Updated the plugins admin help text and yellow sidebar content.
+* Tweak - Tested 100% compatible with WooCommerce Version 2.1.9
+
+= 1.0.5.1 - 2014/05/12 =
+* Tweak - Updated Framework help text font for consistency.
+* Tweak - Added remove_all_filters('mce_external_plugins'); before call to wp_editor to remove extension scripts from other plugins.
+* Tweak - Launched Plugin Pro Version Trail License for Free Trail.
+* Tweak - Updated the plugins admin panel Yellow sidebar content.
+* Tweak - Update plugins description text for easier reading.
+* Tweak - Tested for full compatibility with WooCommerce Version 2.1.8
+* Tweak - Tested for full compatibility with WordPress Version 3.9.1
 
 = 1.0.5 - 2014/01/28 =
 * Feature - Upgraded for 100% compatibility with soon to be released WooCommerce Version 2.1 with backward compatibility to Version 2.0
@@ -200,6 +242,12 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.0.6 =
+Upgrade now for new features. Full Button styling options. Quick View as button or Hyperlink text under product images. Full compatibility with WooCommerce 2.1.9
+
+= 1.0.5.1 =
+Update now for 4 Tweaks and full compatibility with WooCommerce Version version 2.1.8 and WordPress Version 3.9.1
 
 = 1.0.5 =
 Upgrade now for full compatibility with WooCommerce Version 2.1 and WordPress version 3.8.1. Includes full backward compatibly with WooCommerce versions 2.0 to 2.0.20. Major pop-up display in mobiles rework.

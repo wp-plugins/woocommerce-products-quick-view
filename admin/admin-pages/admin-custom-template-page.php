@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>
 <?php
 /*-----------------------------------------------------------------------------------
-WC Quick View Admin Page
+WC Quick View Custom Template Page
 
 TABLE OF CONTENTS
 
@@ -21,12 +21,12 @@ TABLE OF CONTENTS
 
 -----------------------------------------------------------------------------------*/
 
-class WC_QV_Admin_Page extends WC_QV_Admin_UI
+class WC_QV_Custom_Template_Page extends WC_QV_Admin_UI
 {	
 	/**
 	 * @var string
 	 */
-	private $menu_slug = 'wc-quick-view';
+	private $menu_slug = 'wc-quick-view-custom-template';
 	
 	/**
 	 * @var array
@@ -57,34 +57,18 @@ class WC_QV_Admin_Page extends WC_QV_Admin_UI
 	/*-----------------------------------------------------------------------------------*/
 	public function page_data() {
 		
-		$page_data = array( 
-			array(
-				'type'				=> 'menu',
-				'page_title'		=> __( 'WC Quick View', 'wooquickview' ),
-				'menu_title'		=> __( 'WC Quick View', 'wooquickview' ),
-				'capability'		=> 'manage_options',
-				'menu_slug'			=> $this->menu_slug,
-				'function'			=> 'wc_qv_admin_page_show',
-				'icon_url'			=> '',
-				'position'			=> '30.34532',
-				'admin_url'			=> 'admin.php',
-				'callback_function' => '',
-				'script_function' 	=> '',
-				'view_doc'			=> '',
-			),
-			array(
-				'type'				=> 'submenu',
-				'parent_slug'		=> $this->menu_slug,
-				'page_title'		=> __( 'Quick View', 'wooquickview' ),
-				'menu_title'		=> __( 'Quick View', 'wooquickview' ),
-				'capability'		=> 'manage_options',
-				'menu_slug'			=> $this->menu_slug,
-				'function'			=> 'wc_qv_admin_page_show',
-				'admin_url'			=> 'admin.php',
-				'callback_function' => '',
-				'script_function' 	=> '',
-				'view_doc'			=> '',
-			),
+		$page_data = array(
+			'type'				=> 'submenu',
+			'parent_slug'		=> 'wc-quick-view',
+			'page_title'		=> __( 'Custom Template', 'wooquickview' ),
+			'menu_title'		=> __( 'Custom Template', 'wooquickview' ),
+			'capability'		=> 'manage_options',
+			'menu_slug'			=> $this->menu_slug,
+			'function'			=> 'wc_qv_custom_template_page_show',
+			'admin_url'			=> 'admin.php',
+			'callback_function' => '',
+			'script_function' 	=> '',
+			'view_doc'			=> '',
 		);
 		
 		if ( $this->page_data ) return $this->page_data;
@@ -99,7 +83,7 @@ class WC_QV_Admin_Page extends WC_QV_Admin_UI
 	public function add_admin_menu( $admin_menu ) {
 		
 		if ( ! is_array( $admin_menu ) ) $admin_menu = array();
-		$admin_menu = array_merge( $this->page_data(), $admin_menu );
+		$admin_menu[] = $this->page_data();
 		
 		return $admin_menu;
 	}
@@ -110,9 +94,9 @@ class WC_QV_Admin_Page extends WC_QV_Admin_UI
 	/*-----------------------------------------------------------------------------------*/
 	public function tabs_include() {
 		
-		include_once( $this->admin_plugin_dir() . '/tabs/admin-settings-tab.php' );
-		include_once( $this->admin_plugin_dir() . '/tabs/admin-button-style-tab.php' );
-		include_once( $this->admin_plugin_dir() . '/tabs/admin-popup-style-tab.php' );
+		include_once( $this->admin_plugin_dir() . '/tabs/custom-template/global-settings-tab.php' );
+		include_once( $this->admin_plugin_dir() . '/tabs/custom-template/gallery-tab.php' );
+		include_once( $this->admin_plugin_dir() . '/tabs/custom-template/product-data-tab.php' );
 		
 	}
 	
@@ -123,23 +107,21 @@ class WC_QV_Admin_Page extends WC_QV_Admin_UI
 	public function admin_settings_page() {
 		global $wc_qv_admin_init;
 		
-		$my_page_data = $this->page_data();
-		$my_page_data = array_values( $my_page_data );
-		$wc_qv_admin_init->admin_settings_page( $my_page_data[1] );
+		$wc_qv_admin_init->admin_settings_page( $this->page_data() );
 	}
 	
 }
 
-global $wc_qv_admin_page;
-$wc_qv_admin_page = new WC_QV_Admin_Page();
+global $wc_qv_custom_template_page;
+$wc_qv_custom_template_page = new WC_QV_Custom_Template_Page();
 
 /** 
- * wc_qv_admin_page_show()
+ * wc_qv_custom_template_page_show()
  * Define the callback function to show page content
  */
-function wc_qv_admin_page_show() {
-	global $wc_qv_admin_page;
-	$wc_qv_admin_page->admin_settings_page();
+function wc_qv_custom_template_page_show() {
+	global $wc_qv_custom_template_page;
+	$wc_qv_custom_template_page->admin_settings_page();
 }
 
 ?>
