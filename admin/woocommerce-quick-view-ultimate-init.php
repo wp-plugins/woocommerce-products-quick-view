@@ -11,8 +11,8 @@ function wc_quick_view_ultimate_install(){
 	global $wc_qv_admin_init;
 	$wc_qv_admin_init->set_default_settings();
 	
-	update_option('wc_quick_view_ultimate_version', '1.0.7.1');
-	update_option('wc_quick_view_lite_version', '1.0.6.1');
+	update_option('wc_quick_view_ultimate_version', '1.0.7.2');
+	update_option('wc_quick_view_lite_version', '1.0.6.2');
 	update_option('wc_quick_view_ultimate_plugin', 'wc_quick_view_ultimate');
 	//$wp_rewrite->flush_rules();
 	update_option('wc_quick_view_ultimate_just_installed', true);
@@ -134,8 +134,8 @@ function wc_quick_view_lite_upgrade_plugin () {
 		update_option('wc_quick_view_ultimate_version', '1.0.2');
 	}
 	
-	update_option('wc_quick_view_ultimate_version', '1.0.7.1');
-	update_option('wc_quick_view_lite_version', '1.0.6.1');
+	update_option('wc_quick_view_ultimate_version', '1.0.7.2');
+	update_option('wc_quick_view_lite_version', '1.0.6.2');
 
 }
 ?>
