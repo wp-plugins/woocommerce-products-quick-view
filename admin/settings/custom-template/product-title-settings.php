@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>
 <?php
 /*-----------------------------------------------------------------------------------
-WC Quick View ColorBox Popup Settings
+WC Quick View Custom Template Product Title Settings
 
 TABLE OF CONTENTS
 
@@ -28,13 +28,13 @@ TABLE OF CONTENTS
 
 -----------------------------------------------------------------------------------*/
 
-class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
+class WC_QV_Custom_Template_Product_Title_Settings extends WC_QV_Admin_UI
 {
 	
 	/**
 	 * @var string
 	 */
-	private $parent_tab = 'popup-style';
+	private $parent_tab = 'product-data';
 	
 	/**
 	 * @var array
@@ -45,19 +45,19 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 	 * @var string
 	 * You must change to correct option name that you are working
 	 */
-	public $option_name = '';
+	public $option_name = 'quick_view_template_product_title_settings';
 	
 	/**
 	 * @var string
 	 * You must change to correct form key that you are working
 	 */
-	public $form_key = 'wc_quick_view_colorbox_popup_settings';
+	public $form_key = 'quick_view_template_product_title_settings';
 	
 	/**
 	 * @var string
 	 * You can change the order show of this sub tab in list sub tabs
 	 */
-	private $position = 2;
+	private $position = 1;
 	
 	/**
 	 * @var array
@@ -78,13 +78,13 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 		$this->subtab_init();
 		
 		$this->form_messages = array(
-				'success_message'	=> __( 'Color Box Pop Up Settings successfully saved.', 'wooquickview' ),
-				'error_message'		=> __( 'Error: Color Box Pop Up Settings can not save.', 'wooquickview' ),
-				'reset_message'		=> __( 'Color Box Pop Up Settings successfully reseted.', 'wooquickview' ),
+				'success_message'	=> __( 'Product Title Settings successfully saved.', 'wooquickview' ),
+				'error_message'		=> __( 'Error: Product Title Settings can not save.', 'wooquickview' ),
+				'reset_message'		=> __( 'Product Title Settings successfully reseted.', 'wooquickview' ),
 			);
-			
+									
 		add_action( $this->plugin_name . '_set_default_settings' , array( $this, 'set_default_settings' ) );
-		
+				
 		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_init' , array( $this, 'reset_default_settings' ) );
 		
 		//add_action( $this->plugin_name . '_get_all_settings' , array( $this, 'get_settings' ) );
@@ -147,9 +147,9 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 	public function subtab_data() {
 		
 		$subtab_data = array( 
-			'name'				=> 'colorbox-pop-up',
-			'label'				=> __( 'Color Box Pop Up', 'wooquickview' ),
-			'callback_function'	=> 'wc_qv_colorbox_popup_settings_form',
+			'name'				=> 'product-title',
+			'label'				=> __( 'Product Title', 'wooquickview' ),
+			'callback_function'	=> 'wc_qv_custom_template_product_title_settings_form',
 		);
 		
 		if ( $this->subtab_data ) return $this->subtab_data;
@@ -187,98 +187,170 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 	/* Init all fields of this form */
 	/*-----------------------------------------------------------------------------------*/
 	public function init_form_fields() {
-		
+				
   		// Define settings			
      	$this->form_fields = apply_filters( $this->option_name . '_settings_fields', array(
 		
 			array(
-            	'name' 		=> __( 'Colour Box Pop Up', 'wooquickview' ),
+				'name'		=> __( 'Product Title Style', 'wooquickview' ),
                 'type' 		=> 'heading',
            	),
 			array(  
-				'name' 		=> __( 'Pop-up Maximum Width', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_popup_width',
-				'desc'		=> 'px',
-				'type' 		=> 'slider',
-				'default'	=> 600,
-				'min'		=> 520,
-				'max'		=> 800,
-				'increment'	=> 10
-			),
-			array(  
-				'name' 		=> __( 'Pop-up Maximum Height', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_popup_height',
-				'desc'		=> 'px',
-				'type' 		=> 'slider',
-				'default'	=> 460,
-				'min'		=> 300,
-				'max'		=> 500,
-				'increment'	=> 10
-			),
-			array(  
-				'name' 		=> __( "Fix Position on Scroll", 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_center_on_scroll',
+				'name' 		=> __( 'Title Transformation', 'wooquickview' ),
+				'id' 		=> 'title_transformation',
 				'type' 		=> 'onoff_radio',
-				'default'	=> 'true',
+				'default' 	=> 'none',
 				'onoff_options' => array(
 					array(
-						'val' 				=> 'true',
-						'text'				=> __( 'Pop-up stays centered in screen while page scrolls behind it.', 'wooquickview' ) ,
-						'checked_label'		=> 'ON',
-						'unchecked_label' 	=> 'OFF',
+						'val' 				=> 'none',
+						'text' 				=> __( 'None', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
 					),
-					
 					array(
-						'val' 				=> 'false',
-						'text' 				=> __( 'Pop-up scrolls up and down with the page.', 'wooquickview' ) ,
-						'checked_label'		=> 'ON',
-						'unchecked_label' 	=> 'OFF',
-					) 
+						'val' 				=> 'uppercase',
+						'text' 				=> __( 'Uppercase', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
+					array(
+						'val' 				=> 'lowercase',
+						'text' 				=> __( 'Lowercase', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
 				),
 			),
 			array(  
-				'name' 		=> __( 'Open & Close Transition Effect', 'wooquickview' ),
-				'desc' 		=> __( "Choose a pop-up opening & closing effect. Default - None", 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_transition',
-				'css' 		=> 'width:80px;',
-				'type' 		=> 'select',
-				'default'	=> 'none',
-				'options'	=> array(
-						'none'			=> __( 'None', 'wooquickview' ) ,	
-						'fade'			=> __( 'Fade', 'wooquickview' ) ,	
-						'elastic'		=> __( 'Elastic', 'wooquickview' ) ,
+				'name' 		=> __( 'Title Alignment', 'wooquickview' ),
+				'id' 		=> 'title_alignment',
+				'type' 		=> 'onoff_radio',
+				'default' 	=> 'left',
+				'onoff_options' => array(
+					array(
+						'val' 				=> 'left',
+						'text' 				=> __( 'Left', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
 					),
+					array(
+						'val' 				=> 'center',
+						'text' 				=> __( 'Center', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
+					array(
+						'val' 				=> 'right',
+						'text' 				=> __( 'Right', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
+				),
 			),
 			array(  
-				'name' 		=> __( 'Opening & Closing Speed', 'wooquickview' ),
-				'desc' 		=> __( 'Milliseconds when open and close popup', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_speed',
-				'type' 		=> 'text',
-				'css' 		=> 'width:40px;',
-				'default'	=> '300'
+				'name' 		=> __( 'Title Font', 'wooquickview' ),
+				'id' 		=> 'title_font',
+				'type' 		=> 'typography',
+				'default'	=> array( 'size' => '18px', 'face' => 'Arial, sans-serif', 'style' => 'bold', 'color' => '#000000' )
 			),
 			array(  
-				'name' 		=> __( 'Background Overlay Colour', 'wooquickview' ),
-				'desc' 		=> __('Select a colour or empty for no colour.', 'wooquickview'). ' ' . __('Default', 'wooquickview'). ' [default_value]',
-				'id' 		=> 'quick_view_ultimate_colorbox_overlay_color',
+				'name' 		=> __( 'Title Hover Colour', 'wooquickview' ),
+				'id' 		=> 'title_font_hover_color',
 				'type' 		=> 'color',
-				'default'	=> '#666666'
+				'default'	=> '#999999'
+			),
+			array(  
+				'name' 		=> __( 'Title Container Background Colour', 'wooquickview' ),
+				'id' 		=> 'title_bg_color',
+				'type' 		=> 'color',
+				'default'	=> '#FFFFFF'
+			),
+			array(  
+				'name' 		=> __( 'Title Container Border', 'wooquickview' ),
+				'id' 		=> 'title_border',
+				'type' 		=> 'border',
+				'default'	=> array( 'width' => '0px', 'style' => 'solid', 'color' => '#FFFFFF', 'corner' => 'square' , 'rounded_value' => 0 ),
+			),
+			array(  
+				'name' => __( 'Title Container Shadow', 'wooquickview' ),
+				'id' 		=> 'title_shadow',
+				'type' 		=> 'box_shadow',
+				'default'	=> array( 'enable' => 0, 'h_shadow' => '5px' , 'v_shadow' => '5px', 'blur' => '2px' , 'spread' => '2px', 'color' => '#999999', 'inset' => '' )
+			),
+			array(  
+				'name' 		=> __( 'Border Margin (Outside)', 'wooquickview' ),
+				'id' 		=> 'title_margin',
+				'type' 		=> 'array_textfields',
+				'ids'		=> array( 
+	 								array( 
+											'id' 		=> 'title_margin_top',
+	 										'name' 		=> __( 'Top', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 5 ),
+	 
+	 								array(  'id' 		=> 'title_margin_bottom',
+	 										'name' 		=> __( 'Bottom', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 5 ),
+											
+									array( 
+											'id' 		=> 'title_margin_left',
+	 										'name' 		=> __( 'Left', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+											
+									array( 
+											'id' 		=> 'title_margin_right',
+	 										'name' 		=> __( 'Right', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+	 							)
+			),
+			array(  
+				'name' 		=> __( 'Border Padding (Inside)', 'wooquickview' ),
+				'id' 		=> 'title_padding',
+				'type' 		=> 'array_textfields',
+				'ids'		=> array( 
+	 								array( 
+											'id' 		=> 'title_padding_top',
+	 										'name' 		=> __( 'Top', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+	 
+	 								array(  'id' 		=> 'title_padding_bottom',
+	 										'name' 		=> __( 'Bottom', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+											
+									array( 
+											'id' 		=> 'title_padding_left',
+	 										'name' 		=> __( 'Left', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+											
+									array( 
+											'id' 		=> 'title_padding_right',
+	 										'name' 		=> __( 'Right', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+	 							)
 			),
 			
         ));
 	}
+	
 }
 
-global $wc_qv_colorbox_popup_settings;
-$wc_qv_colorbox_popup_settings = new WC_QV_ColorBox_Popup_Settings();
+global $wc_qv_custom_template_product_title_settings;
+$wc_qv_custom_template_product_title_settings = new WC_QV_Custom_Template_Product_Title_Settings();
 
 /** 
- * wc_qv_colorbox_popup_settings_form()
+ * wc_qv_custom_template_product_title_settings_form()
  * Define the callback function to show subtab content
  */
-function wc_qv_colorbox_popup_settings_form() {
-	global $wc_qv_colorbox_popup_settings;
-	$wc_qv_colorbox_popup_settings->settings_form();
+function wc_qv_custom_template_product_title_settings_form() {
+	global $wc_qv_custom_template_product_title_settings;
+	$wc_qv_custom_template_product_title_settings->settings_form();
 }
 
 ?>
