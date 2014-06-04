@@ -108,6 +108,7 @@ class WC_QV_Custom_Template_Product_Data_Tab extends WC_QV_Admin_UI
 		include_once( $this->admin_plugin_dir() . '/settings/custom-template/product-description-settings.php' );
 		include_once( $this->admin_plugin_dir() . '/settings/custom-template/product-meta-settings.php' );
 		include_once( $this->admin_plugin_dir() . '/settings/custom-template/product-price-settings.php' );
+		include_once( $this->admin_plugin_dir() . '/settings/custom-template/quantity-selector-settings.php' );
 		include_once( $this->admin_plugin_dir() . '/settings/custom-template/add-to-cart-settings.php' );
 		
 	}

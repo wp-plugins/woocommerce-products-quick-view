@@ -3,7 +3,7 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.0.6.2
+Stable tag: 1.0.6.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -175,6 +175,10 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.0.6.3 - 2014/06/04 = 
+* Tweak - Updated chosen js script to latest version 1.1.0 on the a3rev Plugin Framework  
+* Tweak - Tested fully compatible with WooCommerce Version 2.1.10 
+
 = 1.0.6.2 - 2014/05/29 = 
 * Tweak - Changed add_filter( 'gettext', array( $this, 'change_button_text' ), null, 2 ); to add_filter( 'gettext', array( $this, 'change_button_text' ), null, 3 ); 
 * Tweak - Update change_button_text() function from ( $original == 'Insert into Post' ) to ( is_admin() && $original === 'Insert into Post' ) 
@@ -252,6 +256,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.0.6.3 =
+Update your plugin for a Framework code tweak and full compatibility with WooCommerce version 2.1.10
 
 = 1.0.6.2 = 
 Update your plugin now for 3 new a3rev plugin framework code tweaks. 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Product Quick View\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-19 16:28+0700\n"
-"PO-Revision-Date: 2014-05-19 16:28+0700\n"
+"POT-Creation-Date: 2014-06-04 17:38+0700\n"
+"PO-Revision-Date: 2014-06-04 17:38+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -16,76 +16,76 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/admin-interface.php:127
+#: admin/admin-interface.php:129
 msgid "Settings successfully saved."
 msgstr ""
 
-#: admin/admin-interface.php:135
+#: admin/admin-interface.php:137
 msgid "Error: Settings can not save."
 msgstr ""
 
-#: admin/admin-interface.php:143
+#: admin/admin-interface.php:145
 msgid "Settings successfully reseted."
 msgstr ""
 
-#: admin/admin-interface.php:164
+#: admin/admin-interface.php:166
 msgid "Thin"
 msgstr ""
 
-#: admin/admin-interface.php:165
+#: admin/admin-interface.php:167
 msgid "Thin/Italic"
 msgstr ""
 
-#: admin/admin-interface.php:166
+#: admin/admin-interface.php:168
 msgid "Normal"
 msgstr ""
 
-#: admin/admin-interface.php:167
+#: admin/admin-interface.php:169
 msgid "Italic"
 msgstr ""
 
-#: admin/admin-interface.php:168
+#: admin/admin-interface.php:170
 msgid "Bold"
 msgstr ""
 
-#: admin/admin-interface.php:169
+#: admin/admin-interface.php:171
 msgid "Bold/Italic"
 msgstr ""
 
-#: admin/admin-interface.php:179
+#: admin/admin-interface.php:181
 msgid "Solid"
 msgstr ""
 
-#: admin/admin-interface.php:180
+#: admin/admin-interface.php:182
 msgid "Double"
 msgstr ""
 
-#: admin/admin-interface.php:181
+#: admin/admin-interface.php:183
 msgid "Dashed"
 msgstr ""
 
-#: admin/admin-interface.php:182
+#: admin/admin-interface.php:184
 msgid "Dotted"
 msgstr ""
 
-#: admin/admin-interface.php:183
+#: admin/admin-interface.php:185
 msgid "Groove"
 msgstr ""
 
-#: admin/admin-interface.php:184
+#: admin/admin-interface.php:186
 msgid "Ridge"
 msgstr ""
 
-#: admin/admin-interface.php:185
+#: admin/admin-interface.php:187
 msgid "Inset"
 msgstr ""
 
-#: admin/admin-interface.php:186
+#: admin/admin-interface.php:188
 msgid "Outset"
 msgstr ""
 
-#: admin/admin-interface.php:1298 admin/admin-interface.php:1388
-#: admin/admin-interface.php:1417
+#: admin/admin-interface.php:1354 admin/admin-interface.php:1444
+#: admin/admin-interface.php:1473
 #: admin/settings/custom-template/add-to-cart-settings.php:209
 #: admin/settings/custom-template/add-to-cart-settings.php:238
 #: admin/settings/custom-template/add-to-cart-settings.php:244
@@ -117,12 +117,13 @@ msgstr ""
 #: admin/settings/custom-template/product-title-settings.php:233
 #: admin/settings/custom-template/product-title-settings.php:239
 #: admin/settings/custom-template/product-title-settings.php:245
+#: admin/settings/custom-template/quantity-selector-settings.php:209
 #: admin/settings/global-settings.php:325
 msgid "ON"
 msgstr ""
 
-#: admin/admin-interface.php:1299 admin/admin-interface.php:1389
-#: admin/admin-interface.php:1418
+#: admin/admin-interface.php:1355 admin/admin-interface.php:1445
+#: admin/admin-interface.php:1474
 #: admin/settings/custom-template/add-to-cart-settings.php:210
 #: admin/settings/custom-template/add-to-cart-settings.php:239
 #: admin/settings/custom-template/add-to-cart-settings.php:245
@@ -154,67 +155,68 @@ msgstr ""
 #: admin/settings/custom-template/product-title-settings.php:234
 #: admin/settings/custom-template/product-title-settings.php:240
 #: admin/settings/custom-template/product-title-settings.php:246
+#: admin/settings/custom-template/quantity-selector-settings.php:210
 #: admin/settings/global-settings.php:326
 msgid "OFF"
 msgstr ""
 
-#: admin/admin-interface.php:1459
+#: admin/admin-interface.php:1515
 msgid "Width"
 msgstr ""
 
-#: admin/admin-interface.php:1461
+#: admin/admin-interface.php:1517
 msgid "Height"
 msgstr ""
 
-#: admin/admin-interface.php:1463
+#: admin/admin-interface.php:1519
 msgid "Hard Crop"
 msgstr ""
 
-#: admin/admin-interface.php:1541
+#: admin/admin-interface.php:1596
 msgid "-- Default Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1552
+#: admin/admin-interface.php:1607
 msgid "-- Google Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1593
+#: admin/admin-interface.php:1648
 msgid "Preview your customized typography settings"
 msgstr ""
 
-#: admin/admin-interface.php:1727 admin/admin-interface.php:1986
+#: admin/admin-interface.php:1782 admin/admin-interface.php:2041
 msgid "Preview your customized border settings"
 msgstr ""
 
-#: admin/admin-interface.php:1736 admin/admin-interface.php:1977
+#: admin/admin-interface.php:1791 admin/admin-interface.php:2032
 msgid "Rounded"
 msgstr ""
 
-#: admin/admin-interface.php:1737 admin/admin-interface.php:1978
+#: admin/admin-interface.php:1792 admin/admin-interface.php:2033
 msgid "Square"
 msgstr ""
 
-#: admin/admin-interface.php:1747 admin/admin-interface.php:1991
+#: admin/admin-interface.php:1802 admin/admin-interface.php:2046
 msgid "Top Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1767 admin/admin-interface.php:2011
+#: admin/admin-interface.php:1822 admin/admin-interface.php:2066
 msgid "Top Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1787 admin/admin-interface.php:2031
+#: admin/admin-interface.php:1842 admin/admin-interface.php:2086
 msgid "Bottom Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1807 admin/admin-interface.php:2051
+#: admin/admin-interface.php:1862 admin/admin-interface.php:2106
 msgid "Bottom Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1900
+#: admin/admin-interface.php:1955
 msgid "Preview your customized border styles settings"
 msgstr ""
 
-#: admin/admin-interface.php:2112
+#: admin/admin-interface.php:2167
 #: admin/settings/custom-template/gallery-style-settings.php:218
 #: admin/settings/custom-template/gallery-style-settings.php:265
 #: admin/settings/custom-template/gallery-style-settings.php:339
@@ -224,7 +226,7 @@ msgstr ""
 msgid "YES"
 msgstr ""
 
-#: admin/admin-interface.php:2113
+#: admin/admin-interface.php:2168
 #: admin/settings/custom-template/gallery-style-settings.php:219
 #: admin/settings/custom-template/gallery-style-settings.php:266
 #: admin/settings/custom-template/gallery-style-settings.php:340
@@ -234,39 +236,39 @@ msgstr ""
 msgid "NO"
 msgstr ""
 
-#: admin/admin-interface.php:2127
+#: admin/admin-interface.php:2182
 msgid "Horizontal Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2145
+#: admin/admin-interface.php:2200
 msgid "Vertical Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2163
+#: admin/admin-interface.php:2218
 msgid "Blur Distance"
 msgstr ""
 
-#: admin/admin-interface.php:2181
+#: admin/admin-interface.php:2236
 msgid "Spread Size"
 msgstr ""
 
-#: admin/admin-interface.php:2199
+#: admin/admin-interface.php:2254
 msgid "INNER"
 msgstr ""
 
-#: admin/admin-interface.php:2200
+#: admin/admin-interface.php:2255
 msgid "OUTER"
 msgstr ""
 
-#: admin/admin-interface.php:2218
+#: admin/admin-interface.php:2273
 msgid "Preview your customized box shadow settings"
 msgstr ""
 
-#: admin/admin-interface.php:2407
+#: admin/admin-interface.php:2509
 msgid "Save changes"
 msgstr ""
 
-#: admin/admin-interface.php:2408
+#: admin/admin-interface.php:2510
 msgid "Reset Settings"
 msgstr ""
 
@@ -287,20 +289,20 @@ msgstr ""
 msgid "Quick View"
 msgstr ""
 
-#: admin/admin-ui.php:127
+#: admin/admin-ui.php:129
 msgid ""
 "Advanced settings inside this yellow border are not activated on the Lite "
 "Version."
 msgstr ""
 
-#: admin/admin-ui.php:129
+#: admin/admin-ui.php:131
 #, php-format
 msgid ""
 "The fully featured %s in availble for <a href=\"%s\" target=\"_blank\">Free "
 "Evaluation Trail Here</a>. No credit card required."
 msgstr ""
 
-#: admin/admin-ui.php:131
+#: admin/admin-ui.php:133
 msgid "Pro Version"
 msgstr ""
 
@@ -421,6 +423,10 @@ msgstr ""
 #: admin/settings/custom-template/add-to-cart-settings.php:307
 #: admin/settings/custom-template/add-to-cart-settings.php:315
 #: admin/settings/custom-template/global-settings.php:229
+#: admin/settings/custom-template/quantity-selector-settings.php:220
+#: admin/settings/custom-template/quantity-selector-settings.php:309
+#: admin/settings/custom-template/quantity-selector-settings.php:316
+#: admin/settings/custom-template/quantity-selector-settings.php:324
 #: admin/settings/fancybox-popup-settings.php:283
 #: admin/settings/hover-position-style-settings.php:223
 #: admin/settings/hover-position-style-settings.php:230
@@ -494,6 +500,9 @@ msgstr ""
 #: admin/settings/custom-template/product-title-settings.php:232
 #: admin/settings/custom-template/product-title-settings.php:298
 #: admin/settings/custom-template/product-title-settings.php:327
+#: admin/settings/custom-template/quantity-selector-settings.php:251
+#: admin/settings/custom-template/quantity-selector-settings.php:286
+#: admin/settings/custom-template/quantity-selector-settings.php:343
 #: admin/settings/under-image-style-settings.php:203
 msgid "Left"
 msgstr ""
@@ -525,6 +534,9 @@ msgstr ""
 #: admin/settings/custom-template/product-title-settings.php:244
 #: admin/settings/custom-template/product-title-settings.php:304
 #: admin/settings/custom-template/product-title-settings.php:333
+#: admin/settings/custom-template/quantity-selector-settings.php:255
+#: admin/settings/custom-template/quantity-selector-settings.php:290
+#: admin/settings/custom-template/quantity-selector-settings.php:347
 #: admin/settings/under-image-style-settings.php:204
 msgid "Right"
 msgstr ""
@@ -571,18 +583,21 @@ msgid "Button Text"
 msgstr ""
 
 #: admin/settings/custom-template/add-to-cart-settings.php:299
+#: admin/settings/custom-template/quantity-selector-settings.php:308
 #: admin/settings/hover-position-style-settings.php:222
 #: admin/settings/under-image-style-settings.php:274
 msgid "Background Colour"
 msgstr ""
 
 #: admin/settings/custom-template/add-to-cart-settings.php:306
+#: admin/settings/custom-template/quantity-selector-settings.php:315
 #: admin/settings/hover-position-style-settings.php:229
 #: admin/settings/under-image-style-settings.php:281
 msgid "Background Colour Gradient From"
 msgstr ""
 
 #: admin/settings/custom-template/add-to-cart-settings.php:314
+#: admin/settings/custom-template/quantity-selector-settings.php:323
 #: admin/settings/hover-position-style-settings.php:236
 #: admin/settings/under-image-style-settings.php:289
 msgid "Background Colour Gradient To"
@@ -619,6 +634,9 @@ msgstr ""
 #: admin/settings/custom-template/product-rating-settings.php:250
 #: admin/settings/custom-template/product-title-settings.php:287
 #: admin/settings/custom-template/product-title-settings.php:316
+#: admin/settings/custom-template/quantity-selector-settings.php:243
+#: admin/settings/custom-template/quantity-selector-settings.php:278
+#: admin/settings/custom-template/quantity-selector-settings.php:335
 #: admin/settings/hover-position-style-settings.php:196
 msgid "Top"
 msgstr ""
@@ -632,6 +650,9 @@ msgstr ""
 #: admin/settings/custom-template/product-rating-settings.php:255
 #: admin/settings/custom-template/product-title-settings.php:292
 #: admin/settings/custom-template/product-title-settings.php:321
+#: admin/settings/custom-template/quantity-selector-settings.php:247
+#: admin/settings/custom-template/quantity-selector-settings.php:282
+#: admin/settings/custom-template/quantity-selector-settings.php:339
 #: admin/settings/hover-position-style-settings.php:198
 msgid "Bottom"
 msgstr ""
@@ -1082,6 +1103,71 @@ msgstr ""
 
 #: admin/settings/custom-template/product-title-settings.php:275
 msgid "Title Container Shadow"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:81
+msgid "Quantity Selector Settings successfully saved."
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:82
+msgid "Error: Quantity Selector Settings can not save."
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:83
+msgid "Quantity Selector Settings successfully reseted."
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:154
+#: admin/settings/custom-template/quantity-selector-settings.php:202
+msgid "Quantity Selector"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:198
+msgid "Quantity Selector Setup"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:214
+msgid "Quantity Selector Container"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:219
+msgid "Container Background Colour"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:226
+msgid "Container Border"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:232
+msgid "Container Shadow"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:238
+msgid "Container Border Margin (Outside)"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:262
+msgid "Quantity Input"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:267
+msgid "Quantity Input Font"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:273
+msgid "Quantity Input Padding (Inside)"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:297
+msgid "Quantity Plus / Minus"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:302
+msgid "Quantity Plus / Minus Font"
+msgstr ""
+
+#: admin/settings/custom-template/quantity-selector-settings.php:330
+msgid "Quantity Plus / Minus Padding (Inside)"
 msgstr ""
 
 #: admin/settings/custom-template/thumbnails-settings.php:81

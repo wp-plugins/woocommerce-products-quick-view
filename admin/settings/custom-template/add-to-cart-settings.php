@@ -57,7 +57,7 @@ class WC_QV_Custom_Template_AddToCart_Button_Settings extends WC_QV_Admin_UI
 	 * @var string
 	 * You can change the order show of this sub tab in list sub tabs
 	 */
-	private $position = 5;
+	private $position = 7;
 	
 	/**
 	 * @var array

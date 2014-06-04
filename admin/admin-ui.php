@@ -32,6 +32,8 @@ class WC_QV_Admin_UI
 	 */
 	public $plugin_name = 'wc_quick_view_ultimate';
 	
+	public $is_free_plugin = true;
+	
 	/**
 	 * @var string
 	 * You must change to correct pro plugin page url on a3rev site
