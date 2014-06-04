@@ -7,28 +7,10 @@ body #main div.box_content div.box_item .entry-item.sticky_product .thumbnail .q
 a.quick_view_ultimate_under_button {
 	white-space: nowrap;
 	text-decoration:none !important;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
 	display: inline-block !important;
-	padding: 4px 14px 4px;
-	color: #fff;
 	text-decoration: none;
-	border:none;
 	position: relative;
 	cursor: pointer;
-	padding: 4px 14px 4px;
-	border: 1px solid #4e7aa6;
-	background: #ffffff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7497b9), to(#4b6e90));
-	background: -webkit-linear-gradient(#7497b9, #4b6e90);
-	background: -moz-linear-gradient(center top, #7497b9 0%, #4b6e90 100%);
-	background: -moz-gradient(center top, #7497b9 0%, #4b6e90 100%);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .quick_view_ultimate_content_under a.quick_view_ultimate_under_button:hover {
 	opacity:0.9;
@@ -39,7 +21,7 @@ a.quick_view_ultimate_under_button {
 	display:none;
 }
 .product_hover .quick_view_ultimate_container {
-	display: block;
+	display: block !important;
 	left: 0;
 	position: absolute;
 	width: 100%;
@@ -55,37 +37,24 @@ a.quick_view_ultimate_under_button {
 	position:relative;
 	display:block;
 }
-.product_hover .quick_view_ultimate_container span{padding-top:15px;padding-bottom:15px;display:block;}
+.product_hover .quick_view_ultimate_container span{display:block;}
 .product_hover .quick_view_ultimate_container span {
 	vertical-align:middle;
 	white-space: nowrap;
 	text-decoration:none !important;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
 	display: inline-block !important;
-	padding: 4px 14px 4px;
-	color: #fff;
 	text-decoration: none;
-	border:none;
 	position: relative;
 	cursor: pointer;
-	padding: 4px 14px 4px;
-	border: 1px solid #FFFFFF;
-	background: #ffffff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
-	background: -webkit-linear-gradient(#000000, #000000);
-	background: -moz-linear-gradient(center top, #000000 0%, #000000 100%);
-	background: -moz-gradient(center top, #000000 0%, #000000 100%);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	box-shadow: 0 0 15px #999999;
-	-moz-box-shadow: 0 0 15px #999999;
-	-webkit-box-shadow: 0 0 15px #999999;
 	z-index:1;
 }
 #fancybox-outer {
 	padding:0px !important;
+}
+.ad-preloads {
+	position: absolute;
+	left: -9000px;
+	top: -9000px;
 }
 @media only screen and (max-width: 568px) {
 	#fancybox-content {

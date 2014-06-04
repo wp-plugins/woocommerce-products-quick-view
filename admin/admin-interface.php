@@ -80,6 +80,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 		$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 		
 		wp_register_script( 'chosen', $this->admin_plugin_url() . '/assets/js/chosen/chosen.jquery' . $suffix . '.js', array( 'jquery' ), true, false );
+		wp_register_script( 'a3rev-chosen', $this->admin_plugin_url() . '/assets/js/chosen/chosen.jquery' . $suffix . '.js', array( 'jquery' ), true, false );
 		wp_register_script( 'a3rev-style-checkboxes', $this->admin_plugin_url() . '/assets/js/iphone-style-checkboxes.js', array('jquery'), true, false );
 		
 		wp_register_script( 'a3rev-admin-ui-script', $this->admin_plugin_url() . '/assets/js/admin-ui-script.js', array('jquery'), true, true );
@@ -91,6 +92,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 		wp_enqueue_script( 'wp-color-picker' );
 		wp_enqueue_script( 'jquery-ui-slider' );
 		wp_enqueue_script( 'chosen' );
+		wp_enqueue_script( 'a3rev-chosen' );
 		wp_enqueue_script( 'a3rev-style-checkboxes' );
 		wp_enqueue_script( 'a3rev-admin-ui-script' );
 		wp_enqueue_script( 'a3rev-typography-preview' );
@@ -816,7 +818,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 	 * separate_option		=> true | false
 	 * custom_attributes	=> array
 	 * view_doc				=> allowed html code : apply for heading only
-	 * placeholder			=> text : apply for select, multiselect and single_select_page
+	 * placeholder			=> text : apply for input, email, number, password, textarea, select, multiselect and single_select_page
 	 * hide_if_checked		=> true | false : apply for checkbox only
 	 * show_if_checked		=> true | false : apply for checkbox only
 	 * checkboxgroup		=> start | end : apply for checkbox only
@@ -920,6 +922,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 			if ( ! isset( $value['default'] ) ) $value['default'] = '';
 			if ( ! isset( $value['desc'] ) ) $value['desc'] = '';
 			if ( ! isset( $value['desc_tip'] ) ) $value['desc_tip'] = false;
+			if ( ! isset( $value['placeholder'] ) ) $value['placeholder'] = '';
 			
 			// For way it has an option name
 			if ( ! isset( $value['separate_option'] ) ) $value['separate_option'] = false;
@@ -1109,7 +1112,9 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 					if ( ! empty( $value['id'] ) ) do_action( $this->plugin_name . '_settings_' . sanitize_title( $value['id'] ) . '_before' );
 					
 					echo '<div id="'. esc_attr( $value['id'] ) . '" class="a3rev_panel_inner '. esc_attr( $value['class'] ) .'" style="'. esc_attr( $value['css'] ) .'">' . "\n\n";
-					if ( stristr( $value['class'], 'pro_feature_fields' ) !== false ) $this->upgrade_top_message( true );
+					if ( stristr( $value['class'], 'pro_feature_fields' ) !== false && ! empty( $value['id'] ) ) $this->upgrade_top_message( true, sanitize_title( $value['id'] ) );
+					elseif ( stristr( $value['class'], 'pro_feature_fields' ) !== false ) $this->upgrade_top_message( true );
+					
 					echo ( ! empty( $value['name'] ) ) ? '<h3>'. esc_html( $value['name'] ) .' '. $view_doc .'</h3>' : '';
 					if ( ! empty( $value['desc'] ) ) echo wpautop( wptexturize( wp_kses_post( $value['desc'] ) ) );
 					echo '<table class="form-table">' . "\n\n";
@@ -1138,6 +1143,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 								style="<?php echo esc_attr( $value['css'] ); ?>"
 								value="<?php echo esc_attr( $option_value ); ?>"
 								class="a3rev-ui-<?php echo sanitize_title( $value['type'] ) ?> <?php echo esc_attr( $value['class'] ); ?>"
+                                placeholder="<?php echo esc_attr( $value['placeholder'] ); ?>"
 								<?php echo implode( ' ', $custom_attributes ); ?>
 								/> <?php echo $description; ?>
 						</td>
@@ -1185,6 +1191,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 								id="<?php echo $id_attribute; ?>"
 								style="<?php echo esc_attr( $value['css'] ); ?>"
 								class="a3rev-ui-<?php echo sanitize_title( $value['type'] ) ?> <?php echo esc_attr( $value['class'] ); ?>"
+                                placeholder="<?php echo esc_attr( $value['placeholder'] ); ?>"
 								<?php echo implode( ' ', $custom_attributes ); ?>
 								><?php echo esc_textarea( $option_value );  ?></textarea>
 						</td>
@@ -1196,7 +1203,6 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 				case 'multiselect' :
 				
 					if ( trim( $value['class'] ) == '' ) $value['class'] = 'chzn-select';
-					if ( ! isset( $value['placeholder'] ) ) $value['placeholder'] = '';
 					if ( ! isset( $value['options'] ) ) $value['options'] = array();
 		
 					?><tr valign="top">
@@ -1262,7 +1268,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 												class="a3rev-ui-<?php echo sanitize_title( $value['type'] ) ?> <?php echo esc_attr( $value['class'] ); ?>"
 												<?php echo implode( ' ', $custom_attributes ); ?>
 												<?php checked( $val, $option_value ); ?>
-												/> <?php echo $text ?></label>
+												/> <span class="description" style="margin-left:5px;"><?php echo $text ?></span></label>
 										</li>
 										<?php
 									}
@@ -1307,7 +1313,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
                                                 value="<?php echo esc_attr( stripslashes( $i_option['val'] ) ); ?>"
                                                 <?php checked( esc_attr( stripslashes( $i_option['val'] ) ), $option_value ); ?>
                                                 <?php echo implode( ' ', $custom_attributes ); ?>
-                                                /> <?php echo $i_option['text'] ?>
+                                                /> <span class="description" style="margin-left:5px;"><?php echo $i_option['text'] ?></span>
 										</li>
 										<?php
 									}
@@ -1360,7 +1366,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 							value="<?php echo esc_attr( stripslashes( $value['checked_value'] ) ); ?>"
 							<?php checked( $option_value, esc_attr( stripslashes( $value['checked_value'] ) ) ); ?>
 							<?php echo implode( ' ', $custom_attributes ); ?>
-						/> <?php echo wp_kses_post( $value['desc'] ) ?></label> <?php echo $tip; ?>
+						/> <?php echo $description; ?></label> <?php echo $tip; ?>
 					<?php
 	
 					if ( ! isset( $value['checkboxgroup'] ) || ( isset( $value['checkboxgroup'] ) && $value['checkboxgroup'] == 'end' ) ) {
@@ -1400,7 +1406,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 								value="<?php echo esc_attr( stripslashes( $value['checked_value'] ) ); ?>"
 								<?php checked( $option_value, esc_attr( stripslashes( $value['checked_value'] ) ) ); ?>
 								<?php echo implode( ' ', $custom_attributes ); ?>
-								/> <?php echo wp_kses_post( $value['desc'] ) ?>
+								/> <?php echo $description; ?>
                         </td>
 					</tr><?php
 	
@@ -1429,7 +1435,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 								value="<?php echo esc_attr( stripslashes( $value['checked_value'] ) ); ?>"
 								<?php checked( $option_value, esc_attr( stripslashes( $value['checked_value'] ) ) ); ?>
 								<?php echo implode( ' ', $custom_attributes ); ?>
-								/> <?php echo wp_kses_post( $value['desc'] ) ?>
+								/> <?php echo $description; ?>
                         </td>
 					</tr><?php
 	
@@ -1466,7 +1472,6 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 				case 'single_select_page' :
 	
 					if ( trim( $value['class'] ) == '' ) $value['class'] = 'chzn-select-deselect';
-					if ( ! isset( $value['placeholder'] ) ) $value['placeholder'] = '';
 					
 					$args = array( 'name'				=> $name_attribute,
 								   'id'					=> $id_attribute,
@@ -1944,6 +1949,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 						if ( ! isset( $option_value['bottom_right_corner'] ) ) $option_value['bottom_right_corner'] = 3;
 						$bottom_right_corner	= $option_value['bottom_right_corner'];
 					}
+					
 					if ( trim( $rounded_value ) == '' || trim( $rounded_value ) <= 0  ) $rounded_value = $value['min'];
 					$rounded_value = intval( $rounded_value );
 					
@@ -2285,6 +2291,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 						</th>
 						<td class="forminp forminp-<?php echo sanitize_title( $value['type'] ) ?>">
                         	<?php echo $description; ?>
+                            <?php remove_all_filters('mce_external_plugins'); ?>
                         	<?php wp_editor( 	$option_value, 
 												$id_attribute, 
 												array( 	'textarea_name' => $name_attribute, 
