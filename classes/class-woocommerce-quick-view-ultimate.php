@@ -335,11 +335,6 @@ class WC_Quick_View_Ultimate
 		$html .= '<p>'.__("<strong>NOTE:</strong> All the functions inside the Yellow border on the plugins admin panel are extra functionality that is activated by upgrading to the Pro version", 'wooquickview').':</p>';
 		$html .= '<p>';
 		$html .= '<h3 style="margin-bottom:5px;">* <a href="'.WC_QUICK_VIEW_ULTIMATE_AUTHOR_URI.'" target="_blank">'.__('WooCommerce Quick View Ultimate', 'wooquickview').'</a></h3>';
-		$html .= '<p>';
-		$html .= '* '. sprintf( __('Trial the <a href="%s" target="_blank">Pro Version for Free</a>', 'wooquickview'), 'http://a3rev.com/shop/wp-e-commerce-quick-view-ultimate' ).'<br />';
-		$html .= '* '. __('No credit card required.', 'wooquickview').'<br />';
-		$html .= '* '. __('Immediate access to developer support.', 'wooquickview');
-		$html .= '</p>';
 		$html .= '<div><strong>'.__('Activates these advanced Features', 'wooquickview').':</strong></div>';
 		$html .= '<p>';
 		$html .= '<ul style="padding-left:10px;">';

@@ -80,7 +80,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 		$suffix = defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min';
 		
 		wp_register_script( 'chosen', $this->admin_plugin_url() . '/assets/js/chosen/chosen.jquery' . $suffix . '.js', array( 'jquery' ), true, false );
-		wp_register_script( 'a3rev-chosen', $this->admin_plugin_url() . '/assets/js/chosen/chosen.jquery' . $suffix . '.js', array( 'jquery' ), true, false );
+		wp_register_script( 'a3rev-chosen-new', $this->admin_plugin_url() . '/assets/js/chosen/chosen.jquery' . $suffix . '.js', array( 'jquery' ), true, false );
 		wp_register_script( 'a3rev-style-checkboxes', $this->admin_plugin_url() . '/assets/js/iphone-style-checkboxes.js', array('jquery'), true, false );
 		
 		wp_register_script( 'a3rev-admin-ui-script', $this->admin_plugin_url() . '/assets/js/admin-ui-script.js', array('jquery'), true, true );
@@ -92,7 +92,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 		wp_enqueue_script( 'wp-color-picker' );
 		wp_enqueue_script( 'jquery-ui-slider' );
 		wp_enqueue_script( 'chosen' );
-		wp_enqueue_script( 'a3rev-chosen' );
+		wp_enqueue_script( 'a3rev-chosen-new' );
 		wp_enqueue_script( 'a3rev-style-checkboxes' );
 		wp_enqueue_script( 'a3rev-admin-ui-script' );
 		wp_enqueue_script( 'a3rev-typography-preview' );
@@ -117,7 +117,7 @@ class WC_QV_Admin_Interface extends WC_QV_Admin_UI
 			wp_enqueue_style( 'a3rev-admin-flat-ui-style', $this->admin_plugin_url() . '/assets/css/admin-flat-ui-style.css' );
 		}
 		wp_enqueue_style( 'wp-color-picker' );
-		wp_enqueue_style( 'a3rev-chosen-style', $this->admin_plugin_url() . '/assets/js/chosen/chosen' . $suffix . '.css' );
+		wp_enqueue_style( 'a3rev-chosen-new-style', $this->admin_plugin_url() . '/assets/js/chosen/chosen' . $suffix . '.css' );
 		wp_enqueue_style( 'a3rev-tiptip-style', $this->admin_plugin_url() . '/assets/js/tipTip/tipTip.css' );
 		
 	} // End admin_css_load()

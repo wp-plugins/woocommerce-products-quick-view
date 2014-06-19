@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Product Quick View\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-04 17:38+0700\n"
-"PO-Revision-Date: 2014-06-04 17:38+0700\n"
+"POT-Creation-Date: 2014-06-19 11:29+0700\n"
+"PO-Revision-Date: 2014-06-19 11:29+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -298,11 +298,11 @@ msgstr ""
 #: admin/admin-ui.php:131
 #, php-format
 msgid ""
-"The fully featured %s in availble for <a href=\"%s\" target=\"_blank\">Free "
-"Evaluation Trail Here</a>. No credit card required."
+"Upgrade to the <a href=\"%s\" target=\"_blank\">%s</a> to activate these "
+"settings."
 msgstr ""
 
-#: admin/admin-ui.php:133
+#: admin/admin-ui.php:134
 msgid "Pro Version"
 msgstr ""
 
@@ -1546,139 +1546,126 @@ msgstr ""
 msgid "WooCommerce Quick View Ultimate"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:339
-#, php-format
-msgid "Trial the <a href=\"%s\" target=\"_blank\">Pro Version for Free</a>"
-msgstr ""
-
-#: classes/class-woocommerce-quick-view-ultimate.php:340
-msgid "No credit card required."
-msgstr ""
-
-#: classes/class-woocommerce-quick-view-ultimate.php:341
-msgid "Immediate access to developer support."
-msgstr ""
-
-#: classes/class-woocommerce-quick-view-ultimate.php:343
+#: classes/class-woocommerce-quick-view-ultimate.php:338
 msgid "Activates these advanced Features"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:346
+#: classes/class-woocommerce-quick-view-ultimate.php:341
 msgid "Quick View Custom Template for pop-up."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:347
+#: classes/class-woocommerce-quick-view-ultimate.php:342
 msgid "Custom Template Dynamic Product Gallery."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:348
+#: classes/class-woocommerce-quick-view-ultimate.php:343
 msgid "Custom Template Next &gt; &lt; Previous Product feature."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:349
+#: classes/class-woocommerce-quick-view-ultimate.php:344
 msgid "Custom Template Style and layout settings."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:350
+#: classes/class-woocommerce-quick-view-ultimate.php:345
 msgid "Optional Fancybox | Colorbox pop-up tool."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:351
+#: classes/class-woocommerce-quick-view-ultimate.php:346
 msgid "Select pop-up open and close effect."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:352
+#: classes/class-woocommerce-quick-view-ultimate.php:347
 msgid "Set pop-up opening / closing speed."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:353
+#: classes/class-woocommerce-quick-view-ultimate.php:348
 msgid "Set pop-up background overlay colour."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:354
+#: classes/class-woocommerce-quick-view-ultimate.php:349
 msgid "Access to support from developers."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:355
+#: classes/class-woocommerce-quick-view-ultimate.php:350
 msgid "Lifetime upgrades and maintenence."
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:358
+#: classes/class-woocommerce-quick-view-ultimate.php:353
 msgid "View this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:358
+#: classes/class-woocommerce-quick-view-ultimate.php:353
 msgid "documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:359
+#: classes/class-woocommerce-quick-view-ultimate.php:354
 msgid "Visit this plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:359
+#: classes/class-woocommerce-quick-view-ultimate.php:354
 msgid "support forum"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:360
+#: classes/class-woocommerce-quick-view-ultimate.php:355
 msgid "More FREE a3rev WooCommerce Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:363
+#: classes/class-woocommerce-quick-view-ultimate.php:358
 msgid "WooCommerce Product Sort and Display"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:364
+#: classes/class-woocommerce-quick-view-ultimate.php:359
 msgid "WooCommerce Dynamic Products Gallery"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:365
+#: classes/class-woocommerce-quick-view-ultimate.php:360
 msgid "WooCommerce Predictive Search"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:366
+#: classes/class-woocommerce-quick-view-ultimate.php:361
 msgid "WooCommerce Compare Products"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:367
+#: classes/class-woocommerce-quick-view-ultimate.php:362
 msgid "WooCommerce Widget Product Slideshow"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:368
+#: classes/class-woocommerce-quick-view-ultimate.php:363
 msgid "WooCommerce Email Inquiry & Cart Options"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:369
+#: classes/class-woocommerce-quick-view-ultimate.php:364
 msgid "WooCommerce Email Inquiry Ultimate (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:370
+#: classes/class-woocommerce-quick-view-ultimate.php:365
 msgid "WooCommerce Quotes and Orders (Pro Only)"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:373
+#: classes/class-woocommerce-quick-view-ultimate.php:368
 msgid "FREE a3rev WordPress Plugins"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:376
+#: classes/class-woocommerce-quick-view-ultimate.php:371
 msgid "a3 Responsive Slider"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:377
+#: classes/class-woocommerce-quick-view-ultimate.php:372
 msgid "Contact Us Page - Contact People"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:378
+#: classes/class-woocommerce-quick-view-ultimate.php:373
 msgid "WordPress Email Template"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:379
+#: classes/class-woocommerce-quick-view-ultimate.php:374
 msgid "Page View Count"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:389
+#: classes/class-woocommerce-quick-view-ultimate.php:384
 msgid "Documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:390
+#: classes/class-woocommerce-quick-view-ultimate.php:385
 msgid "Support"
 msgstr ""
