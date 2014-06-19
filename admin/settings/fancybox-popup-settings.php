@@ -196,6 +196,26 @@ class WC_QV_Fancybox_Popup_Settings extends WC_QV_Admin_UI
                 'type' 		=> 'heading',
            	),
 			array(  
+				'name' 		=> __( 'Pop-up Maximum Width', 'wooquickview' ),
+				'id' 		=> 'quick_view_ultimate_fancybox_popup_width',
+				'desc'		=> 'px',
+				'type' 		=> 'slider',
+				'default'	=> 600,
+				'min'		=> 520,
+				'max'		=> 800,
+				'increment'	=> 10
+			),
+			array(  
+				'name' 		=> __( 'Pop-up Maximum Height', 'wooquickview' ),
+				'id' 		=> 'quick_view_ultimate_fancybox_popup_height',
+				'desc'		=> 'px',
+				'type' 		=> 'slider',
+				'default'	=> 460,
+				'min'		=> 300,
+				'max'		=> 500,
+				'increment'	=> 10
+			),
+			array(  
 				'name' 		=> __( "Fix Position on Scroll", 'wooquickview' ),
 				'id' 		=> 'quick_view_ultimate_fancybox_center_on_scroll',
 				'type' 		=> 'onoff_radio',
