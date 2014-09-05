@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>
 <?php
 /*-----------------------------------------------------------------------------------
-WC Quick View ColorBox Popup Settings
+WC Quick View Custom Template Product Data Settings
 
 TABLE OF CONTENTS
 
@@ -28,13 +28,13 @@ TABLE OF CONTENTS
 
 -----------------------------------------------------------------------------------*/
 
-class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
+class WC_QV_Custom_Template_Product_Meta_Settings extends WC_QV_Admin_UI
 {
 	
 	/**
 	 * @var string
 	 */
-	private $parent_tab = 'popup-style';
+	private $parent_tab = 'product-data';
 	
 	/**
 	 * @var array
@@ -45,19 +45,19 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 	 * @var string
 	 * You must change to correct option name that you are working
 	 */
-	public $option_name = '';
+	public $option_name = 'quick_view_template_product_meta_settings';
 	
 	/**
 	 * @var string
 	 * You must change to correct form key that you are working
 	 */
-	public $form_key = 'wc_quick_view_colorbox_popup_settings';
+	public $form_key = 'quick_view_template_product_meta_settings';
 	
 	/**
 	 * @var string
 	 * You can change the order show of this sub tab in list sub tabs
 	 */
-	private $position = 2;
+	private $position = 3;
 	
 	/**
 	 * @var array
@@ -78,13 +78,15 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 		$this->subtab_init();
 		
 		$this->form_messages = array(
-				'success_message'	=> __( 'Color Box Pop Up Settings successfully saved.', 'wooquickview' ),
-				'error_message'		=> __( 'Error: Color Box Pop Up Settings can not save.', 'wooquickview' ),
-				'reset_message'		=> __( 'Color Box Pop Up Settings successfully reseted.', 'wooquickview' ),
+				'success_message'	=> __( 'Product Meta Settings successfully saved.', 'wooquickview' ),
+				'error_message'		=> __( 'Error: Product Meta Settings can not save.', 'wooquickview' ),
+				'reset_message'		=> __( 'Product Meta Settings successfully reseted.', 'wooquickview' ),
 			);
-			
-		add_action( $this->plugin_name . '_set_default_settings' , array( $this, 'set_default_settings' ) );
+									
+		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_end', array( $this, 'include_script' ) );
 		
+		add_action( $this->plugin_name . '_set_default_settings' , array( $this, 'set_default_settings' ) );
+				
 		add_action( $this->plugin_name . '-' . $this->form_key . '_settings_init' , array( $this, 'reset_default_settings' ) );
 		
 		//add_action( $this->plugin_name . '_get_all_settings' , array( $this, 'get_settings' ) );
@@ -147,9 +149,9 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 	public function subtab_data() {
 		
 		$subtab_data = array( 
-			'name'				=> 'colorbox-pop-up',
-			'label'				=> __( 'Color Box Pop Up', 'wooquickview' ),
-			'callback_function'	=> 'wc_qv_colorbox_popup_settings_form',
+			'name'				=> 'product-meta',
+			'label'				=> __( 'Product Meta', 'wooquickview' ),
+			'callback_function'	=> 'wc_qv_custom_template_product_meta_settings_form',
 		);
 		
 		if ( $this->subtab_data ) return $this->subtab_data;
@@ -187,98 +189,146 @@ class WC_QV_ColorBox_Popup_Settings extends WC_QV_Admin_UI
 	/* Init all fields of this form */
 	/*-----------------------------------------------------------------------------------*/
 	public function init_form_fields() {
-		
+				
   		// Define settings			
      	$this->form_fields = apply_filters( $this->option_name . '_settings_fields', array(
-		
+			
 			array(
-            	'name' 		=> __( 'Colour Box Pop Up', 'wooquickview' ),
+				'name'		=> __( 'Product Meta Setup', 'wooquickview' ),
                 'type' 		=> 'heading',
            	),
 			array(  
-				'name' 		=> __( 'Pop-up Maximum Width', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_popup_width',
-				'desc'		=> 'px',
-				'type' 		=> 'slider',
-				'default'	=> 600,
-				'min'		=> 520,
-				'max'		=> 800,
-				'increment'	=> 10
+				'name' 		=> __( 'Product Meta', 'wooquickview' ),
+				'id' 		=> 'show_product_meta',
+				'class'		=> 'show_product_meta',
+				'type' 		=> 'onoff_checkbox',
+				'default'	=> 1,
+				'checked_value'		=> 1,
+				'unchecked_value' 	=> 0,
+				'checked_label'		=> __( 'ON', 'wooquickview' ),
+				'unchecked_label' 	=> __( 'OFF', 'wooquickview' ),
 			),
+			
+			array(
+				'name'		=> __( 'Product Meta Style', 'wooquickview' ),
+                'type' 		=> 'heading',
+				'class'		=> 'show_product_meta_container'
+           	),
 			array(  
-				'name' 		=> __( 'Pop-up Maximum Height', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_popup_height',
-				'desc'		=> 'px',
-				'type' 		=> 'slider',
-				'default'	=> 460,
-				'min'		=> 300,
-				'max'		=> 500,
-				'increment'	=> 10
-			),
-			array(  
-				'name' 		=> __( "Fix Position on Scroll", 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_center_on_scroll',
+				'name' 		=> __( 'Product Meta Alignment', 'wooquickview' ),
+				'id' 		=> 'meta_alignment',
 				'type' 		=> 'onoff_radio',
-				'default'	=> 'true',
+				'default' 	=> 'left',
 				'onoff_options' => array(
 					array(
-						'val' 				=> 'true',
-						'text'				=> __( 'Pop-up stays centered in screen while page scrolls behind it.', 'wooquickview' ) ,
-						'checked_label'		=> 'ON',
-						'unchecked_label' 	=> 'OFF',
+						'val' 				=> 'left',
+						'text' 				=> __( 'Left', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
 					),
-					
 					array(
-						'val' 				=> 'false',
-						'text' 				=> __( 'Pop-up scrolls up and down with the page.', 'wooquickview' ) ,
-						'checked_label'		=> 'ON',
-						'unchecked_label' 	=> 'OFF',
-					) 
+						'val' 				=> 'center',
+						'text' 				=> __( 'Center', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
+					array(
+						'val' 				=> 'right',
+						'text' 				=> __( 'Right', 'wooquickview' ),
+						'checked_label'		=> __( 'ON', 'wooquickview') ,
+						'unchecked_label' 	=> __( 'OFF', 'wooquickview') ,
+					),
 				),
 			),
 			array(  
-				'name' 		=> __( 'Open & Close Transition Effect', 'wooquickview' ),
-				'desc' 		=> __( "Choose a pop-up opening & closing effect. Default - None", 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_transition',
-				'css' 		=> 'width:80px;',
-				'type' 		=> 'select',
-				'default'	=> 'none',
-				'options'	=> array(
-						'none'			=> __( 'None', 'wooquickview' ) ,	
-						'fade'			=> __( 'Fade', 'wooquickview' ) ,	
-						'elastic'		=> __( 'Elastic', 'wooquickview' ) ,
-					),
+				'name' 		=> __( 'Product Meta Name Font', 'wooquickview' ),
+				'id' 		=> 'meta_name_font',
+				'type' 		=> 'typography',
+				'default'	=> array( 'size' => '12px', 'face' => 'Arial, sans-serif', 'style' => 'normal', 'color' => '#000000' )
 			),
 			array(  
-				'name' 		=> __( 'Opening & Closing Speed', 'wooquickview' ),
-				'desc' 		=> __( 'Milliseconds when open and close popup', 'wooquickview' ),
-				'id' 		=> 'quick_view_ultimate_colorbox_speed',
-				'type' 		=> 'text',
-				'css' 		=> 'width:40px;',
-				'default'	=> '300'
+				'name' 		=> __( 'Product Meta Value Font', 'wooquickview' ),
+				'id' 		=> 'meta_value_font',
+				'type' 		=> 'typography',
+				'default'	=> array( 'size' => '12px', 'face' => 'Arial, sans-serif', 'style' => 'normal', 'color' => '#000000' )
 			),
 			array(  
-				'name' 		=> __( 'Background Overlay Colour', 'wooquickview' ),
-				'desc' 		=> __('Select a colour or empty for no colour.', 'wooquickview'). ' ' . __('Default', 'wooquickview'). ' [default_value]',
-				'id' 		=> 'quick_view_ultimate_colorbox_overlay_color',
+				'name' 		=> __( 'Product Meta Value Hover Color', 'wooquickview' ),
+				'id' 		=> 'meta_value_font_hover_color',
 				'type' 		=> 'color',
-				'default'	=> '#666666'
+				'default'	=> '#999999'
+			),
+			array(  
+				'name' 		=> __( 'Product Meta Margin', 'wooquickview' ),
+				'id' 		=> 'meta_margin',
+				'type' 		=> 'array_textfields',
+				'ids'		=> array( 
+	 								array( 
+											'id' 		=> 'meta_margin_top',
+	 										'name' 		=> __( 'Top', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 5 ),
+	 
+	 								array(  'id' 		=> 'meta_margin_bottom',
+	 										'name' 		=> __( 'Bottom', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 5 ),
+											
+									array( 
+											'id' 		=> 'meta_margin_left',
+	 										'name' 		=> __( 'Left', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+											
+									array( 
+											'id' 		=> 'meta_margin_right',
+	 										'name' 		=> __( 'Right', 'wooquickview' ),
+	 										'css'		=> 'width:40px;',
+	 										'default'	=> 0 ),
+	 							)
 			),
 			
         ));
 	}
+	
+	public function include_script() {
+	?>
+<script>
+(function($) {
+$(document).ready(function() {
+	if ( $("input.show_product_meta:checked").val() == '1') {
+		$(".show_product_meta_container").css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
+	} else {
+		$(".show_product_meta_container").css( {'visibility': 'hidden', 'height' : '0px', 'overflow' : 'hidden'} );
+	}
+	
+	$(document).on( "a3rev-ui-onoff_checkbox-switch", '.show_product_meta', function( event, value, status ) {
+		$(".show_product_meta_container").hide().css( {'visibility': 'visible', 'height' : 'auto', 'overflow' : 'inherit'} );
+		if ( status == 'true' ) {
+			$(".show_product_meta_container").slideDown();
+		} else {
+			$(".show_product_meta_container").slideUp();
+		}
+	});
+	
+});
+})(jQuery);
+</script>
+    <?php	
+	}
+	
 }
 
-global $wc_qv_colorbox_popup_settings;
-$wc_qv_colorbox_popup_settings = new WC_QV_ColorBox_Popup_Settings();
+global $wc_qv_custom_template_product_meta_settings;
+$wc_qv_custom_template_product_meta_settings = new WC_QV_Custom_Template_Product_Meta_Settings();
 
 /** 
- * wc_qv_colorbox_popup_settings_form()
+ * wc_qv_custom_template_product_meta_settings_form()
  * Define the callback function to show subtab content
  */
-function wc_qv_colorbox_popup_settings_form() {
-	global $wc_qv_colorbox_popup_settings;
-	$wc_qv_colorbox_popup_settings->settings_form();
+function wc_qv_custom_template_product_meta_settings_form() {
+	global $wc_qv_custom_template_product_meta_settings;
+	$wc_qv_custom_template_product_meta_settings->settings_form();
 }
 
 ?>
