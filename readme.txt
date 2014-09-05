@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.7
-Tested up to: 3.9.1
-Stable tag: 1.0.6.4
+Tested up to: 4.0
+Stable tag: 1.1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,14 +34,16 @@ We wanted our customers to have a true supermarket shopping experience. Other Qu
 * Show Quick View as a button or hyperlink text (fully customizable without writing any code)
 * All product page features added by plugins work within the pop-up.
 * Show Quick View on hover over image or show as button or linked text under the image. 
-* Fully cross browser compliant including IE8 to IE11.
+* Fully cross browser compliant including IE9 to IE11.
 * Mobile device optimized - all tablets and phones
 
-= Hover Button point and click Styling =
-
-* Create the perfect Quick View button style to match your site with the point click settings.
+= Sass #dynamic {stylesheets} =
+* All the front end style display is created via [Sass](http://sass-lang.com/) #dynamic {stylesheets} for faster loader and render.
+* Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. 
+* This plugins backend admin panels are created in Sass.
+* Create the perfect Quick View button style to match your site with Sass #dynamic {stylesheet} settings.
 * Button transparency selector. 
-* Do it all by point click from the admin panel with touching the code.
+* Do it all by point click from the admin panel with touching the code, et be writing Sass like a Pro.
 * Change it any time you like.
 
 = Show Quick View under the Image =
@@ -164,6 +166,14 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.1.0 - 2014/09/05 =
+* Feature - Converted all front end CSS #dynamic {stylesheets} to Sass #dynamic {stylesheets} for faster loading.
+* Feature - Convert all back end CSS to Sass.
+* Tweak - use wc_get_product() function instead of get_product() function when site is using WooCommerce Version 2.2
+* Tweak - Updated google font face in plugin framework.
+* Tweak - Tested 100% compatible with WooCommerce Version 2.2 and backward to Version 2.1
+* Tweak - Tested 100% compatible with WordPress Version 4.0
+
 = 1.0.6.4 - 2014/06/19 =
 * Tweak - change wp_register_script( 'a3rev-chosen') to wp_register_script( 'a3rev-chosen-new')
 * Tweak - Tested 100% compatible with WooCommerce version 2.1.11
@@ -249,6 +259,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Major Version upgrade. Full CSS conversion to Sass and full compatibility with WordPress v4.0 and WooCommerce v2.2
 
 = 1.0.6.4 =
 Upgrade now for a framework code tweak that makes your plugin fully compatibile with WooCommerce Version 2.1.11 and backwards.
