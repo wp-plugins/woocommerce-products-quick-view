@@ -3,12 +3,12 @@ Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Add Quick View feature to all grid view products on shop, category, tag pages. Opens full product page content, add to cart without leaving the page
-  
+
 == Description ==
 
 WooCommerce Quick View Ultimate gives your customers a true supermarket shopping experience. In a supermarket shoppers browse products on the shelves, picking up the ones they are interested up, reading all the relevant information and either adding the item to their cart or putting it back on the shelf and continuing to browser. You can now give your customer exactly the same experience with Quick View Ultimate.
@@ -20,7 +20,7 @@ While browsing products anywhere in your store - shop page / category pages / ta
 * Either add the item to the shopping basket (Add to Cart)
 * Or put the item back on the shelf and continue to browse (close the pop-up)
 
-It is quick easy and incredibly convenient for your customers and will create more sales.   
+It is quick easy and incredibly convenient for your customers and will create more sales.
 
 = Why we built this Plugin =
 
@@ -33,16 +33,16 @@ We wanted our customers to have a true supermarket shopping experience. Other Qu
 * Fully mobile responsive - if your theme is responsive it opens in its true responsive dimensions within the pop-up.
 * Show Quick View as a button or hyperlink text (fully customizable without writing any code)
 * All product page features added by plugins work within the pop-up.
-* Show Quick View on hover over image or show as button or linked text under the image. 
+* Show Quick View on hover over image or show as button or linked text under the image.
 * Fully cross browser compliant including IE9 to IE11.
 * Mobile device optimized - all tablets and phones
 
 = Sass #dynamic {stylesheets} =
 * All the front end style display is created via [Sass](http://sass-lang.com/) #dynamic {stylesheets} for faster loader and render.
-* Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. 
+* Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 * This plugins backend admin panels are created in Sass.
 * Create the perfect Quick View button style to match your site with Sass #dynamic {stylesheet} settings.
-* Button transparency selector. 
+* Button transparency selector.
 * Do it all by point click from the admin panel with touching the code, et be writing Sass like a Pro.
 * Change it any time you like.
 
@@ -65,9 +65,9 @@ We wanted our customers to have a true supermarket shopping experience. Other Qu
 
 = Lite & Pro Version Admin Interface =
 
-* All a3rev Lite Version plugins have exactly the same admin interface as the Pro Version. 
-* Pro Version features and settings are inside of a Yellow border. 
-* The Pro Version settings are all active on the admin panels But do not save and are not applied to the front end. 
+* All a3rev Lite Version plugins have exactly the same admin interface as the Pro Version.
+* Pro Version features and settings are inside of a Yellow border.
+* The Pro Version settings are all active on the admin panels But do not save and are not applied to the front end.
 * Upgrading to the Pro version activates all the Pro version Features and Settings and removes the Yellow side bar and borders.
 
 >= Premium Support =
@@ -90,7 +90,7 @@ This feature allows you to create a Quick View Pop-up like now other. Features:
 * Dynamic Gallery automatically gets all images uploaded to the product
 * Set Gallery Left to show aligned Left or Right in the pop-up.
 * Gallery has 5 different transition effect types to choose from.
-* Gallery - set effect transition timing.  
+* Gallery - set effect transition timing.
 * Full template style customizing settings e.g background colour, Title font ect.
 * a3rev Button creator for creating any style for the buttons.
 * Control over what shows in the template e.g Prices, Add to Cart Button etc.
@@ -127,10 +127,10 @@ This feature allows you to create a Quick View Pop-up like now other. Features:
 * WooCommerce v2.0 and later.
 * PHP version 5.2.4 or greater
 * MySQL version 5.0 or greater
- 
+
 = Automatic installation =
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you don't even need to leave your web browser. To do an automatic install of WooCommerce Products Quick View, log in to your WordPress admin panel, navigate to the Plugins menu and click Add New. Search WooCommerce Products Quick View and click install. Or download the plugin from wordpress.org and click the upload sub nav item and use the WordPress plugins uploader to upload the plugin from your computer and unpack it and install it for you. 
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you don't even need to leave your web browser. To do an automatic install of WooCommerce Products Quick View, log in to your WordPress admin panel, navigate to the Plugins menu and click Add New. Search WooCommerce Products Quick View and click install. Or download the plugin from wordpress.org and click the upload sub nav item and use the WordPress plugins uploader to upload the plugin from your computer and unpack it and install it for you.
 
 = Manual installation =
 
@@ -140,7 +140,7 @@ The manual installation method involves downloading our plugin and uploading it 
 2. Using an FTP program, or your hosting control panel, upload the unzipped plugin folder to your WordPress installations wp-content/plugins/ directory.
 3. Activate the plugin from the Plugins menu within the WordPress admin.
 
- 
+
 == Usage ==
 
 1. Install and activate the plugin
@@ -152,7 +152,7 @@ The manual installation method involves downloading our plugin and uploading it 
 4. Make your settings and style the Quick View Button or hypertext link.
 
 5. Have fun.
- 
+
 == Frequently Asked Questions ==
 
 = When can I use this plugin? =
@@ -166,6 +166,10 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.1.1 - 2014/09/12 =
+* Tweak - Tested 100% compatible with WooCommerce 2.2.2
+* Fix - Changed __DIR__ to dirname( __FILE__ ) for Sass script so that on some server __DIR___ is not defined
+
 = 1.1.0 - 2014/09/05 =
 * Feature - Converted all front end CSS #dynamic {stylesheets} to Sass #dynamic {stylesheets} for faster loading.
 * Feature - Convert all back end CSS to Sass.
@@ -178,14 +182,14 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 * Tweak - change wp_register_script( 'a3rev-chosen') to wp_register_script( 'a3rev-chosen-new')
 * Tweak - Tested 100% compatible with WooCommerce version 2.1.11
 
-= 1.0.6.3 - 2014/06/04 = 
-* Tweak - Updated chosen js script to latest version 1.1.0 on the a3rev Plugin Framework  
-* Tweak - Tested fully compatible with WooCommerce Version 2.1.10 
+= 1.0.6.3 - 2014/06/04 =
+* Tweak - Updated chosen js script to latest version 1.1.0 on the a3rev Plugin Framework
+* Tweak - Tested fully compatible with WooCommerce Version 2.1.10
 
-= 1.0.6.2 - 2014/05/29 = 
-* Tweak - Changed add_filter( 'gettext', array( $this, 'change_button_text' ), null, 2 ); to add_filter( 'gettext', array( $this, 'change_button_text' ), null, 3 ); 
-* Tweak - Update change_button_text() function from ( $original == 'Insert into Post' ) to ( is_admin() && $original === 'Insert into Post' ) 
-* Tweak - Added support for placeholder feature for input, email , password , text area types. 
+= 1.0.6.2 - 2014/05/29 =
+* Tweak - Changed add_filter( 'gettext', array( $this, 'change_button_text' ), null, 2 ); to add_filter( 'gettext', array( $this, 'change_button_text' ), null, 3 );
+* Tweak - Update change_button_text() function from ( $original == 'Insert into Post' ) to ( is_admin() && $original === 'Insert into Post' )
+* Tweak - Added support for placeholder feature for input, email , password , text area types.
 
 = 1.0.6.1 - 2014/05/19 =
 * Tweak - Updated Pop-up menu with new Pro Version features set custom pop-up width and height.
@@ -215,7 +219,7 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 = 1.0.5 - 2014/01/28 =
 * Feature - Upgraded for 100% compatibility with soon to be released WooCommerce Version 2.1 with backward compatibility to Version 2.0
 * Feature - Added all required code so plugin can work with WooCommerce Version 2.1 refactored code.
-* Tweak - Removed dynamic pop-up wide setting and replaced with static pop-up max wide. 
+* Tweak - Removed dynamic pop-up wide setting and replaced with static pop-up max wide.
 * Tweak - Pop-up tools wide under 520px shows 100% wide of the screen for mobiles in portrait or landscape
 * Tweak - Added description text to the top of each Pro Version yellow border section
 * Tweak - Tested for compatibility with WordPress version 3.8.1
@@ -243,7 +247,7 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 * Feature - Replaced colour picker with new WordPress 3.6.0 colour picker (Pro Version feature).
 * Feature - Added choice of 350 Google fonts to the existing 17 websafe fonts in all new single row font editor (Pro Version features).
 * Feature - New Border / Button shadow features. Create shadow external or internal, set wide of shadow (Pro Version Features).
-* Feature - New on page instant previews for Fonts editor, create border and shadow style.(Pro Version Features). 
+* Feature - New on page instant previews for Fonts editor, create border and shadow style.(Pro Version Features).
 * Feature - Added intuitive triggers for some settings. When selected corresponding feature settings appear (Pro Version features).
 * Feature - Added set pop up wide from 50% to 100% by increments of + or - 1% using new slider interface (Pro Version features)
 * Tweak - Moved admin from WooCommerce settings tab onto the WooCommerce menu.
@@ -260,6 +264,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Upgrade Notice ==
 
+= 1.1.1 =
+Upgrade now for 1 Sass bug fix and full compatibility with WooCommerce Version 2.2.2
+
 = 1.1.0 =
 Major Version upgrade. Full CSS conversion to Sass and full compatibility with WordPress v4.0 and WooCommerce v2.2
 
@@ -269,8 +276,8 @@ Upgrade now for a framework code tweak that makes your plugin fully compatibile 
 = 1.0.6.3 =
 Update your plugin for a Framework code tweak and full compatibility with WooCommerce version 2.1.10
 
-= 1.0.6.2 = 
-Update your plugin now for 3 new a3rev plugin framework code tweaks. 
+= 1.0.6.2 =
+Update your plugin now for 3 new a3rev plugin framework code tweaks.
 
 = 1.0.6.1 =
 Upgrade now for a Quick View Fancybox scroll bug fix in iOS Mobile operating system.
@@ -294,5 +301,5 @@ Upgrade now for another admin panel intuitive app interface feature plus a Radio
 Upgrade now to get the all new admin panel app interface. PayPal checkout in pop-up bug fix and browser protocol bug fix.
 
 = 1.0.0 =
-Upgrade now for one new bug fix 
+Upgrade now for one new bug fix
 
