@@ -221,7 +221,6 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 			),
 			array(
             	'name' => __( 'Set Display Type', 'wooquickview' ),
-				'id'	=> 'pro_quick_view_ultimate_type',
                 'type' => 'heading',
            	),
 			array(  
@@ -229,6 +228,7 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 				'id' 		=> 'quick_view_ultimate_type',
 				'type' 		=> 'onoff_radio',
 				'default'	=> 'hover',
+				'free_version'		=> true,
 				'onoff_options' => array(
 					array(
 						'val' 				=> 'hover',
@@ -247,6 +247,7 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 			),
 			array(
             	'name' => __( 'Select a Pop Up Tool', 'wooquickview' ),
+				'id'	=> 'pro_quick_view_ultimate_type',
                 'type' => 'heading',
            	),
 			array(  
@@ -266,6 +267,20 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
                 'type' => 'heading',
            	),
 			array(  
+				'name' 		=> __( "Custom Template Pop-up", 'wooquickview' ),
+				'id' 		=> 'quick_view_ultimate_popup_content',
+				'type' 		=> 'onoff_radio',
+				'default'	=> 'full_page',
+				'onoff_options' => array(
+					array(
+						'val' 				=> 'custom_template',
+						'text' 				=> __( 'Use the Custom Template for pop-up with Dynamic product image gallery, view Next&gt; &lt;Previous product in the pop-up.', 'wooquickview' ).' <span class="description">('.__( 'recommended', 'wooquickview' ).')</span>' ,
+						'checked_label'		=> 'ON',
+						'unchecked_label' 	=> 'OFF',
+					),
+				),
+			),
+			array(  
 				'name' 		=> __( 'Site Product Page', 'wooquickview' ),
 				'id' 		=> 'quick_view_ultimate_popup_content',
 				'type' 		=> 'onoff_radio',
@@ -273,7 +288,7 @@ class WC_QV_Global_Settings extends WC_QV_Admin_UI
 				'onoff_options' => array(
 					array(
 						'val' 				=> 'full_page',
-						'text' 				=> __( 'Open full site in pop-up', 'wooquickview' ) .' <span class="description">('.__( 'recommended', 'wooquickview' ).')</span>' ,
+						'text' 				=> __( 'Open full site in pop-up', 'wooquickview' ) . ' - <span style="color:red">' . __( 'The only Activated Option in Lite Version!', 'wooquickview' ) . '</span>',
 						'checked_label'		=> 'ON',
 						'unchecked_label' 	=> 'OFF',
 					),

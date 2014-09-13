@@ -11,8 +11,8 @@ function wc_quick_view_ultimate_install(){
 	global $wc_qv_admin_init;
 	$wc_qv_admin_init->set_default_settings();
 	
-	update_option('wc_quick_view_ultimate_version', '1.0.6');
-	update_option('wc_quick_view_lite_version', '1.0.5');
+	update_option('wc_quick_view_ultimate_version', '1.1.0');
+	update_option('wc_quick_view_lite_version', '1.1.0');
 	update_option('wc_quick_view_ultimate_plugin', 'wc_quick_view_ultimate');
 	//$wp_rewrite->flush_rules();
 	update_option('wc_quick_view_ultimate_just_installed', true);
@@ -32,6 +32,9 @@ add_action('init', 'quick_view_ultimate_init');
 
 // Add custom style to dashboard
 add_action( 'admin_enqueue_scripts', array( 'WC_Quick_View_Ultimate', 'a3_wp_admin' ) );
+
+// Add admin sidebar menu css
+add_action( 'admin_enqueue_scripts', array( 'WC_Quick_View_Ultimate', 'admin_sidebar_menu_css' ) );
 
 // Add text on right of Visit the plugin on Plugin manager page
 add_filter( 'plugin_row_meta', array('WC_Quick_View_Ultimate', 'plugin_extra_links'), 10, 2 );
@@ -131,8 +134,8 @@ function wc_quick_view_lite_upgrade_plugin () {
 		update_option('wc_quick_view_ultimate_version', '1.0.2');
 	}
 	
-	update_option('wc_quick_view_ultimate_version', '1.0.6');
-	update_option('wc_quick_view_lite_version', '1.0.5');
+	update_option('wc_quick_view_ultimate_version', '1.1.0');
+	update_option('wc_quick_view_lite_version', '1.1.0');
 
 }
 ?>
