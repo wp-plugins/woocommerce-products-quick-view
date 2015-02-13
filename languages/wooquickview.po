@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Product Quick View\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-19 11:29+0700\n"
-"PO-Revision-Date: 2014-06-19 11:29+0700\n"
+"POT-Creation-Date: 2015-02-13 16:49+0700\n"
+"PO-Revision-Date: 2015-02-13 16:50+0700\n"
 "Last-Translator: Nguyen Cong Tuan <mr.nguyencongtuan@gmail.com>\n"
 "Language-Team: a3rev\n"
 "Language: en\n"
@@ -84,8 +84,8 @@ msgstr ""
 msgid "Outset"
 msgstr ""
 
-#: admin/admin-interface.php:1354 admin/admin-interface.php:1444
-#: admin/admin-interface.php:1473
+#: admin/admin-interface.php:1359 admin/admin-interface.php:1449
+#: admin/admin-interface.php:1478
 #: admin/settings/custom-template/add-to-cart-settings.php:209
 #: admin/settings/custom-template/add-to-cart-settings.php:238
 #: admin/settings/custom-template/add-to-cart-settings.php:244
@@ -122,8 +122,8 @@ msgstr ""
 msgid "ON"
 msgstr ""
 
-#: admin/admin-interface.php:1355 admin/admin-interface.php:1445
-#: admin/admin-interface.php:1474
+#: admin/admin-interface.php:1360 admin/admin-interface.php:1450
+#: admin/admin-interface.php:1479
 #: admin/settings/custom-template/add-to-cart-settings.php:210
 #: admin/settings/custom-template/add-to-cart-settings.php:239
 #: admin/settings/custom-template/add-to-cart-settings.php:245
@@ -160,63 +160,63 @@ msgstr ""
 msgid "OFF"
 msgstr ""
 
-#: admin/admin-interface.php:1515
+#: admin/admin-interface.php:1520
 msgid "Width"
 msgstr ""
 
-#: admin/admin-interface.php:1517
+#: admin/admin-interface.php:1522
 msgid "Height"
 msgstr ""
 
-#: admin/admin-interface.php:1519
+#: admin/admin-interface.php:1524
 msgid "Hard Crop"
 msgstr ""
 
-#: admin/admin-interface.php:1596
+#: admin/admin-interface.php:1601
 msgid "-- Default Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1607
+#: admin/admin-interface.php:1612
 msgid "-- Google Fonts --"
 msgstr ""
 
-#: admin/admin-interface.php:1648
+#: admin/admin-interface.php:1653
 msgid "Preview your customized typography settings"
 msgstr ""
 
-#: admin/admin-interface.php:1782 admin/admin-interface.php:2041
+#: admin/admin-interface.php:1787 admin/admin-interface.php:2046
 msgid "Preview your customized border settings"
 msgstr ""
 
-#: admin/admin-interface.php:1791 admin/admin-interface.php:2032
+#: admin/admin-interface.php:1796 admin/admin-interface.php:2037
 msgid "Rounded"
 msgstr ""
 
-#: admin/admin-interface.php:1792 admin/admin-interface.php:2033
+#: admin/admin-interface.php:1797 admin/admin-interface.php:2038
 msgid "Square"
 msgstr ""
 
-#: admin/admin-interface.php:1802 admin/admin-interface.php:2046
+#: admin/admin-interface.php:1807 admin/admin-interface.php:2051
 msgid "Top Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1822 admin/admin-interface.php:2066
+#: admin/admin-interface.php:1827 admin/admin-interface.php:2071
 msgid "Top Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1842 admin/admin-interface.php:2086
+#: admin/admin-interface.php:1847 admin/admin-interface.php:2091
 msgid "Bottom Right Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1862 admin/admin-interface.php:2106
+#: admin/admin-interface.php:1867 admin/admin-interface.php:2111
 msgid "Bottom Left Corner"
 msgstr ""
 
-#: admin/admin-interface.php:1955
+#: admin/admin-interface.php:1960
 msgid "Preview your customized border styles settings"
 msgstr ""
 
-#: admin/admin-interface.php:2167
+#: admin/admin-interface.php:2172
 #: admin/settings/custom-template/gallery-style-settings.php:218
 #: admin/settings/custom-template/gallery-style-settings.php:265
 #: admin/settings/custom-template/gallery-style-settings.php:339
@@ -226,7 +226,7 @@ msgstr ""
 msgid "YES"
 msgstr ""
 
-#: admin/admin-interface.php:2168
+#: admin/admin-interface.php:2173
 #: admin/settings/custom-template/gallery-style-settings.php:219
 #: admin/settings/custom-template/gallery-style-settings.php:266
 #: admin/settings/custom-template/gallery-style-settings.php:340
@@ -236,39 +236,39 @@ msgstr ""
 msgid "NO"
 msgstr ""
 
-#: admin/admin-interface.php:2182
+#: admin/admin-interface.php:2187
 msgid "Horizontal Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2200
+#: admin/admin-interface.php:2205
 msgid "Vertical Shadow"
 msgstr ""
 
-#: admin/admin-interface.php:2218
+#: admin/admin-interface.php:2223
 msgid "Blur Distance"
 msgstr ""
 
-#: admin/admin-interface.php:2236
+#: admin/admin-interface.php:2241
 msgid "Spread Size"
 msgstr ""
 
-#: admin/admin-interface.php:2254
+#: admin/admin-interface.php:2259
 msgid "INNER"
 msgstr ""
 
-#: admin/admin-interface.php:2255
+#: admin/admin-interface.php:2260
 msgid "OUTER"
 msgstr ""
 
-#: admin/admin-interface.php:2273
+#: admin/admin-interface.php:2278
 msgid "Preview your customized box shadow settings"
 msgstr ""
 
-#: admin/admin-interface.php:2509
+#: admin/admin-interface.php:2514
 msgid "Save changes"
 msgstr ""
 
-#: admin/admin-interface.php:2510
+#: admin/admin-interface.php:2515
 msgid "Reset Settings"
 msgstr ""
 
@@ -1647,25 +1647,37 @@ msgid "FREE a3rev WordPress Plugins"
 msgstr ""
 
 #: classes/class-woocommerce-quick-view-ultimate.php:371
-msgid "a3 Responsive Slider"
+msgid "a3 Lazy Load"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:371
+msgid "WooCommerce Compatible"
 msgstr ""
 
 #: classes/class-woocommerce-quick-view-ultimate.php:372
-msgid "Contact Us Page - Contact People"
+msgid "a3 Portfolio"
 msgstr ""
 
 #: classes/class-woocommerce-quick-view-ultimate.php:373
-msgid "WordPress Email Template"
+msgid "a3 Responsive Slider"
 msgstr ""
 
 #: classes/class-woocommerce-quick-view-ultimate.php:374
+msgid "Contact Us Page - Contact People"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:375
+msgid "WordPress Email Template"
+msgstr ""
+
+#: classes/class-woocommerce-quick-view-ultimate.php:376
 msgid "Page View Count"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:384
+#: classes/class-woocommerce-quick-view-ultimate.php:386
 msgid "Documentation"
 msgstr ""
 
-#: classes/class-woocommerce-quick-view-ultimate.php:385
+#: classes/class-woocommerce-quick-view-ultimate.php:387
 msgid "Support"
 msgstr ""

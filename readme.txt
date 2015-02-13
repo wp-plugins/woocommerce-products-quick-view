@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.7
-Tested up to: 4.0
-Stable tag: 1.1.1
+Tested up to: 4.1
+Stable tag: 1.2.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -166,6 +166,14 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.2.0 - 2015/02/13 =
+* Tweak - Maintenance update for full compatibility with WooCommerce major version release 2.3.0 with backward compatibility to WC 2.2.0
+* Tweak - Tested fully compatible with WooCommerce just released version 2.3.3
+* Tweak - Changed WP_CONTENT_DIR to WP_PLUGIN_DIR. When an admin sets a custom WordPress file structure then it can get the correct path of plugin
+* Tweak - Added Link to new plugins a3 Lazy Load and a3 Portfolio to the Free WordPress plugins list in yelow sidebar.
+* Tweak - Tested 100% compatible with WordPress Version 4.1
+* Fix - Sass compile path not saving on windows xampp
+
 = 1.1.1 - 2014/09/12 =
 * Tweak - Tested 100% compatible with WooCommerce 2.2.2
 * Fix - Changed __DIR__ to dirname( __FILE__ ) for Sass script so that on some server __DIR___ is not defined
@@ -263,6 +271,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Maintenance Update.Full compatibility with WooCommerce major version release 2.3.0 with backward compatibility to WooCommerce v 2.2.0 and full compatibility with WordPress v4.1
 
 = 1.1.1 =
 Upgrade now for 1 Sass bug fix and full compatibility with WooCommerce Version 2.2.2
