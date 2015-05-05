@@ -303,7 +303,6 @@ class WC_Quick_View_Ultimate
 	
 	public function quick_view_ultimate_reload_cart() {
 		global $woocommerce;
-		check_ajax_referer( 'reload-cart', 'security' );
 		if(function_exists('woocommerce_mini_cart'))woocommerce_mini_cart() ;
 		die();
 	}
