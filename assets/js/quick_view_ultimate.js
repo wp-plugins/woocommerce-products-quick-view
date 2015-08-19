@@ -43,5 +43,4 @@ jQuery(document).ready(function() {
 	jQuery(document).on("mouseleave", ".shop-product", function(){
 		jQuery(this).removeClass("product_hover");	
 	});
-	
 });	

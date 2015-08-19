@@ -2,8 +2,8 @@
 Contributors: a3rev, A3 Revolution Software Development team
 Tags: WooCommerce, WooCommerce Quick View, Quick View, WooCommerce Products Quick View.
 Requires at least: 3.7
-Tested up to: 4.2.2
-Stable tag: 1.2.4
+Tested up to: 4.3
+Stable tag: 1.2.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -166,6 +166,16 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 == Changelog ==
 
+= 1.2.5 - 2015/08/19 =
+* Tweak - Tested for full compatibility with WooCommerce Version 2.4.4
+* Tweak - Tested for full compatibility with WordPress major version 4.3.0
+* Tweak - Include new CSSMin lib from https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port into plugin framework instead of old CSSMin lib from http://code.google.com/p/cssmin/ , to avoid conflict with plugins or themes that have CSSMin lib
+* Tweak - Make __construct() function for 'Compile_Less_Sass' class instead of using a method with the same name as the class for compatibility on WP 4.3 and is deprecated on PHP4
+* Tweak - Change class name from 'lessc' to 'a3_lessc' so that it does not conflict with plugins or themes that have another Lessc lib
+* Fix - Check 'request_filesystem_credentials' function, if it does not exists then require the core php lib file from WP where it is defined
+* Fix - Make __construct() function for 'WC_Quick_View_Ultimate' class instead of using a method with the same name as the class for compatibility on WP 4.3 and is deprecated on PHP4
+* Fix - Make __construct() function for 'WC_Quick_View_Ultimate_Style' class instead of using a method with the same name as the class for compatibility on WP 4.3 and is deprecated on PHP4
+
 = 1.2.4 - 2015/06/04 =
 * Tweak - Tested for full compatibility with WooCommerce Version 2.3.10
 * Tweak - Tested for full compatibility with WordPress Version 4.2.2
@@ -291,6 +301,9 @@ On any WordPress install that has the WooCommerce plugin installed and activated
 
 
 == Upgrade Notice ==
+
+= 1.2.5 =
+Major Maintenance Upgrade. 3 Code Tweaks plus 4 bug fixes for full compatibility with WordPress v 4.3.0 and WooCommerce v 2.4.4
 
 = 1.2.4 =
 Important Maintenance Upgrade. 2 x major a3rev Plugin Framework Security Hardening Tweaks plus 1 https bug fix and full compatibility with WooCommerce 2.3.10 and WordPress 4.2.2

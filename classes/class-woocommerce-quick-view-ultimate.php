@@ -20,7 +20,7 @@
  */
 class WC_Quick_View_Ultimate
 {
-	public function WC_Quick_View_Ultimate() {
+	public function __construct() {
 		$this->init();
 	}
 	
@@ -196,12 +196,13 @@ class WC_Quick_View_Ultimate
 		if( $quick_view_ultimate_enable == 'yes' ) $do_this = true;
 		if( !$do_this ) return;
 		wp_enqueue_style( 'quick-view-css', WC_QUICK_VIEW_ULTIMATE_CSS_URL.'/style.css');
-		WC_Quick_View_Ultimate_Style::button_style_under_image();
-		WC_Quick_View_Ultimate_Style::button_style_show_on_hover();
+
+		global $wc_quick_view_ultimate_style;
+		$wc_quick_view_ultimate_style->button_style_under_image();
+		$wc_quick_view_ultimate_style->button_style_show_on_hover();
 	}
 	
 	public function quick_view_ultimate_popup(){
-		
 		//if (!is_tax( 'product_cat' ) && !is_post_type_archive('product') && !is_tax( 'product_tag' )) return; // Not on product page - return
 		
 		global $woocommerce;
@@ -319,11 +320,11 @@ class WC_Quick_View_Ultimate
 		$wc_qv_admin_init->plugin_extension_end();
 	}
 	
-	public static function a3_wp_admin() {
+	public function a3_wp_admin() {
 		wp_enqueue_style( 'a3rev-wp-admin-style', WC_QUICK_VIEW_ULTIMATE_CSS_URL . '/a3_wp_admin.css' );
 	}
 
-	public static function admin_sidebar_menu_css() {
+	public function admin_sidebar_menu_css() {
 		wp_enqueue_style( 'a3rev-wc-qv-admin-sidebar-menu-style', WC_QUICK_VIEW_ULTIMATE_CSS_URL . '/admin_sidebar_menu.css' );
 	}
 	
@@ -378,7 +379,7 @@ class WC_Quick_View_Ultimate
 		return $html;
 	}
 	
-	public static function plugin_extra_links($links, $plugin_name) {
+	public function plugin_extra_links($links, $plugin_name) {
 		if ( $plugin_name != WC_QUICK_VIEW_ULTIMATE_NAME) {
 			return $links;
 		}
@@ -387,4 +388,7 @@ class WC_Quick_View_Ultimate
 		return $links;
 	}
 }
+
+$GLOBALS['wc_quick_view_ultimate'] = new WC_Quick_View_Ultimate();
+
 ?>

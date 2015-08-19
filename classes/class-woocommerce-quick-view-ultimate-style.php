@@ -11,11 +11,11 @@
 class WC_Quick_View_Ultimate_Style
 {
 	
-	public function WC_Quick_View_Ultimate_Style(){
-		//construct
+	public function __construct(){
+		
 	}
 	
-	public static function button_style_show_on_hover(){
+	public function button_style_show_on_hover(){
 		global $wc_qv_admin_interface, $wc_qv_fonts_face;
 		$quick_view_ultimate_on_hover_bt_text = get_option( 'quick_view_ultimate_on_hover_bt_text' );
 		$quick_view_ultimate_on_hover_bt_alink = get_option( 'quick_view_ultimate_on_hover_bt_alink' );
@@ -71,7 +71,7 @@ class WC_Quick_View_Ultimate_Style
 		
 	}
 	
-	public static function button_style_under_image(){
+	public function button_style_under_image(){
 		global $wc_qv_admin_interface, $wc_qv_fonts_face;
 		
 		$quick_view_ultimate_under_image_bt_type = get_option( 'quick_view_ultimate_under_image_bt_type' );
@@ -127,4 +127,4 @@ class WC_Quick_View_Ultimate_Style
 	}
 	
 }
-$GLOBALS['wc_quick_view_ultimate_ultimate_style'] = new WC_Quick_View_Ultimate_Style();
+$GLOBALS['wc_quick_view_ultimate_style'] = new WC_Quick_View_Ultimate_Style();
